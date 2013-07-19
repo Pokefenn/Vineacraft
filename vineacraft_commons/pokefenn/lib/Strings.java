@@ -31,7 +31,7 @@ public class Strings {
     
     public static final String VINE_PARTS_NAME = "vineParts";
     public static final String BASIC_VINEA_MACHINE_BLOCK = "basicVineaMachineBlock";
-    
+    public static final String ADVANCED_VINEA_MACHINE_BLOCK = "advancedVineaMachineBlock";
     
     /* Tile entity name consants */
      
