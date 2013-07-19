@@ -1,6 +1,7 @@
 package pokefenn.item;
 
 import pokefenn.lib.Strings;
+import pokefenn.vineacraft.Vineacraft;
 
 public class ItemVineParts extends ItemVineacraft {
 
@@ -9,7 +10,7 @@ public class ItemVineParts extends ItemVineacraft {
         
         super(id);
         this.setUnlocalizedName(Strings.VINE_PARTS_NAME);
-        //this.setCreativeTab(Vineacraft.tabsvineac);
+        this.setCreativeTab(Vineacraft.tabsVineac);
         
     }
 }

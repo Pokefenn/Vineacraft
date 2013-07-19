@@ -11,8 +11,8 @@ public class ItemVineacraft extends Item {
     public ItemVineacraft(int id) {
     
     super(id = Reference.SHIFTED_ID_RANGE_CORRECTION);
-    maxStackSize = 1;
-    setNoRepair();
+    //maxStackSize = 1;
+    //setNoRepair();
     
     }
     

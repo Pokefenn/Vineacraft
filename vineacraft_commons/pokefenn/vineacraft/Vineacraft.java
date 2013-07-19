@@ -1,6 +1,10 @@
 package pokefenn.vineacraft;
 
+import net.minecraft.creativetab.CreativeTabs;
 import pokefenn.proxy.CommonProxy;
+import pokefenn.block.ModBlocks;
+import pokefenn.creativetab.CreativeTabVineac;
+import pokefenn.item.ModItems;
 import pokefenn.lib.Reference;
 
 import cpw.mods.fml.common.Mod;
@@ -36,15 +40,39 @@ public class Vineacraft {
     @SidedProxy(clientSide = "pokefenn.proxy.ClientProxy", serverSide = "pokefenn.proxy.CommonProxy")
     public static CommonProxy proxy;
     
+    public static CreativeTabs tabsVineac = new CreativeTabVineac(
+            CreativeTabs.getNextID(), Reference.MOD_ID);
+
     
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
        
+
+        // Initialize the Render Tick Handler (Client only)
+        proxy.registerRenderers();
+
+        // Register the Sound Handler (Client only)
+        proxy.registerSoundHandler();
+
+        // Initialize mod blocks
+        ModBlocks.init();
+
+        // Initialize mod items
+        ModItems.init();
         
     }
     
     @Init
     public void init(FMLInitializationEvent event){
+        
+        
+     // Initialize mod tile entities
+        proxy.registerTileEntities();
+
+     // Initialize custom rendering and pre-load textures (Client only)
+        //proxy.initRenderingAndTextures();
+        
+        
         
         
     }
@@ -53,6 +81,9 @@ public class Vineacraft {
     public void postInit(FMLPostInitializationEvent event) {
     
     
+     // Initialize the Addon Handler
+        //AddonHandler.init();
+        
     }
     
 
