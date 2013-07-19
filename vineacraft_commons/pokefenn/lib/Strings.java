@@ -33,6 +33,8 @@ public class Strings {
     public static final String BASIC_VINEA_MACHINE_BLOCK_NAME = "basicVineaMachineBlock";
     public static final String ADVANCED_VINEA_MACHINE_BLOCK_NAME = "advancedVineaMachineBlock";
     public static final String VINEA_SHEARS_NAME = "vineaShears";
+    public static final String VINEA_WRENCH_NAME = "vineaWrench";
+    public static final String VINIUM_NAME = "vinium";
     
     /* Tile entity name consants */
      
