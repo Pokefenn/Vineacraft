@@ -1,5 +1,8 @@
 package pokefenn.block;
 
-public class BlockAutomaticSqueezer {
+public class BlockAutomaticSqueezer extends BlockVineacraft {
 
+    
+    
+    
 }

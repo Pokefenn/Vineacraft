@@ -2,9 +2,7 @@ package pokefenn.block;
 
 
 
-
-
-public class BlockManualSqueezer {
+public class BlockManualSqueezer extends BlockVineacraft {
 
     
     

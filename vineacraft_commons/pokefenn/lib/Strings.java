@@ -29,6 +29,7 @@ public class Strings {
     
     /* Item name constants */
     
+    public static final String VINE_PARTS_NAME = "vineParts";
     
     /* Tile entity name consants */
      

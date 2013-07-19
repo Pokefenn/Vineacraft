@@ -14,14 +14,15 @@ public class ModBlocks {
     public static Block automaticSqueezer;
     public static Block vineaInfuser;
     public static Block vineaFurnace;
+    public static Block vineaHarvester;
     
     public static void init() {
         
-       // manualSqueezer = new ManualSqueezer(BlockIds.MANUAL_SQUEEZER);
+       //manualSqueezer = new BlockManualSqueezer(BlockIds.MANUAL_SQUEEZER);
        //automaticSqueezer = new BlockAutomaticSqueezer(BlockIds.AUTOMATIC_SQUEEZER);
        //vineaInfuser = new BlockVineaInfuser(BlockIds.VINEA_INFUSER);
        //vineaFurnace = new BlockVineaInfuser(BlockIds.VINEA_FURNACE);
-        
+       //vineaHarvester = new BlockVineaHarvester(BlockIds.VINEA_HARVESTER);
         
         
         

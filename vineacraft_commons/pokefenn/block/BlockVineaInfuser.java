@@ -1,5 +1,5 @@
 package pokefenn.block;
 
-public class BlockVineaInfuser {
+public class BlockVineaInfuser extends BlockVineacraft {
 
 }
