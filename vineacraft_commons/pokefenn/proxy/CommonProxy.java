@@ -10,7 +10,6 @@ public class CommonProxy {
     
     }
 
-
     public void registerEvents()
     {
         
@@ -36,6 +35,5 @@ public class CommonProxy {
         
     }
 
-    
 }
 
