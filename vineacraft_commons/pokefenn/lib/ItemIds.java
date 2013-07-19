@@ -10,6 +10,8 @@ public class ItemIds {
     public static int BASIC_VINEA_MACHINE_BLOCK_DEFAULT = 20061;
     
     /* Current item ids */
+    
+    
     public static int VINE_PARTS;
     public static int BASIC_VINEA_MACHINE_BLOCK;
 }

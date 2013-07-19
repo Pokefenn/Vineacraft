@@ -30,6 +30,8 @@ public class Strings {
     /* Item name constants */
     
     public static final String VINE_PARTS_NAME = "vineParts";
+    public static final String BASIC_VINEA_MACHINE_BLOCK = "basicVineaMachineBlock";
+    
     
     /* Tile entity name consants */
      
