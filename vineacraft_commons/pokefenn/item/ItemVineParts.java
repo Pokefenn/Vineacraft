@@ -5,7 +5,6 @@ import pokefenn.vineacraft.Vineacraft;
 
 public class ItemVineParts extends ItemVineacraft {
 
-    
     public ItemVineParts(int id){
         
         super(id);

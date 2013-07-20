@@ -1,9 +1,19 @@
 package pokefenn.vineacraft;
 
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.crafting.CraftingManager;
+import net.minecraftforge.common.MinecraftForge;
+
+import java.io.File;
+import java.util.Arrays;
+
 import pokefenn.proxy.CommonProxy;
 import pokefenn.block.ModBlocks;
+import pokefenn.configuration.ConfigurationHandler;
 import pokefenn.creativetab.CreativeTabVineac;
+import pokefenn.handlers.AddonHandler;
 import pokefenn.item.ModItems;
 import pokefenn.lib.Reference;
 
@@ -47,6 +57,12 @@ public class Vineacraft {
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
        
+     // Initialize the configuration
+        ConfigurationHandler.init(new File(event.getModConfigurationDirectory()
+                .getAbsolutePath()
+                + File.separator
+                + Reference.CHANNEL_NAME
+                + File.separator + Reference.MOD_ID + ".cfg"));
 
         // Initialize the Render Tick Handler (Client only)
         proxy.registerRenderers();
@@ -70,7 +86,7 @@ public class Vineacraft {
         proxy.registerTileEntities();
 
      // Initialize custom rendering and pre-load textures (Client only)
-        //proxy.initRenderingAndTextures();
+        proxy.initRenderingAndTextures();
         
         
         
@@ -82,7 +98,7 @@ public class Vineacraft {
     
     
      // Initialize the Addon Handler
-        //AddonHandler.init();
+        AddonHandler.init();
         
     }
     

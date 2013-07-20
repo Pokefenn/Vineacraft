@@ -25,7 +25,7 @@ public class Strings {
     public static final String VINEA_INFUSER_NAME = "vineaInfuser";
     public static final String VINE_SAP_FLOWING_NAME = "vineSapFlowing";
     public static final String VINE_SAP_STILL_NAME = "vineSapStill";
-    
+    public static final String VINEA_HARVESTER_NAME = "vineaHarvester";
     
     /* Item name constants */
     
@@ -36,8 +36,14 @@ public class Strings {
     public static final String VINEA_WRENCH_NAME = "vineaWrench";
     public static final String VINIUM_NAME = "vinium";
     
+    
     /* Tile entity name consants */
      
+    public static final String TE_AUTOMATIC_SQUEEZER_NAME = "tileAutomaticSqueezer";
+    public static final String TE_MANUAL_SQUEEZER_NAME = "tileManualSqueezer";
+    public static final String TE_VINEA_FURNACE_NAME = "tileVineaFurnace";
+    public static final String TE_VINEA_HARVESTER_NAME = "tileVineaHarvester";
+    public static final String TE_VINEA_INFUSER_NAME = "tileVineaInfuser";
     
     /* COntainer related consants */
     

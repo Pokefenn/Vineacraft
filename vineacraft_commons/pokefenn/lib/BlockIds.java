@@ -9,6 +9,9 @@ public class BlockIds {
     public static int VINEA_FURNACE_DEFAULT = 3682;
     public static int VINEA_INFUSER_DEFAULT = 3683;
     public static int VINEA_HARVESTER_DEFAULT = 3684;
+    public static int VINE_SAP_FLOWING_DEFAULT = 3685;
+    public static int VINE_SAP_STILL_DEFAULT = 3686;
+    
     
     //CurrentBlockId's
     public static int AUTOMATIC_SQUEEZER;
@@ -16,6 +19,7 @@ public class BlockIds {
     public static int VINEA_FURNACE;
     public static int VINEA_INFUSER;
     public static int VINEA_HARVESTER;
-    
+    public static int VINE_SAP_FLOWING;
+    public static int VINE_SAP_STILL;
     
 }

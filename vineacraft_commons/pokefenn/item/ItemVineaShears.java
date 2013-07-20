@@ -12,7 +12,7 @@ public class ItemVineaShears extends ItemShears {
         this.setUnlocalizedName(Strings.VINEA_SHEARS_NAME);
         this.setCreativeTab(Vineacraft.tabsVineac);
         this.setMaxStackSize(1);
-        this.setMaxDamage(476);
+        this.setMaxDamage(500);
         
         
         

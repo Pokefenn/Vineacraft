@@ -8,7 +8,6 @@ import pokefenn.vineacraft.Vineacraft;
 import net.minecraft.block.BlockStationary;
 import net.minecraft.block.material.Material;
 
-@SuppressWarnings("unused")
 public class BlockVineSapStill extends BlockStationary {
 
     
@@ -18,7 +17,7 @@ public class BlockVineSapStill extends BlockStationary {
         blockHardness = 100F;
         this.setLightOpacity(3);
         this.setUnlocalizedName(Strings.VINE_SAP_STILL_NAME);
-        //this.setCreativeTab(Vineacraft.tabsvineac);
+        this.setCreativeTab(Vineacraft.tabsVineac);
         this.disableStats();
         
     }
