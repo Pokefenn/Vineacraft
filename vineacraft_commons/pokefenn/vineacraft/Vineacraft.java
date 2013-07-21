@@ -38,7 +38,7 @@ import cpw.mods.fml.relauncher.Side;
 
 
 
-/* To stop these stupid errors  */@SuppressWarnings("unused")
+@SuppressWarnings("unused")
 
 @Mod( modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
