@@ -1,5 +1,5 @@
 package pokefenn.tileentity;
 
-public class TileAutomaticSqueezer {
+public class TileAutomaticSqueezer extends TileVineac {
 
 }
