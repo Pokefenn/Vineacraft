@@ -1,5 +1,7 @@
 package pokefenn.tileentity;
 
-public class TileVineaHatcher {
+public class TileVineaHatcher extends TileVineac {
+    
+    
 
 }

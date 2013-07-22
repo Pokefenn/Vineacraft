@@ -35,7 +35,7 @@ public class ConfigurationHandler {
             BlockIds.VINEA_HARVESTER = configuration.getBlock(Strings.VINEA_HARVESTER_NAME, BlockIds.VINEA_HARVESTER_DEFAULT).getInt(BlockIds.VINEA_HARVESTER_DEFAULT);
             BlockIds.VINE_SAP_FLOWING = configuration.getBlock(Strings.VINE_SAP_FLOWING_NAME, BlockIds.VINE_SAP_FLOWING_DEFAULT).getInt(BlockIds.VINE_SAP_FLOWING_DEFAULT);
             BlockIds.VINE_SAP_STILL = configuration.getBlock(Strings.VINE_SAP_STILL_NAME, BlockIds.VINE_SAP_STILL_DEFAULT).getInt(BlockIds.VINE_SAP_STILL_DEFAULT);
-            
+            BlockIds.VINEA_HATCHER = configuration.getBlock(Strings.VINEA_HATCHER_NAME, BlockIds.VINEA_HATCHER_DEFAULT).getInt(BlockIds.VINEA_HATCHER_DEFAULT);
  
             ItemIds.VINE_PARTS = configuration.getItem(Strings.VINE_PARTS_NAME, ItemIds.VINE_PARTS_DEFAULT).getInt(ItemIds.VINE_PARTS_DEFAULT);
             ItemIds.ADVANCED_VINEA_MACHINE_BLOCK = configuration.getItem(Strings.ADVANCED_VINEA_MACHINE_BLOCK_NAME, ItemIds.ADVANCED_VINEA_MACHINE_BLOCK_DEFAULT).getInt(ItemIds.ADVANCED_VINEA_MACHINE_BLOCK_DEFAULT);

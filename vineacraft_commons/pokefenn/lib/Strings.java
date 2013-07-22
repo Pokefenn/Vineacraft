@@ -26,6 +26,7 @@ public class Strings {
     public static final String VINE_SAP_FLOWING_NAME = "vineSapFlowing";
     public static final String VINE_SAP_STILL_NAME = "vineSapStill";
     public static final String VINEA_HARVESTER_NAME = "vineaHarvester";
+    public static final String VINEA_HATCHER_NAME = "vineaHatcher";
     
     /* Item name constants */
     
@@ -44,8 +45,9 @@ public class Strings {
     public static final String TE_VINEA_FURNACE_NAME = "tileVineaFurnace";
     public static final String TE_VINEA_HARVESTER_NAME = "tileVineaHarvester";
     public static final String TE_VINEA_INFUSER_NAME = "tileVineaInfuser";
+    public static final String TE_VINEA_HATCHER_NAME = "tileVineaHatcher";
     
-    /* COntainer related consants */
+    /* Container related consants */
     
     
     

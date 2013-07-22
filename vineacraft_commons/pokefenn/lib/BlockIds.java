@@ -11,6 +11,7 @@ public class BlockIds {
     public static int VINEA_HARVESTER_DEFAULT = 3684;
     public static int VINE_SAP_FLOWING_DEFAULT = 3685;
     public static int VINE_SAP_STILL_DEFAULT = 3686;
+    public static int VINEA_HATCHER_DEFAULT = 3687;
     
     
     //CurrentBlockId's
@@ -21,5 +22,5 @@ public class BlockIds {
     public static int VINEA_HARVESTER;
     public static int VINE_SAP_FLOWING;
     public static int VINE_SAP_STILL;
-    
+    public static int VINEA_HATCHER;
 }

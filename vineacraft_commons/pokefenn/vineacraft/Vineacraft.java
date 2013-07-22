@@ -53,6 +53,12 @@ public class Vineacraft {
     public static CreativeTabs tabsVineac = new CreativeTabVineac(
             CreativeTabs.getNextID(), Reference.MOD_ID);
 
+    /*@EventHandler
+    public void serverStarting(FMLServerStartingEvent event) {
+
+        // Initialize the custom commands
+        CommandHandler.initCommands(event);
+    */
     
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
