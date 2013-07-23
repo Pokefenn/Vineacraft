@@ -27,6 +27,9 @@ public class Strings {
     public static final String VINE_SAP_STILL_NAME = "vineSapStill";
     public static final String VINEA_HARVESTER_NAME = "vineaHarvester";
     public static final String VINEA_HATCHER_NAME = "vineaHatcher";
+    public static final String LIQUID_COCOA_STILL_NAME = "liquidCocoaStill";
+    public static final String LIQUID_COCOA_FLOWING_NAME = "liquidCocoaFlowing";
+    
     
     /* Item name constants */
     
