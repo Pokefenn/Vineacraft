@@ -1,8 +1,12 @@
 package pokefenn.block;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import pokefenn.lib.Reference;
 import pokefenn.tileentity.TileVineac;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.MathHelper;
@@ -15,6 +19,13 @@ public abstract class BlockVineacraft extends BlockContainer {
     public BlockVineacraft(int id, Material material) {
         
         super(id, material);
+    }
+    
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister iconRegister) {
+
+        blockIcon = iconRegister.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
     
  protected String getUnwrappedUnlocalizedName(String unlocalizedName) {

@@ -29,6 +29,7 @@ public class Strings {
     public static final String VINEA_HATCHER_NAME = "vineaHatcher";
     public static final String LIQUID_COCOA_STILL_NAME = "liquidCocoaStill";
     public static final String LIQUID_COCOA_FLOWING_NAME = "liquidCocoaFlowing";
+    public static final String ADVANCED_SQUEEZER_NAME = "advancedSqueezer";
     
     
     /* Item name constants */
@@ -49,6 +50,7 @@ public class Strings {
     public static final String TE_VINEA_HARVESTER_NAME = "tileVineaHarvester";
     public static final String TE_VINEA_INFUSER_NAME = "tileVineaInfuser";
     public static final String TE_VINEA_HATCHER_NAME = "tileVineaHatcher";
+    public static final String TE_ADVANCED_SQUEEZER_NAME = "tileAdvancedSqueezer";
     
     /* Container related consants */
     

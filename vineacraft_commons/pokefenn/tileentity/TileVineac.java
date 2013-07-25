@@ -17,7 +17,7 @@ public class TileVineac extends TileEntity {
     protected String customName;
     
     
-    /*public  TileVineacraft {
+    /*public TileVineac {
         
         orientation = ForgeDirection.SOUTH;
         state = 0;
