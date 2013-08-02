@@ -7,7 +7,6 @@ public class ContainerVineaHatcher extends Container {
 
     @Override
     public boolean canInteractWith(EntityPlayer entityplayer) {
-        // TODO Auto-generated method stub
         return true;
     }
 

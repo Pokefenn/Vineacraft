@@ -33,7 +33,7 @@ public abstract class BlockVineacraft extends BlockContainer {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
      
  }
-
+/*
  @Override
  public void onBlockPlacedBy(World world, int x, int y, int z, EntityLiving entityLiving, ItemStack itemStack) {
 
@@ -61,6 +61,6 @@ public abstract class BlockVineacraft extends BlockContainer {
 
      ((TileVineac) world.getBlockTileEntity(x, y, z)).setOrientation(direction);
  }
- 
+ */
  
 }

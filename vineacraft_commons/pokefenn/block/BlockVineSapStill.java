@@ -1,24 +1,35 @@
 package pokefenn.block;
 
-import pokefenn.lib.Strings;
 import pokefenn.vineacraft.Vineacraft;
-
-
-
 import net.minecraft.block.BlockStationary;
 import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.IFluidBlock;
 
-public class BlockVineSapStill extends BlockStationary {
+public class BlockVineSapStill/* extends BlockStationary implements IFluidBlock*/ {
+/*
+	protected BlockVineSapStill(int id) {
+		super(id, Material.water);
+		this.setHardness(100.0F);
+		this.setLightOpacity(0);
+		this.setCreativeTab(Vineacraft.tabsVineac);
+	}
 
-    
-    protected BlockVineSapStill(int id) {
-        
-        super(id, Material.water);
-        blockHardness = 100F;
-        this.setLightOpacity(3);
-        this.setUnlocalizedName(Strings.VINE_SAP_STILL_NAME);
-        this.setCreativeTab(Vineacraft.tabsVineac);
-        this.disableStats();
-        
-    }
+	@Override
+	public Fluid getFluid() {
+		return null;
+	}
+
+	@Override
+	public FluidStack drain(World world, int x, int y, int z, boolean doDrain) {
+		return null;
+	}
+
+	@Override
+	public boolean canDrain(World world, int x, int y, int z) {
+		return true;
+	}
+*/
 }

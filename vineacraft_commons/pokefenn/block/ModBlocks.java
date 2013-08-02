@@ -1,12 +1,15 @@
 package pokefenn.block;
 
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 import pokefenn.lib.BlockIds;
+import pokefenn.lib.Strings;
+import pokefenn.tileentity.TileAdvancedSqueezer;
+import pokefenn.tileentity.TileAutomaticSqueezer;
+import pokefenn.tileentity.TileManualSqueezer;
+import cpw.mods.fml.common.registry.GameRegistry;
 
-@SuppressWarnings("unused")
 public class ModBlocks {
 
     
@@ -15,10 +18,12 @@ public class ModBlocks {
     public static Block vineaInfuser;
     public static Block vineaFurnace;
     public static Block vineaHarvester;
+    //public static Block liquidCocoaStill;
+    //public static Block liquidCocoaFlowing;
+    public static Block advancedSqueezer;
+    public static Block vineaHatcher;
     public static Block vineSapFlowing;
     public static Block vineSapStill;
-    public static Block liquidCocoaStill;
-    public static Block liquidCocoaFlowing;
     
     
     public static void init() {
@@ -28,13 +33,25 @@ public class ModBlocks {
        vineaInfuser = new BlockVineaInfuser(BlockIds.VINEA_INFUSER);
        vineaFurnace = new BlockVineaInfuser(BlockIds.VINEA_FURNACE);
        vineaHarvester = new BlockVineaHarvester(BlockIds.VINEA_HARVESTER);
-       vineSapFlowing = new BlockVineSapFlowing(BlockIds.VINE_SAP_FLOWING);
-       vineSapStill = new BlockVineSapStill(BlockIds.VINE_SAP_STILL);
-       liquidCocoaStill = new BlockLiquidCocoaStill(BlockIds.LIQUID_COCOA_STILL);
-       liquidCocoaFlowing = new BlockLiquidCocoaFlowing(BlockIds.LIQUID_COCOA_FLOWING);
+       advancedSqueezer = new BlockAdvancedSqueezer(BlockIds.ADVANCED_SQUEEZER);
+       vineaHatcher = new BlockVineaHatcher(BlockIds.VINEA_HATCHER);
+      // vineSapStill = new BlockVineSapStill(BlockIds.VINE_SAP_STILL);
+      // vineSapFlowing = new BlockVineSapFlowing(BlockIds.VINE_SAP_FLOWING);
        
         
-        
+       GameRegistry.registerBlock(manualSqueezer, Strings.MANUAL_SQUEEZER_NAME);
+       GameRegistry.registerBlock(automaticSqueezer, Strings.AUTOMATIC_SQUEEZER_NAME);
+       GameRegistry.registerBlock(advancedSqueezer, Strings.ADVANCED_SQUEEZER_NAME);
+       GameRegistry.registerBlock(vineaFurnace, Strings.VINEA_FURNACE_NAME);
+       GameRegistry.registerBlock(vineaHarvester, Strings.VINEA_HARVESTER_NAME);
+     //  GameRegistry.registerBlock(vineSapFlowing, Strings.VINE_SAP_FLOWING_NAME);
+     //  GameRegistry.registerBlock(vineSapStill, Strings.VINE_SAP_STILL_NAME);
+       //GameRegistry
+       
+       
+        //vineSap = new Fluid("Vine_Sap");
+		//FluidRegistry.registerFluid(vineSap);
+       
     }
     
     
@@ -43,4 +60,12 @@ public class ModBlocks {
         
     }
     
+    
+    public static void registerTileEntities(){
+        
+        GameRegistry.registerTileEntity(TileManualSqueezer.class, Strings.TE_MANUAL_SQUEEZER_NAME);
+        GameRegistry.registerTileEntity(TileAutomaticSqueezer.class, Strings.TE_AUTOMATIC_SQUEEZER_NAME);
+        GameRegistry.registerTileEntity(TileAdvancedSqueezer.class, Strings.TE_ADVANCED_SQUEEZER_NAME);
+        
+    }
 }

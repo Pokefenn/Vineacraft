@@ -9,7 +9,6 @@ import net.minecraftforge.common.ForgeDirection;
 import pokefenn.lib.Strings;
 
 
-@SuppressWarnings("unused")
 public class TileVineac extends TileEntity {
     
     protected ForgeDirection orientation;

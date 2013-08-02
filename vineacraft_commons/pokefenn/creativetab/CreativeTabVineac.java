@@ -2,7 +2,7 @@ package pokefenn.creativetab;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import pokefenn.lib.ItemIds;
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 
 
@@ -22,7 +22,7 @@ public class CreativeTabVineac extends CreativeTabs {
     
     public int getTabIconItemIndex() {
         
-        return ItemIds.VINE_PARTS;
+        return Block.vine.blockID;
     }
     
     

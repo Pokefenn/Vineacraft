@@ -7,7 +7,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-@SuppressWarnings("unused")
 public class BlockAutomaticSqueezer extends BlockVineacraft {
 
     public BlockAutomaticSqueezer(int id) {

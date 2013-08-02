@@ -1,47 +1,30 @@
 package pokefenn.vineacraft;
 
-import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.item.crafting.CraftingManager;
-import net.minecraftforge.common.MinecraftForge;
-
 import java.io.File;
-import java.util.Arrays;
 
-import pokefenn.proxy.CommonProxy;
+import net.minecraft.creativetab.CreativeTabs;
 import pokefenn.block.ModBlocks;
 import pokefenn.configuration.ConfigurationHandler;
 import pokefenn.creativetab.CreativeTabVineac;
+import pokefenn.gui.GuiHandler;
 import pokefenn.handlers.AddonHandler;
 import pokefenn.item.ModItems;
 import pokefenn.lib.Reference;
-
+import pokefenn.network.PacketHandler;
+import pokefenn.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.Init;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.Mod.PostInit;
-import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLFingerprintViolationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLInterModComms;
-import cpw.mods.fml.common.event.FMLInterModComms.IMCEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.network.NetworkRegistry;
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.TickRegistry;
-import cpw.mods.fml.relauncher.Side;
 
 
-
-@SuppressWarnings("unused")
 
 @Mod( modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-@NetworkMod(clientSideRequired=true, serverSideRequired=false)
+@NetworkMod(clientSideRequired=true, serverSideRequired=false, packetHandler = PacketHandler.class)
 public class Vineacraft {
 
     @Instance(Reference.MOD_ID)
@@ -60,7 +43,7 @@ public class Vineacraft {
         CommandHandler.initCommands(event);
     */
     
-    @PreInit
+    @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
        
      // Initialize the configuration
@@ -82,11 +65,14 @@ public class Vineacraft {
         // Initialize mod items
         ModItems.init();
         
+        System.out.println("What if i told you that this mod was made by a 14 year old?");
     }
     
-    @Init
+    @EventHandler
     public void init(FMLInitializationEvent event){
         
+        
+        new GuiHandler();
         
      // Initialize mod tile entities
         proxy.registerTileEntities();
@@ -99,8 +85,8 @@ public class Vineacraft {
         
     }
     
-    @PostInit
-    public void postInit(FMLPostInitializationEvent event) {
+    @EventHandler
+    public void modsLoaded(FMLPostInitializationEvent event) {
     
     
      // Initialize the Addon Handler

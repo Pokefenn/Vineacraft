@@ -42,7 +42,7 @@ public class Strings {
     public static final String VINIUM_NAME = "vinium";
     
     
-    /* Tile entity name consants */
+    /* Tile entity name constants */
      
     public static final String TE_AUTOMATIC_SQUEEZER_NAME = "tileAutomaticSqueezer";
     public static final String TE_MANUAL_SQUEEZER_NAME = "tileManualSqueezer";
@@ -52,9 +52,14 @@ public class Strings {
     public static final String TE_VINEA_HATCHER_NAME = "tileVineaHatcher";
     public static final String TE_ADVANCED_SQUEEZER_NAME = "tileAdvancedSqueezer";
     
-    /* Container related consants */
+    /* Container related constants */
     
     
+    
+    //Fluid constants
+    
+    
+    public static final String FLUID_VINE_SAP_NAME = "fluidVineSap";
     
     
     

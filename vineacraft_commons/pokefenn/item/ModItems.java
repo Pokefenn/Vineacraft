@@ -5,11 +5,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import pokefenn.lib.ItemIds;
+import pokefenn.lib.Strings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
 
-@SuppressWarnings("unused")
 public class ModItems {
 
     
@@ -34,6 +34,8 @@ public class ModItems {
         basicVineaMachineBlock = new ItemBasicVineaMachineBlock(ItemIds.BASIC_VINEA_MACHINE_BLOCK);
         vinium = new ItemVinium(ItemIds.VINIUM);
         
+        
+        GameRegistry.registerItem(vineParts, Strings.VINE_PARTS_NAME);
         
     }
 }
