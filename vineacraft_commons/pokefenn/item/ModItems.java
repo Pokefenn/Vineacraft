@@ -18,8 +18,6 @@ public class ModItems {
     public static Item vineParts;
     public static Item vineaShears;
     public static Item vineaWrench;
-    public static Item advancedVineaMachineBlock;
-    public static Item basicVineaMachineBlock;
     public static Item vinium;
     
     public static void init() {
@@ -30,12 +28,15 @@ public class ModItems {
         vineParts = new ItemVineParts(ItemIds.VINE_PARTS);
         vineaShears = new ItemVineaShears(ItemIds.VINEA_SHEARS);
         vineaWrench = new ItemVineaWrench(ItemIds.VINEA_WRENCH);
-        advancedVineaMachineBlock = new ItemAdvancedVineaMachineBlock(ItemIds.ADVANCED_VINEA_MACHINE_BLOCK);
-        basicVineaMachineBlock = new ItemBasicVineaMachineBlock(ItemIds.BASIC_VINEA_MACHINE_BLOCK);
         vinium = new ItemVinium(ItemIds.VINIUM);
         
         
-        GameRegistry.registerItem(vineParts, Strings.VINE_PARTS_NAME);
+        //GameRegistry.registerItem(vineParts, Strings.VINE_PARTS_NAME);
         
     }
+    
+    public static final String TEXTURE_LOCATION = "mods";
+    public static final String VINIUM_ICON = "vinium";
+    public static final String VINEA_SHEARS_ICON = "vineaShears";
+    
 }

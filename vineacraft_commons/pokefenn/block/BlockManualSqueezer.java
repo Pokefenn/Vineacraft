@@ -16,7 +16,7 @@ public class BlockManualSqueezer extends BlockVineacraft {
         super(id, Material.rock);
         this.setUnlocalizedName(Strings.MANUAL_SQUEEZER_NAME);
         this.setCreativeTab(Vineacraft.tabsVineac);
-        
+        this.setHardness(5F);
     }
     
     

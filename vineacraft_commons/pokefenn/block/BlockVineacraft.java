@@ -21,12 +21,12 @@ public abstract class BlockVineacraft extends BlockContainer {
         super(id, material);
     }
     
-    @Override
+/*    @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister iconRegister) {
 
         blockIcon = iconRegister.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
-    }
+    }*/
     
  protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         

@@ -72,7 +72,7 @@ public class Vineacraft {
     public void init(FMLInitializationEvent event){
         
         
-        new GuiHandler();
+        //new GuiHandler();
         
      // Initialize mod tile entities
         proxy.registerTileEntities();

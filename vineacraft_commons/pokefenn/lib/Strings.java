@@ -30,13 +30,13 @@ public class Strings {
     public static final String LIQUID_COCOA_STILL_NAME = "liquidCocoaStill";
     public static final String LIQUID_COCOA_FLOWING_NAME = "liquidCocoaFlowing";
     public static final String ADVANCED_SQUEEZER_NAME = "advancedSqueezer";
+    public static final String ADVANCED_MACHINE_BLOCK_NAME = "advancedMachineBlock";
+    public static final String BASIC_MACHINE_BLOCK_NAME = "basicMachineBlock";
     
     
     /* Item name constants */
     
     public static final String VINE_PARTS_NAME = "vineParts";
-    public static final String BASIC_VINEA_MACHINE_BLOCK_NAME = "basicVineaMachineBlock";
-    public static final String ADVANCED_VINEA_MACHINE_BLOCK_NAME = "advancedVineaMachineBlock";
     public static final String VINEA_SHEARS_NAME = "vineaShears";
     public static final String VINEA_WRENCH_NAME = "vineaWrench";
     public static final String VINIUM_NAME = "vinium";
@@ -59,7 +59,7 @@ public class Strings {
     //Fluid constants
     
     
-    public static final String FLUID_VINE_SAP_NAME = "fluidVineSap";
+    public static final String VINE_SAP_NAME = "vineSap";
     
     
     

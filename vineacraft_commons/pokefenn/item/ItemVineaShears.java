@@ -1,15 +1,14 @@
 package pokefenn.item;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.ItemShears;
 import pokefenn.lib.Strings;
 import pokefenn.vineacraft.Vineacraft;
 
 public class ItemVineaShears extends ItemShears {
     
-
-
-    
-
 
     public ItemVineaShears(int id){
         
@@ -22,6 +21,14 @@ public class ItemVineaShears extends ItemShears {
         
     }
 
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister register) {
+    	
+    	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.VINEA_SHEARS_ICON);       
+    	
+    	
+    }
     
 
     

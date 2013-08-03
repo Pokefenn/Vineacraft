@@ -8,17 +8,17 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidBlock;
 
-public class BlockVineSapFlowing/* extends BlockFlowing implements IFluidBlock*/ {
-	/*
+public class BlockVineSapFlowing extends BlockFlowing /* implements IFluidBlock*/ {
+	
 
 	protected BlockVineSapFlowing(int id) {
 		super(id, Material.water);
 		this.setCreativeTab(Vineacraft.tabsVineac);
-		this.setHardness(100.0F);
+		this.setHardness(1F);
 		this.setLightOpacity(1);
 		
 	}
-
+/*
 	@Override
 	public Fluid getFluid() {
 		return null;
@@ -31,7 +31,7 @@ public class BlockVineSapFlowing/* extends BlockFlowing implements IFluidBlock*/
 
 	@Override
 	public boolean canDrain(World world, int x, int y, int z) {
-		return true;
+		return false;
 	}
 */
 }

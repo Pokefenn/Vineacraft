@@ -13,7 +13,7 @@ public class BlockVineaHarvester extends BlockVineacraft {
        super(id, Material.rock);
        this.setUnlocalizedName(Strings.VINEA_HARVESTER_NAME);
        this.setCreativeTab(Vineacraft.tabsVineac);
-       
+       this.setHardness(5F);
    }
    
     @Override

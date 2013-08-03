@@ -41,10 +41,12 @@ public class ConfigurationHandler {
             BlockIds.LIQUID_COCOA_STILL = configuration.getBlock(Strings.LIQUID_COCOA_STILL_NAME, BlockIds.LIQUID_COCOA_STILL_DEFAULT).getInt(BlockIds.LIQUID_COCOA_STILL_DEFAULT);
             BlockIds.LIQUID_COCOA_FLOWING = configuration.getBlock(Strings.LIQUID_COCOA_FLOWING_NAME, BlockIds.LIQUID_COCOA_FLOWING_DEFAULT).getInt(BlockIds.LIQUID_COCOA_FLOWING_DEFAULT);
             BlockIds.ADVANCED_SQUEEZER = configuration.getBlock(Strings.ADVANCED_SQUEEZER_NAME, BlockIds.ADVANCED_SQEEZER_DEFAULT).getInt(BlockIds.ADVANCED_SQEEZER_DEFAULT);
+            BlockIds.ADVANCED_MACHINE_BLOCK = configuration.getBlock(Strings.ADVANCED_MACHINE_BLOCK_NAME, BlockIds.ADVANCED_MACHINE_BLOCK_DEFAULT).getInt(BlockIds.ADVANCED_MACHINE_BLOCK_DEFAULT);
+            BlockIds.BASIC_MACHINE_BLOCK = configuration.getBlock(Strings.BASIC_MACHINE_BLOCK_NAME, BlockIds.BASIC_MACHINE_BLOCK_DEFAULT).getInt(BlockIds.BASIC_MACHINE_BLOCK_DEFAULT);
+            
             
             //Items
             ItemIds.VINE_PARTS = configuration.getItem(Strings.VINE_PARTS_NAME, ItemIds.VINE_PARTS_DEFAULT).getInt(ItemIds.VINE_PARTS_DEFAULT);
-            ItemIds.ADVANCED_VINEA_MACHINE_BLOCK = configuration.getItem(Strings.ADVANCED_VINEA_MACHINE_BLOCK_NAME, ItemIds.ADVANCED_VINEA_MACHINE_BLOCK_DEFAULT).getInt(ItemIds.ADVANCED_VINEA_MACHINE_BLOCK_DEFAULT);
             ItemIds.VINEA_SHEARS = configuration.getItem(Strings.VINEA_SHEARS_NAME, ItemIds.VINEA_SHEARS_DEFAULT).getInt(ItemIds.VINEA_SHEARS_DEFAULT);
             ItemIds.VINEA_WRENCH = configuration.getItem(Strings.VINEA_WRENCH_NAME, ItemIds.VINEA_WRENCH_DEFAULT).getInt(ItemIds.VINEA_WRENCH_DEFAULT);
             ItemIds.VINIUM = configuration.getItem(Strings.VINIUM_NAME, ItemIds.VINIUM_DEFAULT).getInt(ItemIds.VINIUM_DEFAULT);
