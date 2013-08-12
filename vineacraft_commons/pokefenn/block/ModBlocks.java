@@ -2,6 +2,7 @@ package pokefenn.block;
 
 import net.minecraft.block.Block;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 import pokefenn.lib.BlockIds;
 import pokefenn.lib.Strings;
 import pokefenn.tileentity.TileAdvancedSqueezer;
@@ -25,41 +26,43 @@ public class ModBlocks {
     //public static Block liquidCocoaFlowing;
     public static Block advancedSqueezer;
     public static Block vineaHatcher;
-    //public static Block vineSapFlowing;
-    //public static Block vineSapStill;
+    public static Block vineSapFlowing;
+    public static Block vineSapStill;
     public static Block advancedMachineBlock;
     public static Block basicMachineBlock;
     
-    public static Fluid vineSap;
-    
+    //public static Fluid vineSap;
+  
     
     public static void init() {
-        
+       
        manualSqueezer = new BlockManualSqueezer(BlockIds.MANUAL_SQUEEZER);
        automaticSqueezer = new BlockAutomaticSqueezer(BlockIds.AUTOMATIC_SQUEEZER);
        vineaInfuser = new BlockVineaInfuser(BlockIds.VINEA_INFUSER);
-       vineaFurnace = new BlockVineaInfuser(BlockIds.VINEA_FURNACE);
+       vineaFurnace = new BlockVineaFurnace(BlockIds.VINEA_FURNACE);
        vineaHarvester = new BlockVineaHarvester(BlockIds.VINEA_HARVESTER);
        advancedSqueezer = new BlockAdvancedSqueezer(BlockIds.ADVANCED_SQUEEZER);
        vineaHatcher = new BlockVineaHatcher(BlockIds.VINEA_HATCHER);
-       //vineSapStill = new BlockVineSapStill(BlockIds.VINE_SAP_STILL);
-       //vineSapFlowing = new BlockVineSapFlowing(BlockIds.VINE_SAP_FLOWING);
+       vineSapStill = new BlockVineSapStill(BlockIds.VINE_SAP_STILL);
+       vineSapFlowing = new BlockVineSapFlowing(BlockIds.VINE_SAP_FLOWING);
        advancedMachineBlock = new BlockAdvancedMachineBlock(BlockIds.ADVANCED_MACHINE_BLOCK);
        basicMachineBlock = new BlockBasicMachineBlock(BlockIds.BASIC_MACHINE_BLOCK);
        
+       //vineSap = new Fluid("Vine_Sap");
         
        GameRegistry.registerBlock(manualSqueezer, Strings.MANUAL_SQUEEZER_NAME);
        GameRegistry.registerBlock(automaticSqueezer, Strings.AUTOMATIC_SQUEEZER_NAME);
        GameRegistry.registerBlock(advancedSqueezer, Strings.ADVANCED_SQUEEZER_NAME);
        GameRegistry.registerBlock(vineaFurnace, Strings.VINEA_FURNACE_NAME);
        GameRegistry.registerBlock(vineaHarvester, Strings.VINEA_HARVESTER_NAME);
-       //GameRegistry.registerBlock(vineSapFlowing, Strings.VINE_SAP_FLOWING_NAME);
-       //GameRegistry.registerBlock(vineSapStill, Strings.VINE_SAP_STILL_NAME);
+       GameRegistry.registerBlock(vineSapFlowing, Strings.VINE_SAP_FLOWING_NAME);
+       GameRegistry.registerBlock(vineSapStill, Strings.VINE_SAP_STILL_NAME);
        GameRegistry.registerBlock(advancedMachineBlock, Strings.ADVANCED_MACHINE_BLOCK_NAME);
        GameRegistry.registerBlock(basicMachineBlock, Strings.BASIC_MACHINE_BLOCK_NAME);
-       
-        //vineSap = new Fluid("Vine_Sap");
-	    //FluidRegistry.registerFluid(vineSap/*, Strings.VINE_SAP_NAME*/);
+       GameRegistry.registerBlock(vineaHatcher, Strings.VINEA_HATCHER_NAME);
+
+     	
+	    //FluidRegistry.registerFluid(vineSap);
        
     }
     
@@ -73,6 +76,21 @@ public class ModBlocks {
     public static final String BASIC_MACHINE_BLOCK_TOP_AND_BOT = "basicMachineBlockTopAndBot";
     public static final String BASIC_MACHINE_BLOCK_SIDE = "basicMachineBlockSide";
     
+    public static final String VINEA_FURNACE_FRONT = "vineaFurnaceFront";
+    
+    public static final String MANUAL_SQUEEZER_SIDE = "manualSqueezerSide";
+    public static final String MANUAL_SQUEEZER_TOP = "manualSqueezerTop";
+    public static final String MANUAL_SQUEEZER_BOT = "manualSqueezerBot";
+    
+    //public static final String ADVANCED_SQUEEZER_TOP_ACTIVE = "advancedSqueezerTopActive";
+    public static final String ADVANCED_SQUEEZER_TOP = "advancedSqueezerTop";
+    public static final String ADVANCED_SQUEEZER_SIDE = "advancedSqueezerSide";
+    public static final String ADVANCED_SQUEEZER_BOT = "advancedSqueezerBot";
+    
+    public static final String AUTOMATIC_SQUEEZER_TOP = "automaticSqueezerTop";
+    public static final String AUTOMATIC_SQUEEZER_SIDE = "automaticSqueezerSide";
+    public static final String AUTOMATIC_SQUEEZER_BOT = "automaticSqueezerbot";
+    
     
     
     public static void registerTileEntities(){
@@ -82,7 +100,7 @@ public class ModBlocks {
         GameRegistry.registerTileEntity(TileAdvancedSqueezer.class, Strings.TE_ADVANCED_SQUEEZER_NAME);
         GameRegistry.registerTileEntity(TileVineaHatcher.class, Strings.TE_VINEA_HATCHER_NAME);
         GameRegistry.registerTileEntity(TileVineaFurnace.class, Strings.TE_VINEA_FURNACE_NAME);
-        GameRegistry.registerTileEntity(TileVineaInfuser.class, Strings.VINEA_INFUSER_NAME);
+        GameRegistry.registerTileEntity(TileVineaInfuser.class, Strings.TE_VINEA_INFUSER_NAME);
         GameRegistry.registerTileEntity(TileVineaHarvester.class, Strings.TE_VINEA_HARVESTER_NAME);
         
         

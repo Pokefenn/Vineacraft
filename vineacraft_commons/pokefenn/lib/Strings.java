@@ -40,6 +40,7 @@ public class Strings {
     public static final String VINEA_SHEARS_NAME = "vineaShears";
     public static final String VINEA_WRENCH_NAME = "vineaWrench";
     public static final String VINIUM_NAME = "vinium";
+    public static final String INFESTATION_VINE_NAME = "infestationVine";
     
     
     /* Tile entity name constants */

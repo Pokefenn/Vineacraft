@@ -44,7 +44,7 @@ public class BlockAdvancedMachineBlock extends Block {
 			return bottomIcon;
 		}else if(side == 1) {
 			return topIcon;
-		}else {
+		}else{
 			return sideIcon;
 		}
 		

@@ -8,7 +8,7 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidBlock;
 
-public class BlockVineSapFlowing extends BlockFlowing /* implements IFluidBlock*/ {
+public class BlockVineSapFlowing extends BlockFlowing  implements IFluidBlock {
 	
 
 	protected BlockVineSapFlowing(int id) {
@@ -18,7 +18,7 @@ public class BlockVineSapFlowing extends BlockFlowing /* implements IFluidBlock*
 		this.setLightOpacity(1);
 		
 	}
-/*
+
 	@Override
 	public Fluid getFluid() {
 		return null;
@@ -33,5 +33,6 @@ public class BlockVineSapFlowing extends BlockFlowing /* implements IFluidBlock*
 	public boolean canDrain(World world, int x, int y, int z) {
 		return false;
 	}
-*/
+
 }
+

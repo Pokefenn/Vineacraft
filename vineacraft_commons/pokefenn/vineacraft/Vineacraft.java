@@ -3,6 +3,7 @@ package pokefenn.vineacraft;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.fluids.Fluid;
 import pokefenn.block.ModBlocks;
 import pokefenn.configuration.ConfigurationHandler;
 import pokefenn.creativetab.CreativeTabVineac;
@@ -34,7 +35,7 @@ public class Vineacraft {
     public static CommonProxy proxy;
     
     public static CreativeTabs tabsVineac = new CreativeTabVineac(
-            CreativeTabs.getNextID(), Reference.MOD_ID);
+            CreativeTabs.getNextID(), Reference.MOD_NAME);
 
     /*@EventHandler
     public void serverStarting(FMLServerStartingEvent event) {
@@ -42,7 +43,7 @@ public class Vineacraft {
         // Initialize the custom commands
         CommandHandler.initCommands(event);
     */
-    
+        
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
        
@@ -51,7 +52,7 @@ public class Vineacraft {
                 .getAbsolutePath()
                 + File.separator
                 + Reference.CHANNEL_NAME
-                + File.separator + Reference.MOD_ID + ".cfg"));
+                + File.separator + Reference.MOD_NAME + ".cfg"));
 
         // Initialize the Render Tick Handler (Client only)
         proxy.registerRenderers();
@@ -65,14 +66,21 @@ public class Vineacraft {
         // Initialize mod items
         ModItems.init();
         
-        System.out.println("What if i told you that this mod was made by a 14 year old?");
-    }
+        System.out.println("Ooooh, what does this button do?");
+        System.out.println("Please Dee-Dee don't click the button!");        
+        System.out.println("BANG!");
+        
+        
+		}
     
     @EventHandler
     public void init(FMLInitializationEvent event){
         
+    	
+ 
+    	
         
-        //new GuiHandler();
+        new GuiHandler();
         
      // Initialize mod tile entities
         proxy.registerTileEntities();

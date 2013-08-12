@@ -10,12 +10,17 @@ public class ItemVineacraft extends Item {
     
     public ItemVineacraft(int id) {
     
-    super(id = Reference.SHIFTED_ID_RANGE_CORRECTION);
+    super(id - 256);
     maxStackSize = 64;
     setNoRepair();
     
     }
     
-    
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister iconRegister) {
+
+        itemIcon = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
+    }
 
 }
