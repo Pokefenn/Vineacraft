@@ -1,9 +1,12 @@
 package pokefenn.item;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockWood;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+import pokefenn.block.ModBlocks;
 import pokefenn.lib.Strings;
 import pokefenn.vineacraft.Vineacraft;
 import cpw.mods.fml.relauncher.Side;
@@ -19,14 +22,13 @@ public class ItemInfestationVine extends ItemVineacraft {
         this.setMaxDamage(10);
 	}
 	
-	@SideOnly(Side.SERVER)
-	public boolean onBlockActivated(ItemStack itemstack, EntityPlayer player, BlockWood target){
+	@Override
+	public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10){
 		
-			
-			
+		 
 		
 		
-		return false;
+		return true;
 	
 	}
 	
