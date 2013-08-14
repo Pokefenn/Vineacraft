@@ -68,7 +68,7 @@ public class Vineacraft {
         
         System.out.println("Ooooh, what does this button do?");
         System.out.println("Please Dee-Dee don't click the button!");        
-        System.out.println("BANG!");
+        System.out.println("BOOM!!");
         
         
 		}

@@ -41,7 +41,7 @@ public class BlockAutomaticSqueezer extends BlockVineacraft {
 	public void registerIcons(IconRegister register){
 		topIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.AUTOMATIC_SQUEEZER_TOP);
 		sideIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.AUTOMATIC_SQUEEZER_SIDE);
-		bottomIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.AUTOMATIC_SQUEEZER_BOT);
+		bottomIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_MACHINE_BLOCK_BOTTOM);
 	
 	}
 	
@@ -51,7 +51,7 @@ public class BlockAutomaticSqueezer extends BlockVineacraft {
 		if(side == 0 ){
 			return bottomIcon;
 		}else if(side == 1) {
-			return topIcon;
+			return bottomIcon;
 		}else{
 			return sideIcon;
 		}

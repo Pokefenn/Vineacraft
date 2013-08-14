@@ -11,6 +11,8 @@ public class ItemIds {
     public static int VINEA_WRENCH_DEFAULT = 4063;
     public static int VINIUM_DEFAULT = 4064; 
     public static int INFESTATION_VINE_DEFAULT = 4065;
+    public static int VINEA_TANK_MODULE_DEAFULT = 4066;
+    public static int VINEA_GRATING_DEFAULT = 4067;
     
     
     /* Current item id's */
@@ -21,5 +23,7 @@ public class ItemIds {
     public static int VINEA_WRENCH;
     public static int VINIUM;
     public static int INFESTATION_VINE;
+    public static int VINEA_TANK_MODULE;
+    public static int VINEA_GRATING;
     
 }

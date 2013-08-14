@@ -89,8 +89,9 @@ public class ModBlocks {
     
     public static final String AUTOMATIC_SQUEEZER_TOP = "automaticSqueezerTop";
     public static final String AUTOMATIC_SQUEEZER_SIDE = "automaticSqueezerSide";
-    public static final String AUTOMATIC_SQUEEZER_BOT = "automaticSqueezerbot";
+    public static final String AUTOMATIC_SQUEEZER_BOT = "automaticSqueezerBot";
     
+    public static final String VINEA_HATCHER_SIDE = "vineaHatcherSide";
     
     
     public static void registerTileEntities(){

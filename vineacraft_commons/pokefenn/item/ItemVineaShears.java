@@ -1,18 +1,22 @@
 package pokefenn.item;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import java.util.List;
+
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemShears;
+import net.minecraft.item.ItemStack;
 import pokefenn.lib.Strings;
 import pokefenn.vineacraft.Vineacraft;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemVineaShears extends ItemShears {
     
 
     public ItemVineaShears(int id){
         
-        super(id);
+        super(id - 256);
         this.setCreativeTab(Vineacraft.tabsVineac);
         this.setMaxStackSize(1);
         this.setMaxDamage(500);
@@ -30,6 +34,11 @@ public class ItemVineaShears extends ItemShears {
     	
     }
     
-
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void addInformation (ItemStack stack, EntityPlayer player, List list, boolean par4)
+    {
+        list.add("Advanced shears for all your vine needs!");
+    }
     
 }

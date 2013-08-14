@@ -5,36 +5,34 @@ import java.util.List;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import pokefenn.lib.Strings;
 import pokefenn.vineacraft.Vineacraft;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemVineaWrench extends ItemVineacraft {
+public class ItemVineaGrating extends ItemVineacraft {
+	
+	public ItemVineaGrating(int id){
+		
+		super(id);
+		this.setUnlocalizedName("vineaGrating");
+		this.setCreativeTab(Vineacraft.tabsVineac);
+		
+	}
 
-    public ItemVineaWrench(int id){
-        
-        super(id);
-        this.setUnlocalizedName(Strings.VINEA_WRENCH_NAME);
-        this.setCreativeTab(Vineacraft.tabsVineac);
-        this.setMaxStackSize(1);
-    }
-    
-    
-    @Override
+	@Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister register) {
     	
-    	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.VINEA_WRENCH_ICON);       
+    	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.VINEA_GRATING_ICON);       
     	
     	
     }
-
-    @Override
+	
+	@Override
     @SideOnly(Side.CLIENT)
     public void addInformation (ItemStack stack, EntityPlayer player, List list, boolean par4)
     {
-        list.add("Used to rotate machines!");
+        list.add("Crafting recipe for many things!");
     }
-
+	
 }

@@ -51,8 +51,8 @@ public class ConfigurationHandler {
             ItemIds.VINEA_WRENCH = configuration.getItem(Strings.VINEA_WRENCH_NAME, ItemIds.VINEA_WRENCH_DEFAULT).getInt(ItemIds.VINEA_WRENCH_DEFAULT);
             ItemIds.VINIUM = configuration.getItem(Strings.VINIUM_NAME, ItemIds.VINIUM_DEFAULT).getInt(ItemIds.VINIUM_DEFAULT);
             ItemIds.INFESTATION_VINE = configuration.getItem(Strings.INFESTATION_VINE_NAME, ItemIds.INFESTATION_VINE_DEFAULT).getInt(ItemIds.INFESTATION_VINE_DEFAULT);
-               
-            
+            ItemIds.VINEA_TANK_MODULE = configuration.getItem(Strings.VINEA_TANK_MODULE_NAME, ItemIds.VINEA_TANK_MODULE_DEAFULT).getInt(ItemIds.VINEA_TANK_MODULE_DEAFULT);
+            ItemIds.VINEA_GRATING = configuration.getItem(Strings.VINEA_GRATING_NAME, ItemIds.VINEA_GRATING_DEFAULT).getInt(ItemIds.VINEA_GRATING_DEFAULT);
             
                
            }
