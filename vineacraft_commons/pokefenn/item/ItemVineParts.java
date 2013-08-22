@@ -24,8 +24,9 @@ public class ItemVineParts extends ItemVineacraft {
     @SideOnly(Side.CLIENT)
     public void addInformation (ItemStack stack, EntityPlayer player, List list, boolean par4)
     {
-        list.add("Byproduct of squeezing! Used to craft vines!");
+        list.add("Byproduct of squeezing!");
     }
+    
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister register) {

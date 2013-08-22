@@ -11,6 +11,7 @@ import pokefenn.tileentity.TileManualSqueezer;
 import pokefenn.tileentity.TileVineaFurnace;
 import pokefenn.tileentity.TileVineaHarvester;
 import pokefenn.tileentity.TileVineaHatcher;
+import pokefenn.tileentity.TileVineaHopper;
 import pokefenn.tileentity.TileVineaInfuser;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -30,8 +31,12 @@ public class ModBlocks {
     public static Block vineSapStill;
     public static Block advancedMachineBlock;
     public static Block basicMachineBlock;
+    public static Block vineaBrick;
+    public static Block vineaHopper;
+    public static Block vineaFluidHopper;
+    public static Block vineSap;
     
-    //public static Fluid vineSap;
+    public static Fluid fluidVineSap;
   
     
     public static void init() {
@@ -43,10 +48,14 @@ public class ModBlocks {
        vineaHarvester = new BlockVineaHarvester(BlockIds.VINEA_HARVESTER);
        advancedSqueezer = new BlockAdvancedSqueezer(BlockIds.ADVANCED_SQUEEZER);
        vineaHatcher = new BlockVineaHatcher(BlockIds.VINEA_HATCHER);
-       vineSapStill = new BlockVineSapStill(BlockIds.VINE_SAP_STILL);
-       vineSapFlowing = new BlockVineSapFlowing(BlockIds.VINE_SAP_FLOWING);
+       //vineSapStill = new BlockVineSapStill(BlockIds.VINE_SAP_STILL);
+       //vineSapFlowing = new BlockVineSapFlowing(BlockIds.VINE_SAP_FLOWING);
        advancedMachineBlock = new BlockAdvancedMachineBlock(BlockIds.ADVANCED_MACHINE_BLOCK);
        basicMachineBlock = new BlockBasicMachineBlock(BlockIds.BASIC_MACHINE_BLOCK);
+       vineaBrick = new BlockVineaBrick(BlockIds.VINEA_BRICK);
+       vineaHopper = new BlockVineaHopper(BlockIds.VINEA_HOPPER);
+       vineaFluidHopper = new BlockVineaFluidHopper(BlockIds.VINEA_FLUID_HOPPER);
+       vineSap = new VineSapFluid(BlockIds.VINE_SAP_FLOWING, fluidVineSap);
        
        //vineSap = new Fluid("Vine_Sap");
         
@@ -55,19 +64,28 @@ public class ModBlocks {
        GameRegistry.registerBlock(advancedSqueezer, Strings.ADVANCED_SQUEEZER_NAME);
        GameRegistry.registerBlock(vineaFurnace, Strings.VINEA_FURNACE_NAME);
        GameRegistry.registerBlock(vineaHarvester, Strings.VINEA_HARVESTER_NAME);
-       GameRegistry.registerBlock(vineSapFlowing, Strings.VINE_SAP_FLOWING_NAME);
-       GameRegistry.registerBlock(vineSapStill, Strings.VINE_SAP_STILL_NAME);
+       //GameRegistry.registerBlock(vineSapFlowing, Strings.VINE_SAP_FLOWING_NAME);
+       //GameRegistry.registerBlock(vineSapStill, Strings.VINE_SAP_STILL_NAME);
        GameRegistry.registerBlock(advancedMachineBlock, Strings.ADVANCED_MACHINE_BLOCK_NAME);
        GameRegistry.registerBlock(basicMachineBlock, Strings.BASIC_MACHINE_BLOCK_NAME);
        GameRegistry.registerBlock(vineaHatcher, Strings.VINEA_HATCHER_NAME);
-
-     	
+       GameRegistry.registerBlock(vineaBrick, Strings.VINEA_BRICK_NAME);
+       GameRegistry.registerBlock(vineaHopper, Strings.VINEA_HOPPER_NAME);
+       GameRegistry.registerBlock(vineaFluidHopper, Strings.VINEA_FLUID_HOPPER_NAME);
+       GameRegistry.registerBlock(vineSap, Strings.VINE_SAP_FLOWING_NAME);
+       
 	    //FluidRegistry.registerFluid(vineSap);
+       //FluidStuff
+       
+       fluidVineSap = new Fluid ("Vine Sap");
+       FluidRegistry.registerFluid(fluidVineSap);
+       
+       
        
     }
     
     
-    public static final String TEXTURE_LOCATION = "mods";
+    public static final String TEXTURE_LOCATION = "vineacraft";
     
     public static final String ADVANCED_MACHINE_BLOCK_TOP = "advancedMachineBlockTop";
     public static final String ADVANCED_MACHINE_BLOCK_SIDE = "advancedMachineBlockSide";
@@ -92,7 +110,12 @@ public class ModBlocks {
     public static final String AUTOMATIC_SQUEEZER_BOT = "automaticSqueezerBot";
     
     public static final String VINEA_HATCHER_SIDE = "vineaHatcherSide";
+    public static final String VINEA_HATCHER_BOT = "vineaHatcherBot";
     
+    public static final String VINEA_BRICK_ALL_SIDES = "vineaBrickAllSides";
+    
+    public static final String VINE_SAP_STILL_ICON = "vineSapStill";
+    public static final String VINE_SAP_FLOWING_ICON = "vineSapFlowing";
     
     public static void registerTileEntities(){
         
@@ -103,7 +126,7 @@ public class ModBlocks {
         GameRegistry.registerTileEntity(TileVineaFurnace.class, Strings.TE_VINEA_FURNACE_NAME);
         GameRegistry.registerTileEntity(TileVineaInfuser.class, Strings.TE_VINEA_INFUSER_NAME);
         GameRegistry.registerTileEntity(TileVineaHarvester.class, Strings.TE_VINEA_HARVESTER_NAME);
-        
+        GameRegistry.registerTileEntity(TileVineaHopper.class, Strings.TE_VINEA_HOPPER_NAME);
         
         
     }

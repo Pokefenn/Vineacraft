@@ -28,7 +28,7 @@ public class BlockVineaHatcher extends BlockVineacraft {
     }
     
     @SideOnly(Side.CLIENT)
-	private Icon topAndBotIcon;
+	private Icon topIcon;
 	@SideOnly(Side.CLIENT)
 	private Icon sideIcon;
 	@SideOnly(Side.CLIENT)
@@ -37,9 +37,9 @@ public class BlockVineaHatcher extends BlockVineacraft {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister register){
-		topAndBotIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.BASIC_MACHINE_BLOCK_TOP_AND_BOT);
+		topIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.BASIC_MACHINE_BLOCK_TOP_AND_BOT);
 		sideIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.VINEA_HATCHER_SIDE);
-//		botIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.BASIC_MACHINE_BLOCK_BOT);
+		botIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.VINEA_HATCHER_BOT);
 	
 	}
 	
@@ -47,9 +47,9 @@ public class BlockVineaHatcher extends BlockVineacraft {
 	@Override
 	public Icon getIcon(int side, int meta) {
 		if(side == 0 ){
-			return topAndBotIcon;
+			return botIcon;
 		}else if(side == 1) {
-			return topAndBotIcon;
+			return topIcon;
 		}else{
 			return sideIcon;
 		}

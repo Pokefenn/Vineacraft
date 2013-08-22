@@ -19,6 +19,7 @@ public class ModItems {
     public static Item infestationVine;
     public static Item vineaTankModule;
     public static Item vineaGrating;
+    public static Item bucketVineSap;
     
     public static void init() {
         
@@ -32,13 +33,16 @@ public class ModItems {
         infestationVine = new ItemInfestationVine(ItemIds.INFESTATION_VINE);
         vineaTankModule = new ItemVineaTankModule(ItemIds.VINEA_TANK_MODULE);
         vineaGrating = new ItemVineaGrating(ItemIds.VINEA_GRATING);
+        bucketVineSap = new ItemBucketVineSap(ItemIds.BUCKET_VINE_SAP);
         
-        //GameRegistry.registerItem(vineParts, Strings.VINE_PARTS_NAME);
         
         //Shaped Recipes
         
         GameRegistry.addRecipe(new ItemStack(infestationVine), new Object[] { "vvv", "vbv", "vvv", Character.valueOf('v'), Block.vine, Character.valueOf('b'), Item.bone });
         GameRegistry.addRecipe(new ItemStack(vineaGrating), new Object[] { "vvv", "v v", "vvv", Character.valueOf('v'), Block.vine});
+        GameRegistry.addRecipe(new ItemStack(vineaTankModule), new Object[] { "vgv", "v v", "vgv", Character.valueOf('v'), Block.vine, Character.valueOf('g'), Block.glass  });
+        GameRegistry.addRecipe(new ItemStack(vineaWrench), new Object[] { "v v", " v ", "v v", Character.valueOf('v'), ModItems.vinium });
+        //GameRegistry.addRecipe(new ItemStack(vineaShears), new Object[] { " v", "v ", 'v', Character.valueOf('v'), ModItems.vinium });
         
         //Shapeless Recipes
         
@@ -49,7 +53,7 @@ public class ModItems {
     
     }
     //Texture stuff bro
-    public static final String TEXTURE_LOCATION = "mods";
+    public static final String TEXTURE_LOCATION = "vineacraft";
     
     public static final String VINIUM_ICON = "vinium";
     public static final String VINEA_SHEARS_ICON = "vineaShears";
@@ -58,6 +62,6 @@ public class ModItems {
     public static final String VINEA_GRATING_ICON = "vineaGrating";
     public static final String VINE_PARTS_ICON = "vineParts";
     public static final String VINEA_TANK_MODULE_ICON = "vineaTankModule";
-    
+    public static final String BUCKET_VINE_SAP_ICON = "bucketVineSap";
     
 }

@@ -3,12 +3,12 @@ package pokefenn.vineacraft;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.fluids.Fluid;
 import pokefenn.block.ModBlocks;
 import pokefenn.configuration.ConfigurationHandler;
 import pokefenn.creativetab.CreativeTabVineac;
 import pokefenn.gui.GuiHandler;
 import pokefenn.handlers.AddonHandler;
+import pokefenn.handlers.LocalizationHandler;
 import pokefenn.item.ModItems;
 import pokefenn.lib.Reference;
 import pokefenn.network.PacketHandler;
@@ -44,9 +44,18 @@ public class Vineacraft {
         CommandHandler.initCommands(event);
     */
         
+    
+    //Acid will allow you to * your metals? :O
+    
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
        
+     // Load localisation stuff bro
+    	
+    	LocalizationHandler.loadLanguages();
+    	
+    	
+    	
      // Initialize the configuration
         ConfigurationHandler.init(new File(event.getModConfigurationDirectory()
                 .getAbsolutePath()
@@ -57,13 +66,11 @@ public class Vineacraft {
         // Initialize the Render Tick Handler (Client only)
         proxy.registerRenderers();
 
-        // Register the Sound Handler (Client only)
-        proxy.registerSoundHandler();
 
-        // Initialize mod blocks
+        // Initialise mod blocks
         ModBlocks.init();
 
-        // Initialize mod items
+        // Initialise mod items
         ModItems.init();
         
         System.out.println("Ooooh, what does this button do?");
@@ -71,22 +78,17 @@ public class Vineacraft {
         System.out.println("BOOM!!");
         
         
+        
+        System.out.println("Vineacraft does not support Sopa and Pipa and i suggest that you don't.");
+        
 		}
     
     @EventHandler
     public void init(FMLInitializationEvent event){
         
     	
- 
-    	
         
         new GuiHandler();
-        
-     // Initialize mod tile entities
-        proxy.registerTileEntities();
-
-     // Initialize custom rendering and pre-load textures (Client only)
-        proxy.initRenderingAndTextures();
         
         
         

@@ -9,14 +9,14 @@ import net.minecraftforge.common.ForgeDirection;
 import pokefenn.lib.Strings;
 
 
-public class TileVineac extends TileEntity {
+public class TileVineacraft extends TileEntity {
     
     protected ForgeDirection orientation;
     protected byte state;
     protected String customName;
     
     
-    /*public TileVineac {
+    /*public TileVineacraft {
         
         orientation = ForgeDirection.SOUTH;
         state = 0;

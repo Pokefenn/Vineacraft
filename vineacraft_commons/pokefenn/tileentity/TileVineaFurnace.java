@@ -1,6 +1,6 @@
 package pokefenn.tileentity;
 
-public class TileVineaFurnace extends TileVineac {
+public class TileVineaFurnace extends TileVineacraft {
     
     
 

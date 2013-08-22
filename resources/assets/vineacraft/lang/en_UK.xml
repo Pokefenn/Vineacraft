@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+    <comment>English (en_UK) Localization File</comment>
+    <entry key="item.vineParts.name">Vine Parts</entry>
+    <entry key="tile.vineaHopper.name">Vinea Hopper</entry>
+    <entry key="container.vineaHopper">vineaHopper</entry>
+ 
+    
+</properties> 

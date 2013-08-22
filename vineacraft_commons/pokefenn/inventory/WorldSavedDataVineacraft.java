@@ -89,10 +89,6 @@ public class WorldSavedDataVineacraft extends WorldSavedData implements IInvento
 		return false;
 	}
 
-    /*@Override
-    public boolean isStackValidForSlot(int i, ItemStack itemstack) {
-        return false;
-    }
-    */
+    
 
 }

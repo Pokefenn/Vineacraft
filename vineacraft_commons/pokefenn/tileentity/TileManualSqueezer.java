@@ -5,7 +5,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 
-public class TileManualSqueezer extends TileVineac implements IInventory {
+public class TileManualSqueezer extends TileVineacraft implements IInventory {
 
     private ItemStack[] items;
     
@@ -94,7 +94,6 @@ public class TileManualSqueezer extends TileVineac implements IInventory {
 
 	@Override
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

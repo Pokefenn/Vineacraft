@@ -1,18 +1,17 @@
 package pokefenn.inventory;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.Container;
+import net.minecraft.entity.player.InventoryPlayer;
+import pokefenn.tileentity.TileAdvancedSqueezer;
 
-public class ContainerAdvancedSqueezer extends Container {
+public class ContainerAdvancedSqueezer {
 
+	public ContainerAdvancedSqueezer(InventoryPlayer inventoryPlayer, TileAdvancedSqueezer advancedSqueezer){
+	
     
     
-    @Override
-    public boolean canInteractWith(EntityPlayer entityplayer) {
-        return false;
-    }
     
-    
+	}
     
 }
 

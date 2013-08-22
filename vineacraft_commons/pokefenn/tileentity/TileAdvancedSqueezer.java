@@ -3,7 +3,7 @@ package pokefenn.tileentity;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 
-public class TileAdvancedSqueezer extends TileVineac implements IInventory{
+public class TileAdvancedSqueezer extends TileVineacraft implements IInventory{
 
     @Override
     public int getSizeInventory() {
