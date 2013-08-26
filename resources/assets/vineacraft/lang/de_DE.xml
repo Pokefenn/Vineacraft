@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+    <comment>German (de_DE) Localization File</comment>
+
+	<entry key="item.vineaShears.name">Vineaschere</entry>
+    <entry key="item.vineParts.name">Weinrebenstück</entry>
+	<entry key="item.vineaWrench.name">Vinea-Schraubenschlüssel</entry>
+	<entry key="item.vinium.name">Vinium</entry>
+	<entry key="item.infestaionVine.name">Seuchen-Wein</entry>
+	<entry key="item.vineaTankModule.name">Vinea-Tankmodul</entry>
+	<entry key="item.vineaGrating.name">Vinea-Gitter</entry>
+	<entry key="item.vineParts.name">Eimer mit Weinrebensaft</entry>
+	
+    <entry key="tile.vineaHopper.name">Vinea-Trichter</entry>
+	<entry key="tile.manualSqueezer.name">Manuelle Presse</entry>
+	<entry key="tile.automaticSqueezer.name">Automatische Presse</entry>	
+	<entry key="tile.vineaInfuser.name">Vinea-Einflößer</entry>
+	<entry key="tile.advancedSqueezer.name">Fortgeschrittene Presse</entry>
+	<entry key="tile.vineaHatcher.name">Vinea-Brutplatz</entry>
+	<entry key="tile.advancedMachineBlock.name">Fortgeschrittener Vinea-Maschinenblock</entry>
+	<entry key="tile.basicMachineBlock.name">Basis-Vinea-Maschinenblock</entry>
+	<entry key="tile.vineaBrick.name">Vinea-Ziegel</entry>
+	
+</properties>
