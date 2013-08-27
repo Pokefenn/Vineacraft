@@ -1,8 +1,12 @@
 package pokefenn.block;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.Fluid;
-import net.minecraftforge.fluids.FluidRegistry;
+import pokefenn.fluid.FluidVineSap;
+import pokefenn.item.ModItems;
 import pokefenn.lib.BlockIds;
 import pokefenn.lib.Strings;
 import pokefenn.tileentity.TileAdvancedSqueezer;
@@ -34,9 +38,10 @@ public class ModBlocks {
     public static Block vineaBrick;
     public static Block vineaHopper;
     public static Block vineaFluidHopper;
-    public static Block vineSap;
+    //public static VineSapFluid vineSap;
+    public static Block blockVineSap;
     
-    public static Fluid fluidVineSap;
+    public static Fluid vineSap;
   
     
     public static void init() {
@@ -55,10 +60,12 @@ public class ModBlocks {
        vineaBrick = new BlockVineaBrick(BlockIds.VINEA_BRICK);
        vineaHopper = new BlockVineaHopper(BlockIds.VINEA_HOPPER);
        vineaFluidHopper = new BlockVineaFluidHopper(BlockIds.VINEA_FLUID_HOPPER);
-       vineSap = new VineSapFluid(BlockIds.VINE_SAP_FLOWING, fluidVineSap);
+       //blockVineSap = new BlockVineSap(BlockIds.BLOCK_VINE_SAP, vineSap, Material.water);
+       
        
        //vineSap = new Fluid("Vine_Sap");
         
+       GameRegistry.registerBlock(vineaInfuser, Strings.VINEA_INFUSER_NAME);
        GameRegistry.registerBlock(manualSqueezer, Strings.MANUAL_SQUEEZER_NAME);
        GameRegistry.registerBlock(automaticSqueezer, Strings.AUTOMATIC_SQUEEZER_NAME);
        GameRegistry.registerBlock(advancedSqueezer, Strings.ADVANCED_SQUEEZER_NAME);
@@ -72,20 +79,32 @@ public class ModBlocks {
        GameRegistry.registerBlock(vineaBrick, Strings.VINEA_BRICK_NAME);
        GameRegistry.registerBlock(vineaHopper, Strings.VINEA_HOPPER_NAME);
        GameRegistry.registerBlock(vineaFluidHopper, Strings.VINEA_FLUID_HOPPER_NAME);
-       GameRegistry.registerBlock(vineSap, Strings.VINE_SAP_FLOWING_NAME);
+       //GameRegistry.registerBlock(blockVineSap, Strings.BLOCK_VINE_SAP_NAME);
        
-	    //FluidRegistry.registerFluid(vineSap);
+	   
        //FluidStuff
        
-       fluidVineSap = new Fluid ("Vine Sap");
-       FluidRegistry.registerFluid(fluidVineSap);
+       //fluidVineSap = new Fluid ("Vine Sap");
+       //FluidRegistry.registerFluid(vineSap);
+       
+       //vineSap = new BlockVineSap(3000, vineSap, Material.water).getFluid();
+       
+       vineSap = new FluidVineSap();
        
        
+       //CraftingRecipes 
        
+       GameRegistry.addRecipe(new ItemStack(manualSqueezer), new Object[] { "wpw", "rcr", "wbw", Character.valueOf('p'), Block.pistonBase, Character.valueOf('c'), Item.cauldron, Character.valueOf('w'), Block.cloth, Character.valueOf('r'), Item.redstone, Character.valueOf('b'), ModBlocks.basicMachineBlock });
+       GameRegistry.addRecipe(new ItemStack(advancedMachineBlock), new Object[] { "sds", "rmr", "sis", Character.valueOf('m'), Block.cobblestoneMossy, Character.valueOf('i'), Block.blockIron, Character.valueOf('r'), Block.blockRedstone, Character.valueOf('s'), Item.stick, Character.valueOf('d'), Item.diamond });
+       GameRegistry.addRecipe(new ItemStack(advancedMachineBlock), new Object[] { " f ", " t ", " b ", Character.valueOf('f'), Block.furnaceIdle, Character.valueOf('t'), ModItems.vineaTankModule, Character.valueOf('b'), advancedMachineBlock });
     }
     
-    
-    public static final String TEXTURE_LOCATION = "vineacraft";
+ 
+
+
+
+
+	public static final String TEXTURE_LOCATION = "vineacraft";
     
     public static final String ADVANCED_MACHINE_BLOCK_TOP = "advancedMachineBlockTop";
     public static final String ADVANCED_MACHINE_BLOCK_SIDE = "advancedMachineBlockSide";
@@ -114,8 +133,8 @@ public class ModBlocks {
     
     public static final String VINEA_BRICK_ALL_SIDES = "vineaBrickAllSides";
     
-    public static final String VINE_SAP_STILL_ICON = "vineSapStill";
-    public static final String VINE_SAP_FLOWING_ICON = "vineSapFlowing";
+    public static final String VINE_SAP_STILL_ICON = "vineSapStillIcon";
+    public static final String VINE_SAP_FLOWING_ICON = "vineSapFlowingIcon";
     
     public static void registerTileEntities(){
         

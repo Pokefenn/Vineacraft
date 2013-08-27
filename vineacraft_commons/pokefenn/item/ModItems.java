@@ -38,9 +38,10 @@ public class ModItems {
         
         //Shaped Recipes
         
+        GameRegistry.addRecipe(new ItemStack(infestationVine), new Object[] { "vvv", "vsv", "vvv", Character.valueOf('v'), Block.vine, Character.valueOf('s'), Item.sugar });
         GameRegistry.addRecipe(new ItemStack(infestationVine), new Object[] { "vvv", "vbv", "vvv", Character.valueOf('v'), Block.vine, Character.valueOf('b'), Item.bone });
         GameRegistry.addRecipe(new ItemStack(vineaGrating), new Object[] { "vvv", "v v", "vvv", Character.valueOf('v'), Block.vine});
-        GameRegistry.addRecipe(new ItemStack(vineaTankModule), new Object[] { "vgv", "v v", "vgv", Character.valueOf('v'), Block.vine, Character.valueOf('g'), Block.glass  });
+        GameRegistry.addRecipe(new ItemStack(vineaTankModule), new Object[] { "ggg", "gvg", "ggg", Character.valueOf('v'), Block.vine, Character.valueOf('g'), Block.glass  });
         GameRegistry.addRecipe(new ItemStack(vineaWrench), new Object[] { "v v", " v ", "v v", Character.valueOf('v'), ModItems.vinium });
         //GameRegistry.addRecipe(new ItemStack(vineaShears), new Object[] { " v", "v ", 'v', Character.valueOf('v'), ModItems.vinium });
         

@@ -1,18 +1,13 @@
 package pokefenn.configuration;
 
-import static net.minecraftforge.common.Configuration.CATEGORY_GENERAL;
-
 import java.io.File;
 import java.util.logging.Level;
 
 import net.minecraftforge.common.Configuration;
-
-import pokefenn.vineacraft.Vineacraft;
 import pokefenn.lib.BlockIds;
 import pokefenn.lib.ItemIds;
 import pokefenn.lib.Reference;
 import pokefenn.lib.Strings;
-
 import cpw.mods.fml.common.FMLLog;
 
 
@@ -35,7 +30,7 @@ public class ConfigurationHandler {
             BlockIds.VINEA_INFUSER = configuration.getBlock(Strings.VINEA_INFUSER_NAME, BlockIds.VINEA_INFUSER_DEFAULT).getInt(BlockIds.VINEA_INFUSER_DEFAULT);
             BlockIds.VINEA_FURNACE = configuration.getBlock(Strings.VINEA_FURNACE_NAME, BlockIds.VINEA_FURNACE_DEFAULT).getInt(BlockIds.VINEA_FURNACE_DEFAULT);
             BlockIds.VINEA_HARVESTER = configuration.getBlock(Strings.VINEA_HARVESTER_NAME, BlockIds.VINEA_HARVESTER_DEFAULT).getInt(BlockIds.VINEA_HARVESTER_DEFAULT);
-            BlockIds.VINE_SAP_FLOWING = configuration.getBlock(Strings.VINE_SAP_FLOWING_NAME, BlockIds.VINE_SAP_FLOWING_DEFAULT).getInt(BlockIds.VINE_SAP_FLOWING_DEFAULT);
+            //BlockIds.VINE_SAP_FLOWING = configuration.getBlock(Strings.VINE_SAP_FLOWING_NAME, BlockIds.VINE_SAP_FLOWING_DEFAULT).getInt(BlockIds.VINE_SAP_FLOWING_DEFAULT);
             //BlockIds.VINE_SAP_STILL = configuration.getBlock(Strings.VINE_SAP_STILL_NAME, BlockIds.VINE_SAP_STILL_DEFAULT).getInt(BlockIds.VINE_SAP_STILL_DEFAULT);
             BlockIds.VINEA_HATCHER = configuration.getBlock(Strings.VINEA_HATCHER_NAME, BlockIds.VINEA_HATCHER_DEFAULT).getInt(BlockIds.VINEA_HATCHER_DEFAULT);
             BlockIds.LIQUID_COCOA_STILL = configuration.getBlock(Strings.LIQUID_COCOA_STILL_NAME, BlockIds.LIQUID_COCOA_STILL_DEFAULT).getInt(BlockIds.LIQUID_COCOA_STILL_DEFAULT);
@@ -46,7 +41,8 @@ public class ConfigurationHandler {
             BlockIds.VINEA_BRICK = configuration.getBlock(Strings.VINEA_BRICK_NAME, BlockIds.VINEA_BRICK_DEFAULT).getInt(BlockIds.VINEA_BRICK_DEFAULT);
             BlockIds.VINEA_HOPPER = configuration.getBlock(Strings.VINEA_HOPPER_NAME, BlockIds.VINEA_HOPPER_DEFAULT).getInt(BlockIds.VINEA_HOPPER_DEFAULT);
             BlockIds.VINEA_FLUID_HOPPER = configuration.getBlock(Strings.VINEA_FLUID_HOPPER_NAME, BlockIds.VINEA_FLUID_HOPPER_DEFAULT).getInt(BlockIds.VINEA_FLUID_HOPPER_DEFAULT);
- 
+            BlockIds.BLOCK_VINE_SAP = configuration.getBlock(Strings.BLOCK_VINE_SAP_NAME, BlockIds.BLOCK_VINE_SAP_DEFAULT).getInt(BlockIds.BLOCK_VINE_SAP_DEFAULT);
+            
             
             //Items
             ItemIds.VINE_PARTS = configuration.getItem(Strings.VINE_PARTS_NAME, ItemIds.VINE_PARTS_DEFAULT).getInt(ItemIds.VINE_PARTS_DEFAULT);

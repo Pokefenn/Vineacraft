@@ -7,10 +7,10 @@
     <entry key="item.vineParts.name">Vine Parts</entry>
 	<entry key="item.vineaWrench.name">Vinea Wrench</entry>
 	<entry key="item.vinium.name">Vinium</entry>
-	<entry key="item.infestaionVine.name">Infestation Vine</entry>
+	<entry key="item.infestationVine.name">Infestation Vine</entry>
 	<entry key="item.vineaTankModule.name">Vinea Tank Module</entry>
 	<entry key="item.vineaGrating.name">Vinea Grating</entry>
-	<entry key="item.vineParts.name">Vine Sap Bucket</entry>
+	<entry key="item.bucketVineSap.name">Vine Sap Bucket</entry>
 	
     <entry key="tile.vineaHopper.name">Vinea Hopper</entry>
 	<entry key="tile.manualSqueezer.name">Manual Squeezer</entry>
@@ -21,5 +21,8 @@
 	<entry key="tile.advancedMachineBlock.name">Advanced Vinea Machine Block</entry>
 	<entry key="tile.basicMachineBlock.name">Basic Vinea Machine Block</entry>
 	<entry key="tile.vineaBrick.name">Vinea Brick</entry>
+	<entry key="tile.vineaFurnace.name">Vinea Furnace</entry>
+	<entry key="tile.vineaHarvester.name">Vinea Harvester</entry>
+	<entry key="tile.vineaFluidHopper.name">Vinea Fluid Hopper</entry>
 	
 </properties> 

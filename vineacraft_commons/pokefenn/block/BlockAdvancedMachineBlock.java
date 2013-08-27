@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
+import pokefenn.lib.Strings;
 import pokefenn.vineacraft.Vineacraft;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -17,7 +18,7 @@ public class BlockAdvancedMachineBlock extends Block {
 	public BlockAdvancedMachineBlock(int id) {
 		
 		super(id, Material.rock);
-		this.setUnlocalizedName("ADVANCED_MACHINE_BLOCK_NAME");
+		this.setUnlocalizedName(Strings.ADVANCED_MACHINE_BLOCK_NAME);
 		this.setCreativeTab(Vineacraft.tabsVineac);
 		this.setHardness(5F);
 		
@@ -53,6 +54,13 @@ public class BlockAdvancedMachineBlock extends Block {
 		}
 		
 		
+		
+		
+		
 	}
 	
+	
+	
 }
+	 
+

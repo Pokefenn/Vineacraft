@@ -50,10 +50,14 @@ public class Vineacraft {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
        
+
+    	
+    	
      // Load localisation stuff bro
     	
     	LocalizationHandler.loadLanguages();
     	
+    	//FluidRegistry.registerFluid(ModBlocks.fluidVineSap);
     	
     	
      // Initialize the configuration

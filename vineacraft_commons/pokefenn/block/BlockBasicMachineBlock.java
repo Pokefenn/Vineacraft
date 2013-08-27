@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.util.Icon;
+import pokefenn.lib.Strings;
 import pokefenn.vineacraft.Vineacraft;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,7 +13,7 @@ public class BlockBasicMachineBlock extends Block {
 
 	public BlockBasicMachineBlock(int id) {
 		super(id, Material.wood);
-		this.setUnlocalizedName("BASIC_MACHINE_BLOCK_NAME");
+		this.setUnlocalizedName(Strings.BASIC_MACHINE_BLOCK_NAME);
 		this.setCreativeTab(Vineacraft.tabsVineac);
 		this.setHardness(3F);
 	}

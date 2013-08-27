@@ -32,7 +32,7 @@ public class ItemVineaGrating extends ItemVineacraft {
     @SideOnly(Side.CLIENT)
     public void addInformation (ItemStack stack, EntityPlayer player, List list, boolean par4)
     {
-        list.add("Crafting recipe for many things!");
+        list.add("Crafting component for many things!");
     }
 	
 }

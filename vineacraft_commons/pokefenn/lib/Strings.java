@@ -7,6 +7,7 @@ public class Strings {
     public static final String TRUE = "true";
     public static final String FALSE = "false";
     public static final String TOKEN_DELIMITER = ".";
+    public static final String RESOURCE_PREFIX = Reference.MOD_ID.toLowerCase() + ":";
     
     /* Fingerprint check related constants */
     
@@ -35,7 +36,8 @@ public class Strings {
     public static final String VINEA_BRICK_NAME = "vineaBrick";
     public static final String VINEA_HOPPER_NAME = "vineaHopper";
     public static final String VINEA_FLUID_HOPPER_NAME = "vineaFluidHopper";
-    
+    public static final String BLOCK_VINE_SAP_NAME = "blockVineSap";
+    public static final String VINEA_FABRICATOR_NAME = "vineaFabricator";
     
     /* Item name constants */
     
@@ -59,12 +61,15 @@ public class Strings {
     public static final String TE_VINEA_HATCHER_NAME = "tileVineaHatcher";
     public static final String TE_ADVANCED_SQUEEZER_NAME = "tileAdvancedSqueezer";
     public static final String TE_VINEA_HOPPER_NAME = "tileVineaHopper";
+    public static final String TE_VINEA_FABRICATOR_NAME = "tileVineaFabricator";
     
     /* Container related constants */
     
     
     
     //Fluid constants
+    
+    public static final String FLUID_VINE_SAP_NAME = "vineSap";
     
     
     //public static final String VINE_SAP_NAME = "vineSap";

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+    <comment>English (fr_FR) Localization File</comment>
+    
+    <entry key="item.vineaShears.name">Cisailles du ;iania/vinea</entry>
+    <entry key="item.vineParts.name">Pièces des lianes</entry>
+    <entry key="item.vineaWrench.name">Clé du liania/vinea</entry>
+    <entry key="item.vinium.name">Vinium</entry>
+    <entry key="item.infestationVine.name">Liane d'infestation</entry>
+    <entry key="item.vineaTankModule.name">Module de réservoir du liania/vinea</entry>
+    <entry key="item.vineaGrating.name">Grille du liania/vinea</entry>
+    <entry key="item.bucketVineSap.name">Seau de séve des lianes</entry>
+    
+    <entry key="tile.vineaHopper.name">Entonnoir du liania/vinea</entry>
+    <entry key="tile.manualSqueezer.name">Presse Manuel</entry>
+    <entry key="tile.automaticSqueezer.name">Presse Automatique</entry> 
+    <entry key="tile.vineaInfuser.name">Infuser du liania/vinea</entry>
+    <entry key="tile.advancedSqueezer.name">Presse avancé</entry>
+    <entry key="tile.vineaHatcher.name">Couvoir du liania/vinea</entry>
+    <entry key="tile.advancedMachineBlock.name">Bloc machien avancé</entry>
+    <entry key="tile.basicMachineBlock.name">Bloc machien de base</entry>
+    <entry key="tile.vineaBrick.name">Brique du liania/vinea</entry>
+    <entry key="tile.vineaFurnace.name">Four du liania/vinea</entry>
+    <entry key="tile.vineaHarvester.name">Moissonneur du liania/vinea</entry>
+    <entry key="tile.vineaFluidHopper.name">Entonnoir des fluides du liania/vinea</entry>
+
+
+
+
+
+</properties> 
