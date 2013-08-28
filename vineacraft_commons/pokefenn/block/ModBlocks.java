@@ -96,7 +96,7 @@ public class ModBlocks {
        
        GameRegistry.addRecipe(new ItemStack(manualSqueezer), new Object[] { "wpw", "rcr", "wbw", Character.valueOf('p'), Block.pistonBase, Character.valueOf('c'), Item.cauldron, Character.valueOf('w'), Block.cloth, Character.valueOf('r'), Item.redstone, Character.valueOf('b'), ModBlocks.basicMachineBlock });
        GameRegistry.addRecipe(new ItemStack(advancedMachineBlock), new Object[] { "sds", "rmr", "sis", Character.valueOf('m'), Block.cobblestoneMossy, Character.valueOf('i'), Block.blockIron, Character.valueOf('r'), Block.blockRedstone, Character.valueOf('s'), Item.stick, Character.valueOf('d'), Item.diamond });
-       GameRegistry.addRecipe(new ItemStack(advancedMachineBlock), new Object[] { " f ", " t ", " b ", Character.valueOf('f'), Block.furnaceIdle, Character.valueOf('t'), ModItems.vineaTankModule, Character.valueOf('b'), advancedMachineBlock });
+       //GameRegistry.addRecipe(new ItemStack(vineaFurnace), new Object[] { "xfx", "xtx", "xbx", Character.valueOf('f'), Block.furnaceIdle, Character.valueOf('t'), ModItems.vineaTankModule, Character.valueOf('b'), advancedMachineBlock, Character.valueOf('x'), Block.blockRedstone });
     }
     
  
