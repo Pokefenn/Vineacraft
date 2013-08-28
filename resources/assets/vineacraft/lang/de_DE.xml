@@ -21,8 +21,8 @@
     <entry key="tile.advancedMachineBlock.name">Fortgeschrittener Vinea-Maschinenblock</entry>
     <entry key="tile.basicMachineBlock.name">Basis-Vinea-Maschinenblock</entry>
     <entry key="tile.vineaBrick.name">Vinea-Ziegel</entry>
-	<entry key="tile.vineaFurnace.name">Vinea-Ofen</entry>
-	<entry key="tile.vineaHarvester.name">Vinea-Erntemaschine</entry>
-	<entry key="tile.vineaFluidHopper.name">Vinea-Flüssigkeitstrichter</entry>
+    <entry key="tile.vineaFurnace.name">Vinea-Ofen</entry>
+    <entry key="tile.vineaHarvester.name">Vinea-Erntemaschine</entry>
+    <entry key="tile.vineaFluidHopper.name">Vinea-Flüssigkeitstrichter</entry>
 
 </properties>
