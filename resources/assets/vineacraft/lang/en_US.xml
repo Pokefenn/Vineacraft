@@ -3,26 +3,26 @@
 <properties version="1.0">
     <comment>English (en_US) Localization File</comment>
 
-	<entry key="item.vineaShears.name">Vinea Shears</entry>
+    <entry key="item.vineaShears.name">Vinea Shears</entry>
     <entry key="item.vineParts.name">Vine Parts</entry>
-	<entry key="item.vineaWrench.name">Vinea Wrench</entry>
-	<entry key="item.vinium.name">Vinium</entry>
-	<entry key="item.infestationVine.name">Infestation Vine</entry>
-	<entry key="item.vineaTankModule.name">Vinea Tank Module</entry>
-	<entry key="item.vineaGrating.name">Vinea Grating</entry>
-	<entry key="item.bucketVineSap.name">Vine Sap Bucket</entry>
-	
+    <entry key="item.vineaWrench.name">Vinea Wrench</entry>
+    <entry key="item.vinium.name">Vinium</entry>
+    <entry key="item.infestationVine.name">Infestation Vine</entry>
+    <entry key="item.vineaTankModule.name">Vinea Tank Module</entry>
+    <entry key="item.vineaGrating.name">Vinea Grating</entry>
+    <entry key="item.bucketVineSap.name">Vine Sap Bucket</entry>
+    
     <entry key="tile.vineaHopper.name">Vinea Hopper</entry>
-	<entry key="tile.manualSqueezer.name">Manual Squeezer</entry>
-	<entry key="tile.automaticSqueezer.name">Automatic Squeezer</entry>	
-	<entry key="tile.vineaInfuser.name">Vinea Infuser</entry>
-	<entry key="tile.advancedSqueezer.name">Advanced Squeezer</entry>
-	<entry key="tile.vineaHatcher.name">Vinea Hatcher</entry>
-	<entry key="tile.advancedMachineBlock.name">Advanced Vinea Machine Block</entry>
-	<entry key="tile.basicMachineBlock.name">Basic Vinea Machine Block</entry>
-	<entry key="tile.vineaBrick.name">Vinea Brick</entry>
-	<entry key="tile.vineaFurnace.name">Vinea Furnace</entry>
-	<entry key="tile.vineaHarvester.name">Vinea Harvester</entry>
-	<entry key="tile.vineaFluidHopper.name">Vinea Fluid Hopper</entry>
-	
-</properties> 
+    <entry key="tile.manualSqueezer.name">Manual Squeezer</entry>
+    <entry key="tile.automaticSqueezer.name">Automatic Squeezer</entry>	
+    <entry key="tile.vineaInfuser.name">Vinea Infuser</entry>
+    <entry key="tile.advancedSqueezer.name">Advanced Squeezer</entry>
+    <entry key="tile.vineaHatcher.name">Vinea Hatcher</entry>
+    <entry key="tile.advancedMachineBlock.name">Advanced Vinea Machine Block</entry>
+    <entry key="tile.basicMachineBlock.name">Basic Vinea Machine Block</entry>
+    <entry key="tile.vineaBrick.name">Vinea Brick</entry>
+    <entry key="tile.vineaFurnace.name">Vinea Furnace</entry>
+    <entry key="tile.vineaHarvester.name">Vinea Harvester</entry>
+    <entry key="tile.vineaFluidHopper.name">Vinea Fluid Hopper</entry>
+    
+</properties>
