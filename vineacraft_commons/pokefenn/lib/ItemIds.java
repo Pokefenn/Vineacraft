@@ -14,6 +14,7 @@ public class ItemIds {
     public static int VINEA_TANK_MODULE_DEAFULT = 4066;
     public static int VINEA_GRATING_DEFAULT = 4067;
     public static int BUCKET_VINE_SAP_DEFAULT = 4068;
+    public static int VINEA_BALL_INFUSER_DEFAULT = 4069;
     
     
     /* Current item id's */
@@ -27,5 +28,6 @@ public class ItemIds {
     public static int VINEA_TANK_MODULE;
     public static int VINEA_GRATING;
     public static int BUCKET_VINE_SAP;
+    public static int VINEA_BALL_INFUSER;
     
 }

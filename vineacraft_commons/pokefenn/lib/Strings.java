@@ -49,6 +49,7 @@ public class Strings {
     public static final String VINEA_TANK_MODULE_NAME = "vineaTankModule";
     public static final String VINEA_GRATING_NAME = "vineaGrating";
     public static final String BUCKET_VINE_SAP_NAME = "bucketVineSap";
+    public static final String VINEA_BALL_INFUSER_NAME = "vineaBallInfuser";
     
     
     /* Tile entity name constants */
@@ -70,9 +71,6 @@ public class Strings {
     //Fluid constants
     
     public static final String FLUID_VINE_SAP_NAME = "vineSap";
-    
-    
-    //public static final String VINE_SAP_NAME = "vineSap";
     
     
     

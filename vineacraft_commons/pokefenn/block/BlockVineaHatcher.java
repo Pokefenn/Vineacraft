@@ -7,8 +7,8 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
+import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
-import pokefenn.vineacraft.Vineacraft;
 
 public class BlockVineaHatcher extends BlockVineacraft {
     

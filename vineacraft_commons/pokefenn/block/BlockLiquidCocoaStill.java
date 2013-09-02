@@ -2,8 +2,8 @@ package pokefenn.block;
 
 import net.minecraft.block.BlockStationary;
 import net.minecraft.block.material.Material;
+import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
-import pokefenn.vineacraft.Vineacraft;
 
 public class BlockLiquidCocoaStill extends BlockStationary {
     

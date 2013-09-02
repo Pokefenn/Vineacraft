@@ -1,12 +1,13 @@
-package pokefenn.vineacraft;
+package pokefenn;
 
 import java.io.File;
-import java.lang.System;
 
 import net.minecraft.creativetab.CreativeTabs;
+import pokefenn.addons.tinkersconstruct.VineaTinkerAddon;
 import pokefenn.block.ModBlocks;
 import pokefenn.configuration.ConfigurationHandler;
 import pokefenn.creativetab.CreativeTabVineac;
+import pokefenn.fluid.ModFluids;
 import pokefenn.gui.GuiHandler;
 import pokefenn.handlers.AddonHandler;
 import pokefenn.handlers.LocalizationHandler;
@@ -14,6 +15,8 @@ import pokefenn.item.ModItems;
 import pokefenn.lib.Reference;
 import pokefenn.network.PacketHandler;
 import pokefenn.proxy.CommonProxy;
+import pokefenn.recipe.VineacraftRecipes;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -46,19 +49,17 @@ public class Vineacraft {
     */
         
     
-    //Acid will allow you to * your metals? :O
+
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-       
-
+    	
     	
     	
      // Load localisation stuff bro
     	
     	LocalizationHandler.loadLanguages();
     	
-    	//FluidRegistry.registerFluid(ModBlocks.fluidVineSap);
     	
     	
      // Initialize the configuration
@@ -68,23 +69,36 @@ public class Vineacraft {
                 + Reference.CHANNEL_NAME
                 + File.separator + Reference.MOD_NAME + ".cfg"));
 
-        // Initialize the Render Tick Handler (Client only)
+        
+        // Initialise the Render Tick Handler (Client only)
         proxy.registerRenderers();
-
-
-        // Initialise mod blocks
+        
+        
+      //Init Fluids
+    	ModFluids.init();
+    	
+    	
+    	// Initialise mod blocks
         ModBlocks.init();
 
-        // Initialise mod items
+
+     // Initialise mod items
         ModItems.init();
+        
+        VineacraftRecipes.init();
+        
+        //ModBlocks.registerTileEntities();
+
+
+        
         
         System.out.println("Ooooh, what does this button do?");
         System.out.println("Please Dee-Dee don't click the button!");        
-        System.out.println("BOOM!!");
-        
+        System.out.println("BOOM!!!");
         
         
         System.out.println("Vineacraft does not support Sopa and Pipa and i suggest that you don't.");
+        
         
 		}
     
@@ -92,12 +106,10 @@ public class Vineacraft {
     public void init(FMLInitializationEvent event){
         
     	
-        
+        //GuiHandlerStuff
         new GuiHandler();
         
-        
-        
-        
+
     }
     
     @EventHandler
@@ -106,8 +118,13 @@ public class Vineacraft {
     
      // Initialize the Addon Handler
         AddonHandler.init();
+                
         
+        if (Loader.isModLoaded("TConstruct")){
+            
+        VineaTinkerAddon.init();
     }
-    
+        
 
+}
 }

@@ -3,7 +3,6 @@ package pokefenn.fluid;
 import net.minecraft.util.Icon;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
-import pokefenn.block.BlockVineSap;
 import pokefenn.block.ModBlocks;
 import pokefenn.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
@@ -16,22 +15,22 @@ public class FluidVineSap extends Fluid {
 		
 		
 		super(Strings.FLUID_VINE_SAP_NAME);
-		setDensity(7);
-        setViscosity(700);
+		setDensity(50);
+        setViscosity(4000);
         FluidRegistry.registerFluid(this);
 		
 	}
-/*
+
 	 @Override
 	    @SideOnly(Side.CLIENT)
 	    public Icon getStillIcon(){
-	        return BlockVineSap.vineSapStillIcon;
+	        return BlockVineSap.vineSapIcon;
 	    }
 
 	    @Override
 	    @SideOnly(Side.CLIENT)
 	    public Icon getFlowingIcon(){
-	        return BlockVineSap.vineSapFlowingIcon;
+	        return BlockVineSap.vineSapIcon;
 	    }   
-	*/
+	
 }

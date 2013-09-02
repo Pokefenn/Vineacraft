@@ -1,15 +1,14 @@
 package pokefenn.block;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import pokefenn.lib.Strings;
-import pokefenn.tileentity.TileAutomaticSqueezer;
-import pokefenn.vineacraft.Vineacraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
+import pokefenn.Vineacraft;
+import pokefenn.lib.Strings;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockAutomaticSqueezer extends BlockVineacraft {
 
@@ -25,7 +24,7 @@ public class BlockAutomaticSqueezer extends BlockVineacraft {
 
     @Override
     public TileEntity createNewTileEntity(World world) {
-        return null;
+        return null /*new TileAutomaticSqueezer*/;
     }
     
     

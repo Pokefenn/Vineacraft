@@ -5,23 +5,23 @@ public class BlockIds {
     
   
     // DefaultBlockId's 
-    public static int AUTOMATIC_SQUEEZER_DEFAULT = 3680;
-    public static int MANUAL_SQUEEZER_DEFAULT = 3681;
-    public static int VINEA_FURNACE_DEFAULT = 3682;
-    public static int VINEA_INFUSER_DEFAULT = 3683;
-    public static int VINEA_HARVESTER_DEFAULT = 3684;
-    //public static int VINE_SAP_STILL_DEFAULT = 3686;
-    public static int VINE_SAP_FLOWING_DEFAULT = 3685;
-    public static int VINEA_HATCHER_DEFAULT = 3687;
-    public static int LIQUID_COCOA_FLOWING_DEFAULT = 3688;
-    public static int LIQUID_COCOA_STILL_DEFAULT = 3689;
-    public static int ADVANCED_SQEEZER_DEFAULT = 3690;
-    public static int BASIC_MACHINE_BLOCK_DEFAULT = 3691;
-    public static int ADVANCED_MACHINE_BLOCK_DEFAULT = 3692;
-    public static int VINEA_BRICK_DEFAULT = 3694;
-    public static int VINEA_HOPPER_DEFAULT = 3693;
-    public static int VINEA_FLUID_HOPPER_DEFAULT = 3694;
-    public static int BLOCK_VINE_SAP_DEFAULT = 3695;
+    public static int AUTOMATIC_SQUEEZER_DEFAULT = 2680;
+    public static int MANUAL_SQUEEZER_DEFAULT = 2681;
+    public static int VINEA_FURNACE_DEFAULT = 2682;
+    public static int VINEA_INFUSER_DEFAULT = 2683;
+    public static int VINEA_HARVESTER_DEFAULT = 2684;
+    //public static int VINE_SAP_STILL_DEFAULT = 2686;
+    public static int VINE_SAP_FLOWING_DEFAULT = 2685;
+    public static int VINEA_HATCHER_DEFAULT = 2687;
+    public static int LIQUID_COCOA_FLOWING_DEFAULT = 2688;
+    public static int LIQUID_COCOA_STILL_DEFAULT = 2689;
+    public static int ADVANCED_SQEEZER_DEFAULT = 2690;
+    public static int BASIC_MACHINE_BLOCK_DEFAULT = 2691;
+    public static int ADVANCED_MACHINE_BLOCK_DEFAULT = 2692;
+    public static int VINEA_BRICK_DEFAULT = 2694;
+    public static int VINEA_HOPPER_DEFAULT = 2693;
+    public static int VINEA_FLUID_HOPPER_DEFAULT = 2694;
+    public static int BLOCK_VINE_SAP_DEFAULT = 2695;
     
     
     //CurrentBlockId's

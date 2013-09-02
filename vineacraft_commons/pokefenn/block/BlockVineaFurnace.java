@@ -2,8 +2,8 @@ package pokefenn.block;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
-import pokefenn.vineacraft.Vineacraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.tileentity.TileEntity;

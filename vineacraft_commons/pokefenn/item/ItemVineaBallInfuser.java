@@ -10,12 +10,13 @@ import pokefenn.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemVineaGrating extends ItemVineacraft {
+public class ItemVineaBallInfuser extends ItemVineacraft {
 	
-	public ItemVineaGrating(int id){
+	
+	public ItemVineaBallInfuser(int id){
 		
 		super(id);
-		this.setUnlocalizedName(Strings.VINEA_GRATING_NAME);
+		this.setUnlocalizedName(Strings.VINEA_BALL_INFUSER_NAME);
 		this.setCreativeTab(Vineacraft.tabsVineac);
 		
 	}
@@ -24,7 +25,7 @@ public class ItemVineaGrating extends ItemVineacraft {
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister register) {
     	
-    	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.VINEA_GRATING_ICON);       
+    	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.VINEA_BALL_INFUSER_ICON);       
     	
     	
     }
@@ -33,7 +34,9 @@ public class ItemVineaGrating extends ItemVineacraft {
     @SideOnly(Side.CLIENT)
     public void addInformation (ItemStack stack, EntityPlayer player, List list, boolean par4)
     {
-        list.add("Crafting component for many things!");
+        list.add("Crafting component for things that Infuse");
     }
 	
 }
+
+

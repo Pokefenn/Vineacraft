@@ -18,11 +18,11 @@ public abstract class BlockVineacraft extends BlockContainer {
     }
     
     
- protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
+/* protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
      
- }
+ }*/
 
  
  

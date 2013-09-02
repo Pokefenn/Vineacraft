@@ -3,8 +3,8 @@ package pokefenn.block;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
-import pokefenn.vineacraft.Vineacraft;
 
 public class BlockVineaFluidHopper extends BlockVineacraft {
 	

@@ -11,9 +11,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.Event.Result;
 import net.minecraftforge.event.entity.player.UseHoeEvent;
+import pokefenn.Vineacraft;
 import pokefenn.block.ModBlocks;
 import pokefenn.lib.Strings;
-import pokefenn.vineacraft.Vineacraft;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

@@ -11,6 +11,7 @@
 	<entry key="item.vineaTankModule.name">Vinea Tank Module</entry>
 	<entry key="item.vineaGrating.name">Vinea Grating</entry>
 	<entry key="item.bucketVineSap.name">Vine Sap Bucket</entry>
+	<entry key="item.vineaBallInfuser.name">Vinea Ball Infuser</entry>
 	
     <entry key="tile.vineaHopper.name">Vinea Hopper</entry>
 	<entry key="tile.manualSqueezer.name">Manual Squeezer</entry>
