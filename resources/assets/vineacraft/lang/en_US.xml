@@ -5,7 +5,6 @@
 
     <entry key="item.vineaShears.name">Vinea Shears</entry>
     <entry key="item.vineParts.name">Vine Parts</entry>
-<<<<<<< HEAD
 	<entry key="item.vineaWrench.name">Vinea Wrench</entry>
 	<entry key="item.vinium.name">Vinium</entry>
 	<entry key="item.infestationVine.name">Infestation Vine</entry>
@@ -14,7 +13,6 @@
 	<entry key="item.bucketVineSap.name">Vine Sap Bucket</entry>
 	<entry key="item.vineaBallInfuser.name">Vinea Ball Infuser</entry>
 	
-=======
     <entry key="item.vineaWrench.name">Vinea Wrench</entry>
     <entry key="item.vinium.name">Vinium</entry>
     <entry key="item.infestationVine.name">Infestation Vine</entry>
@@ -22,7 +20,6 @@
     <entry key="item.vineaGrating.name">Vinea Grating</entry>
     <entry key="item.bucketVineSap.name">Vine Sap Bucket</entry>
     
->>>>>>> 972857c4634936f62a680b332bb741a2878508d0
     <entry key="tile.vineaHopper.name">Vinea Hopper</entry>
     <entry key="tile.manualSqueezer.name">Manual Squeezer</entry>
     <entry key="tile.automaticSqueezer.name">Automatic Squeezer</entry>	
