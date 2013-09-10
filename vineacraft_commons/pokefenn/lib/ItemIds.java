@@ -3,7 +3,7 @@ package pokefenn.lib;
 public class ItemIds {
 
     
-    /* Default item id's */
+    // Default item id's 
     
     
 	public static int VINE_PARTS_DEFAULT = 4061;
@@ -15,9 +15,10 @@ public class ItemIds {
     public static int VINEA_GRATING_DEFAULT = 4067;
     public static int BUCKET_VINE_SAP_DEFAULT = 4068;
     public static int VINEA_BALL_INFUSER_DEFAULT = 4069;
+    public static int VINEA_STICK_DEFAULT = 4070;
     
     
-    /* Current item id's */
+    // Current item id's
     
     
     public static int VINE_PARTS;
@@ -29,5 +30,6 @@ public class ItemIds {
     public static int VINEA_GRATING;
     public static int BUCKET_VINE_SAP;
     public static int VINEA_BALL_INFUSER;
+    public static int VINEA_STICK;
     
 }

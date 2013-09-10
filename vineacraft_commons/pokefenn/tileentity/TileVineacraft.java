@@ -10,7 +10,7 @@ import pokefenn.lib.Strings;
 
 
 public class TileVineacraft extends TileEntity {
-    
+ /*   
     protected ForgeDirection orientation;
     protected byte state;
     protected String customName;
@@ -24,7 +24,7 @@ public class TileVineacraft extends TileEntity {
         
         
     }
-    */
+    
     
     public ForgeDirection getOrientation() {
         
@@ -67,5 +67,5 @@ public class TileVineacraft extends TileEntity {
         return true;
 
 }
-    
+*/    
 }

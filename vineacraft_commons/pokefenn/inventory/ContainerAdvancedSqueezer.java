@@ -1,4 +1,4 @@
-package pokefenn.inventory;
+/*package pokefenn.inventory;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -15,5 +15,5 @@ public class ContainerAdvancedSqueezer {
     
 }
 
-
+*/
 

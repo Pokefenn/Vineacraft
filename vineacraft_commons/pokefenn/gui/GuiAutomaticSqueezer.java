@@ -1,36 +1,41 @@
 package pokefenn.gui;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.StatCollector;
-import pokefenn.block.ModBlocks;
+import net.minecraft.util.ResourceLocation;
+
+import org.lwjgl.opengl.GL11;
+
 import pokefenn.inventory.ContainerAutomaticSqueezer;
-import pokefenn.lib.Strings;
 import pokefenn.tileentity.TileAutomaticSqueezer;
 
-public class GuiAutomaticSqueezer/* extends GuiContainer*/ {
+public class GuiAutomaticSqueezer extends GuiContainer {
 
-	/*
-	private TileAutomaticSqueezer tileAutomaticSqueezer;
 	
-	public GuiAutomaticSqueezer(InventoryPlayer inventoryPlayer, TileAutomaticSqueezer tileAutomaticSqueezer) {
+	
+	
+	public GuiAutomaticSqueezer(InventoryPlayer invPlayer, TileAutomaticSqueezer automaticSqueezer){
+		super(new ContainerAutomaticSqueezer(invPlayer, automaticSqueezer));
 		
-		super(new ContainerAutomaticSqueezer(inventoryPlayer, tileAutomaticSqueezer));
-		this.tileAutomaticSqueezer = tileAutomaticSqueezer;
-        xSize = 176;
+	    xSize = 176;
         ySize = 166;
-		
 	}
-	
 
+	private static final ResourceLocation texture = new ResourceLocation("Vineacraft", "resources/assets/vineacraft/textures/gui/automaticSqueezerGUI.png");
 	
-	
-
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int i, int j) {
-		// TODO Auto-generated method stub
+		GL11.glColor4f(1, 1, 1, 1);
 		
-		
+		this.mc.getTextureManager().bindTexture(texture);
+		drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
 	}
-	*/
+
+
+		
+		
+
+	
+
 }

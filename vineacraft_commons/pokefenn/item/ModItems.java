@@ -21,11 +21,12 @@ public class ModItems {
     public static Item vineaGrating;
     public static Item bucketVineSap;
     public static Item vineaBallInfuser;
+    public static Item vineaStick;
     
     public static void init() {
         
        
-        /* Initialize each mod item individually*/
+        // Initialise each mod item
         
         vineParts = new ItemVineParts(ItemIds.VINE_PARTS);
         vineaShears = new ItemVineaShears(ItemIds.VINEA_SHEARS);
@@ -36,6 +37,7 @@ public class ModItems {
         vineaGrating = new ItemVineaGrating(ItemIds.VINEA_GRATING);
         bucketVineSap = new ItemBucketVineSap(ItemIds.BUCKET_VINE_SAP);
         vineaBallInfuser = new ItemVineaBallInfuser(ItemIds.VINEA_BALL_INFUSER);
+        vineaStick = new ItemVineaStick(ItemIds.VINEA_STICK);
         
         
         
@@ -53,5 +55,6 @@ public class ModItems {
     public static final String VINEA_TANK_MODULE_ICON = "vineaTankModule";
     public static final String BUCKET_VINE_SAP_ICON = "bucketVineSap";
     public static final String VINEA_BALL_INFUSER_ICON = "vineaBallInfuser";
+    public static final String VINEA_STICK_ICON = "vineaStick";
     
 }

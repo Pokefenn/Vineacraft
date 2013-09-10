@@ -1,14 +1,18 @@
 package pokefenn.block;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import pokefenn.Vineacraft;
-import pokefenn.lib.Strings;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
+import net.minecraftforge.common.ForgeDirection;
+import pokefenn.Vineacraft;
+import pokefenn.lib.Strings;
+import pokefenn.tileentity.TileVineaFurnace;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockVineaFurnace extends BlockVineacraft {
 
@@ -60,7 +64,10 @@ public class BlockVineaFurnace extends BlockVineacraft {
 	
 }
 
+	
+    }
+
     
     
     
-}
+

@@ -1,4 +1,4 @@
-package pokefenn.tileentity;
+/*package pokefenn.tileentity;
 
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -75,3 +75,4 @@ public class TileAdvancedSqueezer extends TileVineacraft implements IInventory{
     
 
 }
+*/

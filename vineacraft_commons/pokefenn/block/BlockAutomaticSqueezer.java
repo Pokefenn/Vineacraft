@@ -2,11 +2,14 @@ package pokefenn.block;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
 import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
+import pokefenn.tileentity.TileAutomaticSqueezer;
+import cpw.mods.fml.common.network.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -17,14 +20,14 @@ public class BlockAutomaticSqueezer extends BlockVineacraft {
         super(id, Material.rock);
         this.setUnlocalizedName(Strings.AUTOMATIC_SQUEEZER_NAME);
         this.setCreativeTab(Vineacraft.tabsVineac);
-        
+        this.setHardness(3F);
         
         
     }
 
     @Override
     public TileEntity createNewTileEntity(World world) {
-        return null /*new TileAutomaticSqueezer*/;
+        return new TileAutomaticSqueezer();
     }
     
     
@@ -59,5 +62,21 @@ public class BlockAutomaticSqueezer extends BlockVineacraft {
 	}
 	
 	
-    
+
+	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ){
+		
+		if (player.isSneaking())
+			return false;
+		else {
+		
+		if (!world.isRemote) {
+			
+			FMLNetworkHandler.openGui(player, Vineacraft.instance, 0, world, x, y, z);
+			
+		}
+		}
+		return true;
+	
+	
+}
 }

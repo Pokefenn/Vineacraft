@@ -23,7 +23,6 @@ public class BlockVineaInfuser extends BlockVineacraft {
     
     @Override
     public TileEntity createNewTileEntity(World world) {
-        // TODO Auto-generated method stub
         return null;
     }
 

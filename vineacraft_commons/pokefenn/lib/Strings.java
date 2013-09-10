@@ -7,7 +7,6 @@ public class Strings {
     public static final String TRUE = "true";
     public static final String FALSE = "false";
     public static final String TOKEN_DELIMITER = ".";
-    public static final String RESOURCE_PREFIX = Reference.MOD_ID.toLowerCase() + ":";
     
     /* Fingerprint check related constants */
     
@@ -50,6 +49,11 @@ public class Strings {
     public static final String VINEA_GRATING_NAME = "vineaGrating";
     public static final String BUCKET_VINE_SAP_NAME = "bucketVineSap";
     public static final String VINEA_BALL_INFUSER_NAME = "vineaBallInfuser";
+    public static final String VINEA_HELMET_NAME = "vineaHelmet";
+    public static final String VINEA_CHESTPIECE_NAME = "vineaChestpiece";
+    public static final String VINEA_LEGGINGS_NAME = "vineaLeggings";
+    public static final String VINEA_BOOTS_NAME = "vineaBoots";
+    public static final String VINEA_STICK_NAME = "vineaStick";
     
     
     /* Tile entity name constants */
@@ -66,7 +70,7 @@ public class Strings {
     
     /* Container related constants */
     
-    
+    public static final String CONTAINER_AUTOMATIC_SQUEEZER_NAME = "Container" + AUTOMATIC_SQUEEZER_NAME;
     
     //Fluid constants
     

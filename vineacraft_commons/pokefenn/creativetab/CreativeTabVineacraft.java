@@ -6,10 +6,10 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 
 
-public class CreativeTabVineac extends CreativeTabs {
+public class CreativeTabVineacraft extends CreativeTabs {
     
     
-    public CreativeTabVineac(int par1, String par2Str) {
+    public CreativeTabVineacraft(int par1, String par2Str) {
         
         super(par1, par2Str);
     }

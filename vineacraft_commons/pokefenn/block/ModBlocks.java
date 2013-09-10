@@ -6,7 +6,6 @@ import net.minecraft.item.ItemStack;
 import pokefenn.fluid.BlockVineSap;
 import pokefenn.lib.BlockIds;
 import pokefenn.lib.Strings;
-import pokefenn.tileentity.TileAdvancedSqueezer;
 import pokefenn.tileentity.TileAutomaticSqueezer;
 import pokefenn.tileentity.TileManualSqueezer;
 import pokefenn.tileentity.TileVineaFurnace;
@@ -134,19 +133,5 @@ public class ModBlocks {
     
     public static final String AUTOMATIC_SQUEEZER_GUI = "automaticSqueezerGui";
     
-    public static void registerTileEntities(){
-        
-    	//Register tile entites into the game.
-    	
-        GameRegistry.registerTileEntity(TileManualSqueezer.class, Strings.TE_MANUAL_SQUEEZER_NAME);
-        GameRegistry.registerTileEntity(TileAutomaticSqueezer.class, Strings.TE_AUTOMATIC_SQUEEZER_NAME);
-        GameRegistry.registerTileEntity(TileAdvancedSqueezer.class, Strings.TE_ADVANCED_SQUEEZER_NAME);
-        GameRegistry.registerTileEntity(TileVineaHatcher.class, Strings.TE_VINEA_HATCHER_NAME);
-        GameRegistry.registerTileEntity(TileVineaFurnace.class, Strings.TE_VINEA_FURNACE_NAME);
-        GameRegistry.registerTileEntity(TileVineaInfuser.class, Strings.TE_VINEA_INFUSER_NAME);
-        GameRegistry.registerTileEntity(TileVineaHarvester.class, Strings.TE_VINEA_HARVESTER_NAME);
-        GameRegistry.registerTileEntity(TileVineaHopper.class, Strings.TE_VINEA_HOPPER_NAME);
-        
-        
-    }
+    
 }

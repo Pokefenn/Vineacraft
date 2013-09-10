@@ -6,7 +6,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import pokefenn.addons.tinkersconstruct.VineaTinkerAddon;
 import pokefenn.block.ModBlocks;
 import pokefenn.configuration.ConfigurationHandler;
-import pokefenn.creativetab.CreativeTabVineac;
+import pokefenn.creativetab.CreativeTabVineacraft;
 import pokefenn.fluid.ModFluids;
 import pokefenn.gui.GuiHandler;
 import pokefenn.handlers.AddonHandler;
@@ -29,24 +29,24 @@ import cpw.mods.fml.common.network.NetworkMod;
 
 
 @Mod( modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-@NetworkMod(clientSideRequired=true, serverSideRequired=false, packetHandler = PacketHandler.class)
+@NetworkMod(channels = { Reference.CHANNEL_NAME}, clientSideRequired=true, serverSideRequired=false, packetHandler = PacketHandler.class)
 public class Vineacraft {
 
+	//Instance of vineacraft
+	
     @Instance(Reference.MOD_ID)
     public static Vineacraft instance;
     
+    //Client/Common proxy
+    
     @SidedProxy(clientSide = "pokefenn.proxy.ClientProxy", serverSide = "pokefenn.proxy.CommonProxy")
     public static CommonProxy proxy;
+
+    //Creative tab stuff
     
-    public static CreativeTabs tabsVineac = new CreativeTabVineac(
+    public static CreativeTabs tabsVineac = new CreativeTabVineacraft(
             CreativeTabs.getNextID(), Reference.MOD_NAME);
 
-    /*@EventHandler
-    public void serverStarting(FMLServerStartingEvent event) {
-
-        // Initialize the custom commands
-        CommandHandler.initCommands(event);
-    */
         
     
 
@@ -70,7 +70,6 @@ public class Vineacraft {
                 + File.separator + Reference.MOD_NAME + ".cfg"));
 
         
-        // Initialise the Render Tick Handler (Client only)
         proxy.registerRenderers();
         
         
@@ -78,16 +77,17 @@ public class Vineacraft {
     	ModFluids.init();
     	
     	
-    	// Initialise mod blocks
+      // Initialise mod blocks
         ModBlocks.init();
 
 
      // Initialise mod items
         ModItems.init();
         
+        //Initialise crafting recipes
         VineacraftRecipes.init();
         
-        //ModBlocks.registerTileEntities();
+        
 
 
         
@@ -110,6 +110,7 @@ public class Vineacraft {
         new GuiHandler();
         
 
+        CommonProxy.registerTileEntities();
     }
     
     @EventHandler
@@ -117,14 +118,19 @@ public class Vineacraft {
     
     
      // Initialize the Addon Handler
-        AddonHandler.init();
+        //AddonHandler.init();
                 
-        
+        //Addon for Tinkers Construct
         if (Loader.isModLoaded("TConstruct")){
             
         VineaTinkerAddon.init();
     }
-        
+
+        //Addon for forestry.
+        if (Loader.isModLoaded("Forestry")){
+        	
+        	
+        }
 
 }
 }

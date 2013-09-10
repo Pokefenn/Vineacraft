@@ -52,7 +52,9 @@ public class ConfigurationHandler {
             ItemIds.VINEA_GRATING = configuration.getItem(Strings.VINEA_GRATING_NAME, ItemIds.VINEA_GRATING_DEFAULT).getInt(ItemIds.VINEA_GRATING_DEFAULT);
             ItemIds.BUCKET_VINE_SAP = configuration.getItem(Strings.BUCKET_VINE_SAP_NAME, ItemIds.BUCKET_VINE_SAP_DEFAULT).getInt(ItemIds.BUCKET_VINE_SAP_DEFAULT);
             ItemIds.VINEA_BALL_INFUSER = configuration.getItem(Strings.VINEA_BALL_INFUSER_NAME, ItemIds.VINEA_BALL_INFUSER_DEFAULT).getInt(ItemIds.VINEA_BALL_INFUSER_DEFAULT);
-               
+            ItemIds.VINEA_STICK = configuration.getItem(Strings.VINEA_STICK_NAME, ItemIds.VINEA_STICK_DEFAULT).getInt(ItemIds.VINEA_STICK_DEFAULT);
+            
+            
            }
         
         catch (Exception e) {
