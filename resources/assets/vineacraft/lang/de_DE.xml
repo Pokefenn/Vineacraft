@@ -7,7 +7,7 @@
     <entry key="item.vineParts.name">Weinrebenstück</entry>
     <entry key="item.vineaWrench.name">Vinea-Schraubenschlüssel</entry>
     <entry key="item.vinium.name">Vinium</entry>
-    <entry key="item.infestationVineVine.name">Seuchen-Wein</entry>
+    <entry key="item.infestationVine.name">Seuchen-Wein</entry>
     <entry key="item.vineaTankModule.name">Vinea-Tankmodul</entry>
     <entry key="item.vineaGrating.name">Vinea-Gitter</entry>
     <entry key="item.bucketVineSap.name">Eimer mit Weinrebensaft</entry>
@@ -19,6 +19,7 @@
     <entry key="item.vineaTankModule.name">Vinea-Tankmodul</entry>
     <entry key="item.vineaGrating.name">Vinea-Gitter</entry>
     <entry key="item.bucketVineSap.name">Eimer mit Weinrebensaft</entry>
+    <entry key="item.vineaStick.name">Vineastock</entry>
 
     <entry key="tile.vineaHopper.name">Vinea-Trichter</entry>
     <entry key="tile.manualSqueezer.name">Manuelle Presse</entry>
