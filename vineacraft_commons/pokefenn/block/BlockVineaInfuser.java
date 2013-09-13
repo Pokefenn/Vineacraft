@@ -14,9 +14,10 @@ public class BlockVineaInfuser extends BlockVineacraft {
 
     public BlockVineaInfuser(int id){
         
-        super(id, Material.rock);
+        super(id, Material.wood);
         this.setUnlocalizedName(Strings.VINEA_INFUSER_NAME);
         this.setCreativeTab(Vineacraft.tabsVineac);
+        this.setHardness(3.0F);
         
     }
     

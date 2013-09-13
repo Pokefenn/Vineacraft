@@ -10,25 +10,23 @@ public class ContainerAutomaticSqueezer extends Container {
 
 	private TileAutomaticSqueezer automaticSqueezer;
 	
-	public ContainerAutomaticSqueezer(InventoryPlayer invPlayer, TileAutomaticSqueezer automaticSqueezer){
-		this.automaticSqueezer = automaticSqueezer;
-		
+	public ContainerAutomaticSqueezer(InventoryPlayer inventoryPlayer, TileAutomaticSqueezer automaticSqueezer){
 	
-		for(int x = 0; x < 9; x++) {
-			
-			addSlotToContainer(new Slot(invPlayer, x, 8 + 18 * x, 130));
-
-		}
+	
 		
-		for (int y = 0; y < 3; y++) {
-			
-			for (int x = 0; x < 9; x++){
-				
-				addSlotToContainer(new Slot(invPlayer, x + y * 9 + 9, 8 + 18 * x, 72 + y * 18));
-				
-			}
-			
-		}
+		
+		// Add the player's inventory slots to the container
+        for (int inventoryRowIndex = 0; inventoryRowIndex < 3; ++inventoryRowIndex) {
+            for (int inventoryColumnIndex = 0; inventoryColumnIndex < 9; ++inventoryColumnIndex) {
+                this.addSlotToContainer(new Slot(inventoryPlayer, inventoryColumnIndex + inventoryRowIndex * 9 + 9, 8 + inventoryColumnIndex * 18, 94 + inventoryRowIndex * 18));
+            }
+        }
+
+        // Add the player's action bar slots to the container
+        for (int actionBarSlotIndex = 0; actionBarSlotIndex < 9; ++actionBarSlotIndex) {
+            this.addSlotToContainer(new Slot(inventoryPlayer, actionBarSlotIndex, 8 + actionBarSlotIndex * 18, 152));
+        }
+		
 		
 	}
 	
@@ -38,7 +36,7 @@ public class ContainerAutomaticSqueezer extends Container {
 	
 	@Override
 	public boolean canInteractWith(EntityPlayer entityplayer) {
-		return automaticSqueezer.isUseableByPlayer(entityplayer);
+		return true;
 	}
 
     

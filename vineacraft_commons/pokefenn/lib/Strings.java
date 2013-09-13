@@ -72,6 +72,8 @@ public class Strings {
     
     public static final String CONTAINER_AUTOMATIC_SQUEEZER_NAME = "Container" + AUTOMATIC_SQUEEZER_NAME;
     
+    public static final String CONTAINER_INVENTORY = "container.inventory";
+    
     //Fluid constants
     
     public static final String FLUID_VINE_SAP_NAME = "vineSap";

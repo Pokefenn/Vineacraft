@@ -20,7 +20,7 @@ public class Textures {
 	
 	//Gui
 	
-    public static final ResourceLocation GUI_AUTOMATIC_SQUEEZER = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "automaticSqueezerGUI.png");
+    public static final ResourceLocation GUI_AUTOMATIC_SQUEEZER = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "automaticSqueezer.png");
 	
 	//Model
 	

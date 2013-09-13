@@ -5,6 +5,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import pokefenn.Vineacraft;
 import pokefenn.inventory.ContainerAutomaticSqueezer;
+import pokefenn.lib.GuiIds;
 import pokefenn.tileentity.TileAutomaticSqueezer;
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
@@ -20,23 +21,14 @@ public class GuiHandler implements IGuiHandler {
 	@Override
 	public Object getServerGuiElement(int ID, EntityPlayer player, World world,
 			int x, int y, int z) {
-		
-		switch (ID){
-		case 0:
-			TileEntity te = world.getBlockTileEntity(x, y, x);
-		    if (te != null && te instanceof TileAutomaticSqueezer){
-		    	return new ContainerAutomaticSqueezer(player.inventory, (TileAutomaticSqueezer)te);
-		    }
-					
-		 //   else if (te != null && te instanceof TileVineaFurnace){
-		    	
-		    	
-		    	
-		//    }
-				break;
-		
-		
+		if (ID == GuiIds.AUTOMATIC_SQUEEZER){
+			
+			TileAutomaticSqueezer tileAutomaticSqueezer = (TileAutomaticSqueezer) world.getBlockTileEntity(x, y, z);
+            return new ContainerAutomaticSqueezer(player.inventory, tileAutomaticSqueezer);
+			
 		}
+		
+		
 		
 		return null;
 	}
@@ -44,18 +36,13 @@ public class GuiHandler implements IGuiHandler {
 	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 			
-		switch (ID) {
-			
-		case 0:
+		if (ID == GuiIds.AUTOMATIC_SQUEEZER) {
+            TileAutomaticSqueezer tileAutomaticSqueezer = (TileAutomaticSqueezer) world.getBlockTileEntity(x, y, z);
+            return new GuiAutomaticSqueezer(player.inventory, tileAutomaticSqueezer);
+        }
 		
-		TileEntity te = world.getBlockTileEntity(x, y, z);
-		if (te != null && te instanceof TileAutomaticSqueezer) {
-			return new GuiAutomaticSqueezer(player.inventory, (TileAutomaticSqueezer)te);
-			
-		}
-			break;
-			
-		}
+		
+		
 		return null;
 	}
 	
