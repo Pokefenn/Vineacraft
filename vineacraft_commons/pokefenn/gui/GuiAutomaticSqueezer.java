@@ -1,13 +1,12 @@
 package pokefenn.gui;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
 import pokefenn.inventory.ContainerAutomaticSqueezer;
+import pokefenn.lib.Textures;
 import pokefenn.tileentity.TileAutomaticSqueezer;
 
 public class GuiAutomaticSqueezer extends GuiContainer {
@@ -22,13 +21,13 @@ public class GuiAutomaticSqueezer extends GuiContainer {
         ySize = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("Vineacraft", "resources/assets/vineacraft/textures/gui/automaticSqueezerGUI.png");
+
 	
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int i, int j) {
 		GL11.glColor4f(1, 1, 1, 1);
 		
-		this.mc.getTextureManager().bindTexture(texture);
+		this.mc.getTextureManager().bindTexture(Textures.GUI_AUTOMATIC_SQUEEZER);
 		drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
 	}
 

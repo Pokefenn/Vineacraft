@@ -26,9 +26,13 @@ public class GuiHandler implements IGuiHandler {
 			TileEntity te = world.getBlockTileEntity(x, y, x);
 		    if (te != null && te instanceof TileAutomaticSqueezer){
 		    	return new ContainerAutomaticSqueezer(player.inventory, (TileAutomaticSqueezer)te);
+		    }
 					
-					
-		}
+		 //   else if (te != null && te instanceof TileVineaFurnace){
+		    	
+		    	
+		    	
+		//    }
 				break;
 		
 		

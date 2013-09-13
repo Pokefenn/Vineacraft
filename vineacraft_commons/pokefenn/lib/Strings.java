@@ -58,15 +58,15 @@ public class Strings {
     
     /* Tile entity name constants */
      
-    public static final String TE_AUTOMATIC_SQUEEZER_NAME = "tileAutomaticSqueezer";
-    public static final String TE_MANUAL_SQUEEZER_NAME = "tileManualSqueezer";
-    public static final String TE_VINEA_FURNACE_NAME = "tileVineaFurnace";
-    public static final String TE_VINEA_HARVESTER_NAME = "tileVineaHarvester";
-    public static final String TE_VINEA_INFUSER_NAME = "tileVineaInfuser";
-    public static final String TE_VINEA_HATCHER_NAME = "tileVineaHatcher";
-    public static final String TE_ADVANCED_SQUEEZER_NAME = "tileAdvancedSqueezer";
-    public static final String TE_VINEA_HOPPER_NAME = "tileVineaHopper";
-    public static final String TE_VINEA_FABRICATOR_NAME = "tileVineaFabricator";
+    public static final String TILE_AUTOMATIC_SQUEEZER_NAME = "tileAutomaticSqueezer";
+    public static final String TILE_MANUAL_SQUEEZER_NAME = "tileManualSqueezer";
+    public static final String TILE_VINEA_FURNACE_NAME = "tileVineaFurnace";
+    public static final String TILE_VINEA_HARVESTER_NAME = "tileVineaHarvester";
+    public static final String TILE_VINEA_INFUSER_NAME = "tileVineaInfuser";
+    public static final String TILE_VINEA_HATCHER_NAME = "tileVineaHatcher";
+    public static final String TILE_ADVANCED_SQUEEZER_NAME = "tileAdvancedSqueezer";
+    public static final String TILE_VINEA_HOPPER_NAME = "tileVineaHopper";
+    public static final String TILE_VINEA_FABRICATOR_NAME = "tileVineaFabricator";
     
     /* Container related constants */
     

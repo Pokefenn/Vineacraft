@@ -1,5 +1,6 @@
 package pokefenn.block;
 
+import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,7 +14,7 @@ import cpw.mods.fml.common.network.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockAutomaticSqueezer extends BlockVineacraft {
+public class BlockAutomaticSqueezer extends BlockVineacraft implements ITileEntityProvider {
 
     public BlockAutomaticSqueezer(int id) {
 

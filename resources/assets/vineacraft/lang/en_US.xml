@@ -1,21 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
     <comment>English (en_US) Localization File</comment>
 
     <entry key="item.vineaShears.name">Vinea Shears</entry>
     <entry key="item.vineParts.name">Vine Parts</entry>
-<<<<<<< HEAD
-=======
-	<entry key="item.vineaWrench.name">Vinea Wrench</entry>
-	<entry key="item.vinium.name">Vinium</entry>
-	<entry key="item.infestationVine.name">Infestation Vine</entry>
-	<entry key="item.vineaTankModule.name">Vinea Tank Module</entry>
-	<entry key="item.vineaGrating.name">Vinea Grating</entry>
-	<entry key="item.bucketVineSap.name">Vine Sap Bucket</entry>
-	<entry key="item.vineaBallInfuser.name">Vinea Ball Infuser</entry>
-	
->>>>>>> ac29d38522963da056570ccd1854587e9fece78d
     <entry key="item.vineaWrench.name">Vinea Wrench</entry>
     <entry key="item.vinium.name">Vinium</entry>
     <entry key="item.infestationVine.name">Infestation Vine</entry>
