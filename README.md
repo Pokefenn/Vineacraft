@@ -1,7 +1,9 @@
 Vineacraft
 ==========
 
-Vineacraft: Explore technology with vines. By Pokefenn
+Vineacraft: Infuse and Explore technology with vines. By Pokefenn.
+
+
 
 For more info:
 
