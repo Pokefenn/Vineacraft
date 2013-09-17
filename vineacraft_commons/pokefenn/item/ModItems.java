@@ -22,6 +22,7 @@ public class ModItems {
     public static Item bucketVineSap;
     public static Item vineaBallInfuser;
     public static Item vineaStick;
+    public static Item vineapedia;
     
     public static void init() {
         
@@ -38,6 +39,7 @@ public class ModItems {
         bucketVineSap = new ItemBucketVineSap(ItemIds.BUCKET_VINE_SAP);
         vineaBallInfuser = new ItemVineaBallInfuser(ItemIds.VINEA_BALL_INFUSER);
         vineaStick = new ItemVineaStick(ItemIds.VINEA_STICK);
+        vineapedia = new ItemVineapedia(ItemIds.VINEAPEDIA);
         
         
         

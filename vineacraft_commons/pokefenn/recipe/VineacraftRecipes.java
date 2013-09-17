@@ -35,7 +35,8 @@ public class VineacraftRecipes {
 	        
 	        
 	      //BlockShapeless
-	        
+	     
+	        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.vineapedia), new Object[] { Item.book, Block.vine});
 	        
 	        
 	      //ItemShapeless

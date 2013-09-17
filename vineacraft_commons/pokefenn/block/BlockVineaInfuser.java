@@ -1,14 +1,22 @@
 package pokefenn.block;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import pokefenn.Vineacraft;
-import pokefenn.lib.Strings;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
+import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+import net.minecraftforge.common.ForgeDirection;
+import pokefenn.Vineacraft;
+import pokefenn.lib.GuiIds;
+import pokefenn.lib.Strings;
+import pokefenn.tileentity.TileVineaInfuser;
+import pokefenn.tileentity.TileVineacraft;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockVineaInfuser extends BlockVineacraft {
 
@@ -24,7 +32,7 @@ public class BlockVineaInfuser extends BlockVineacraft {
     
     @Override
     public TileEntity createNewTileEntity(World world) {
-        return null;
+        return new TileVineaInfuser();
     }
 
     
@@ -61,6 +69,49 @@ public class BlockVineaInfuser extends BlockVineacraft {
    		
    	}
     
-    
-    
+   	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ){
+		
+		   if (player.isSneaking())
+	            return false;
+	        else {
+	            if (!world.isRemote) {
+	                TileVineaInfuser tileVineaInfuser = (TileVineaInfuser) world.getBlockTileEntity(x, y, z);
+
+	                if (tileVineaInfuser != null) {
+	                    player.openGui(Vineacraft.instance, GuiIds.VINEA_INFUSER, world, x, y, z);
+	                }
+	            }
+
+	            return true;
+	        }
+	    }
+ 
+   	@Override
+    public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entityLiving, ItemStack itemStack) {
+
+        int direction = 0;
+        int facing = MathHelper.floor_double(entityLiving.rotationYaw * 4.0F / 360.0F + 0.5D) & 3;
+
+        if (facing == 0) {
+            direction = ForgeDirection.NORTH.ordinal();
+        }
+        else if (facing == 1) {
+            direction = ForgeDirection.EAST.ordinal();
+        }
+        else if (facing == 2) {
+            direction = ForgeDirection.SOUTH.ordinal();
+        }
+        else if (facing == 3) {
+            direction = ForgeDirection.WEST.ordinal();
+        }
+
+        world.setBlockMetadataWithNotify(x, y, z, direction, 3);
+
+        if (itemStack.hasDisplayName()) {
+            ((TileVineacraft) world.getBlockTileEntity(x, y, z)).setCustomName(itemStack.getDisplayName());
+        }
+
+        ((TileVineacraft) world.getBlockTileEntity(x, y, z)).setOrientation(direction);
+    }
+   	
 }

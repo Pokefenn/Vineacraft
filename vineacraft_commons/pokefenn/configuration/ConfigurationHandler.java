@@ -53,6 +53,7 @@ public class ConfigurationHandler {
             ItemIds.BUCKET_VINE_SAP = configuration.getItem(Strings.BUCKET_VINE_SAP_NAME, ItemIds.BUCKET_VINE_SAP_DEFAULT).getInt(ItemIds.BUCKET_VINE_SAP_DEFAULT);
             ItemIds.VINEA_BALL_INFUSER = configuration.getItem(Strings.VINEA_BALL_INFUSER_NAME, ItemIds.VINEA_BALL_INFUSER_DEFAULT).getInt(ItemIds.VINEA_BALL_INFUSER_DEFAULT);
             ItemIds.VINEA_STICK = configuration.getItem(Strings.VINEA_STICK_NAME, ItemIds.VINEA_STICK_DEFAULT).getInt(ItemIds.VINEA_STICK_DEFAULT);
+            ItemIds.VINEAPEDIA = configuration.getItem(Strings.VINEAPEDIA_NAME, ItemIds.VINEAPEDIA_DEFAULT).getInt(ItemIds.VINEAPEDIA_DEFAULT);
             
             
            }

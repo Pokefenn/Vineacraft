@@ -16,6 +16,21 @@ public class Strings {
     
     /* NBT related constants */
     
+    //public static final String 
+    public static final String NBT_ITEM_CHARGE_LEVEL_KEY = "itemChargeLevel";
+    public static final String NBT_ITEM_MODE_KEY = "itemMode";
+    public static final String NBT_ITEM_CRAFTING_GUI_OPEN = "itemCraftingGuiOpen";
+    public static final String NBT_ITEM_TRANSMUTATION_GUI_OPEN = "itemTransmutationGuiOpen";
+    public static final String NBT_ITEM_ALCHEMICAL_BAG_GUI_OPEN = "itemAlchemicalBagGuiOpen";
+    public static final String NBT_ITEM_DISPLAY = "display";
+    public static final String NBT_ITEM_COLOR = "color";
+    public static final String NBT_TE_STATE_KEY = "teState";
+    public static final String NBT_TE_CUSTOM_NAME = "CustomName";
+    public static final String NBT_TE_DIRECTION_KEY = "teDirection";
+    public static final String NBT_ENCODED_RECIPE_OUTPUT = "recipeOutput";
+    public static final String NBT_ENCODED_RECIPE_INPUTS = "recipeInputs";
+    public static final String NBT_ENCODED_RECIPE_INPUT_PREFIX = "recipeInput_";
+
     
     /* Block name constants */
     
@@ -54,6 +69,7 @@ public class Strings {
     public static final String VINEA_LEGGINGS_NAME = "vineaLeggings";
     public static final String VINEA_BOOTS_NAME = "vineaBoots";
     public static final String VINEA_STICK_NAME = "vineaStick";
+    public static final String VINEAPEDIA_NAME = "vineapedia";
     
     
     /* Tile entity name constants */
@@ -70,7 +86,9 @@ public class Strings {
     
     /* Container related constants */
     
-    public static final String CONTAINER_AUTOMATIC_SQUEEZER_NAME = "Container" + AUTOMATIC_SQUEEZER_NAME;
+    public static final String CONTAINER_AUTOMATIC_SQUEEZER_NAME = "containerAutomaticSqueezer";
+    public static final String CONTAINER_VINEA_FURNACE_NAME = "containerVineaFurnace";
+    public static final String CONTAINER_VINEA_INFUSER_NAME = "containerVineaInfuser";
     
     public static final String CONTAINER_INVENTORY = "container.inventory";
     

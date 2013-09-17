@@ -3,13 +3,13 @@ package pokefenn;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
+import pokefenn.addons.forestry.VineaForestryAddon;
 import pokefenn.addons.tinkersconstruct.VineaTinkerAddon;
 import pokefenn.block.ModBlocks;
 import pokefenn.configuration.ConfigurationHandler;
 import pokefenn.creativetab.CreativeTabVineacraft;
 import pokefenn.fluid.ModFluids;
 import pokefenn.gui.GuiHandler;
-import pokefenn.handlers.AddonHandler;
 import pokefenn.handlers.LocalizationHandler;
 import pokefenn.item.ModItems;
 import pokefenn.lib.Reference;
@@ -97,8 +97,6 @@ public class Vineacraft {
         System.out.println("BOOM!!!");
         
         
-        System.out.println("Vineacraft does not support Sopa and Pipa and i suggest that you don't.");
-        
         
 		}
     
@@ -116,7 +114,7 @@ public class Vineacraft {
     @EventHandler
     public void modsLoaded(FMLPostInitializationEvent event) {
     
-    
+   /* 
      // Initialize the Addon Handler
         //AddonHandler.init();
                 
@@ -124,13 +122,15 @@ public class Vineacraft {
         if (Loader.isModLoaded("TConstruct")){
             
         VineaTinkerAddon.init();
+        //System.out.println("Tinkers construct stuff working");
     }
-
+        
         //Addon for forestry.
         if (Loader.isModLoaded("Forestry")){
         	
-        	
-        }
-
+        	VineaForestryAddon.init();
+        //System.out.println("Forestry stuff working");
+    }
+*/
 }
 }

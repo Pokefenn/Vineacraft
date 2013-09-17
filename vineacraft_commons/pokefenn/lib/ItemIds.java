@@ -16,6 +16,7 @@ public class ItemIds {
     public static int BUCKET_VINE_SAP_DEFAULT = 4068;
     public static int VINEA_BALL_INFUSER_DEFAULT = 4069;
     public static int VINEA_STICK_DEFAULT = 4070;
+    public static int VINEAPEDIA_DEFAULT = 4071;
     
     
     // Current item id's
@@ -31,5 +32,6 @@ public class ItemIds {
     public static int BUCKET_VINE_SAP;
     public static int VINEA_BALL_INFUSER;
     public static int VINEA_STICK;
+    public static int VINEAPEDIA;
     
 }

@@ -17,13 +17,20 @@ public class Textures {
 	
 	//Items
 	
+    public static final String VINEAPEDIA_ICON = "vineapedia";
 	
 	//Gui
 	
     public static final ResourceLocation GUI_AUTOMATIC_SQUEEZER = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "automaticSqueezer.png");
+    public static final ResourceLocation GUI_VINEA_FURNACE = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "vineaFurnace.png");
+    public static final ResourceLocation GUI_VINEA_INFUSER = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "vineaInfuser.png");
 	
 	//Model
 	
-	
+	//Fluids
+    public static final String TEXTURE_LOCATION = "vineacraft";
+    
+    public static final String VINE_SAP_STILL = "vineSapStill";
+    public static final String VINE_SAP_FLOWING = "vineSapFlowing";
 	
 }

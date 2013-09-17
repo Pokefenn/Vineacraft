@@ -4,6 +4,9 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.network.packet.Packet;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.ForgeDirection;
 import net.minecraftforge.fluids.Fluid;
@@ -11,15 +14,23 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTankInfo;
 import net.minecraftforge.fluids.IFluidHandler;
 import pokefenn.lib.Strings;
+import pokefenn.network.PacketTypeHandler;
 
-public class TileAutomaticSqueezer extends TileEntity implements IInventory, IFluidHandler {
+public class TileAutomaticSqueezer extends TileVineacraft implements IInventory, IFluidHandler {
 
-	private ItemStack[] items;
-	private FluidStack[] fluids;
+	private ItemStack[] inventory;
+
+    public static final int INVENTORY_SIZE = 1;
+    
+    public static final int INPUT_INVENTORY_INDEX = 0;
+    public static final int BUCKET_INVENTORY_INDEX = 0;
+	
+	
+	
 	
 	public TileAutomaticSqueezer() {
-		items = new ItemStack[1];
-		fluids = new FluidStack[1];
+
+		inventory = new ItemStack[INVENTORY_SIZE];
 		
 	}
 	
@@ -27,50 +38,55 @@ public class TileAutomaticSqueezer extends TileEntity implements IInventory, IFl
 	
 	@Override
 	public int getSizeInventory() {
-		return items.length;
+		return inventory.length;
 	}
 
 	@Override
-	public ItemStack getStackInSlot(int i) {
-		return items[1];
+	public ItemStack getStackInSlot(int slotIndex) {
+		return inventory[slotIndex];
 	}
 
 	@Override
-	public ItemStack decrStackSize(int i, int j) {
-		ItemStack itemstack = getStackInSlot(i);
+	public ItemStack decrStackSize(int slotIndex, int decrementAmount) {
 		
-		if (itemstack != null) {
-			if (itemstack.stackSize <= j){
-				setInventorySlotContents(i, null);
-				
-			}else{
-				itemstack = itemstack.splitStack(j);
-				onInventoryChanged();
-			}
-			
-		}
-		
-		return itemstack;
-	}
+		 ItemStack itemStack = getStackInSlot(slotIndex);
+	        if (itemStack != null) {
+	            if (itemStack.stackSize <= decrementAmount) {
+	                setInventorySlotContents(slotIndex, null);
+	            }
+	            else {
+	                itemStack = itemStack.splitStack(decrementAmount);
+	                if (itemStack.stackSize == 0) {
+	                    setInventorySlotContents(slotIndex, null);
+	                }
+	            }
+	        }
+
+	        return itemStack;
+	    }
 
 	@Override
-	public ItemStack getStackInSlotOnClosing(int i) {
-		ItemStack item = getStackInSlot(i);
-		setInventorySlotContents(i, null);
-		return item;
-	}
+	public ItemStack getStackInSlotOnClosing(int slotIndex) {
+		
+		  ItemStack itemStack = getStackInSlot(slotIndex);
+	        if (itemStack != null) {
+	            setInventorySlotContents(slotIndex, null);
+	        }
+	        return itemStack;
+	    }
+		
+
 
 	@Override
-	public void setInventorySlotContents(int i, ItemStack itemstack) {
-		items[i] = itemstack;
+	public void setInventorySlotContents(int slotIndex, ItemStack itemStack) {
 		
-		if (itemstack != null && itemstack.stackSize > getInventoryStackLimit()){
-			
-			itemstack.stackSize = getInventoryStackLimit();
-		}
-		
-		onInventoryChanged();
-	}
+		 inventory[slotIndex] = itemStack;
+	        if (itemStack != null && itemStack.stackSize > getInventoryStackLimit()) {
+	            itemStack.stackSize = getInventoryStackLimit();
+	        }
+	    }
+
+	
 
 	@Override
 	public String getInvName() {
@@ -79,8 +95,10 @@ public class TileAutomaticSqueezer extends TileEntity implements IInventory, IFl
 
 	@Override
 	public boolean isInvNameLocalized() {
-		return false;
+		return true;
 	}
+	
+	
 
 	@Override
 	public int getInventoryStackLimit() {
@@ -97,8 +115,11 @@ public class TileAutomaticSqueezer extends TileEntity implements IInventory, IFl
 
 	@Override
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
-		return itemstack.itemID == Block.vine.blockID;
+		return false;
+		
 	}
+	
+
 
 	@Override
 	public boolean isUseableByPlayer(EntityPlayer entityplayer) {
@@ -108,7 +129,14 @@ public class TileAutomaticSqueezer extends TileEntity implements IInventory, IFl
 	@Override
 	public void onInventoryChanged() {
 		
-	}
+		worldObj.updateAllLightTypes(xCoord, yCoord, zCoord);
+
+        if (worldObj.getBlockTileEntity(xCoord, yCoord + 1, zCoord) instanceof TileAutomaticSqueezer) {
+            worldObj.updateAllLightTypes(xCoord, yCoord + 1, zCoord);
+        }
+    }
+
+	
 
 
 	//After this the methods are for IFluidRegistry

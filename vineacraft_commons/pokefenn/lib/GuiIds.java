@@ -11,6 +11,7 @@ public class GuiIds {
 	public static final int VINEA_HATCHER = 5;
 	public static final int VINEA_HOPPER = 6;
 	public static final int VINEA_INFUSER = 7;
+	//public static final int VINEAPEDIA = 8;
 			
 			
 	
