@@ -3,6 +3,7 @@ package pokefenn.proxy;
 import pokefenn.lib.Strings;
 import pokefenn.tileentity.TileAutomaticSqueezer;
 import pokefenn.tileentity.TileVineaFurnace;
+import pokefenn.tileentity.TileVineaHarvester;
 import pokefenn.tileentity.TileVineaInfuser;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -34,7 +35,7 @@ public static void registerTileEntities() {
         //GameRegistry.registerTileEntity(TileVineaHatcher.class, Strings.TE_VINEA_HATCHER_NAME);
         GameRegistry.registerTileEntity(TileVineaFurnace.class, Strings.TILE_VINEA_FURNACE_NAME);
         GameRegistry.registerTileEntity(TileVineaInfuser.class, Strings.TILE_VINEA_INFUSER_NAME);
-        //GameRegistry.registerTileEntity(TileVineaHarvester.class, Strings.TE_VINEA_HARVESTER_NAME);
+        GameRegistry.registerTileEntity(TileVineaHarvester.class, Strings.TILE_VINEA_HARVESTER_NAME);
         //GameRegistry.registerTileEntity(TileVineaHopper.class, Strings.TE_VINEA_HOPPER_NAME);
         
         

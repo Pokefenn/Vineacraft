@@ -13,10 +13,9 @@ import net.minecraftforge.common.ForgeDirection;
 import pokefenn.Vineacraft;
 import pokefenn.lib.GuiIds;
 import pokefenn.lib.Strings;
-import pokefenn.tileentity.TileAutomaticSqueezer;
+import pokefenn.lib.Textures;
 import pokefenn.tileentity.TileVineaFurnace;
 import pokefenn.tileentity.TileVineacraft;
-import cpw.mods.fml.common.network.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -46,9 +45,9 @@ public class BlockVineaFurnace extends BlockVineacraft {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister register){
-		topIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_MACHINE_BLOCK_TOP);
-		sideIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_MACHINE_BLOCK_SIDE);
-		frontIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.VINEA_FURNACE_FRONT);
+		topIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_MACHINE_BLOCK_TOP);
+		sideIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_MACHINE_BLOCK_SIDE);
+		frontIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.VINEA_FURNACE_FRONT);
 	
 	}
 	

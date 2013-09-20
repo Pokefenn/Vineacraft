@@ -1,10 +1,5 @@
 package pokefenn.block;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import pokefenn.Vineacraft;
-import pokefenn.lib.Strings;
-import pokefenn.tileentity.TileVineacraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.EntityLivingBase;
@@ -14,6 +9,13 @@ import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeDirection;
+import pokefenn.Vineacraft;
+import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
+import pokefenn.tileentity.TileVineaHarvester;
+import pokefenn.tileentity.TileVineacraft;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockVineaHarvester extends BlockVineacraft {
 
@@ -27,8 +29,7 @@ public class BlockVineaHarvester extends BlockVineacraft {
    
     @Override
     public TileEntity createNewTileEntity(World world) {
-        // TODO Auto-generated method stub
-        return null;
+        return new TileVineaHarvester();
     }
 
     
@@ -42,9 +43,10 @@ public class BlockVineaHarvester extends BlockVineacraft {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister register){
-		topIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_MACHINE_BLOCK_TOP);
-		sideIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_MACHINE_BLOCK_SIDE);
-		frontIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.VINEA_HARVESTER_ICON);
+		topIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_MACHINE_BLOCK_TOP);
+		
+		sideIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_MACHINE_BLOCK_SIDE);
+		frontIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.VINEA_HARVESTER_ICON);
 	
 	}
 	

@@ -11,6 +11,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeDirection;
 import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 import pokefenn.tileentity.TileVineacraft;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -42,9 +43,9 @@ public class BlockVineaHatcher extends BlockVineacraft {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister register){
-		topIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.BASIC_MACHINE_BLOCK_TOP_AND_BOT);
-		sideIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.VINEA_HATCHER_SIDE);
-		botIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.VINEA_HATCHER_BOT);
+		topIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.BASIC_MACHINE_BLOCK_TOP_AND_BOT);
+		sideIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.VINEA_HATCHER_SIDE);
+		botIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.VINEA_HATCHER_BOT);
 	
 	}
 	

@@ -1,15 +1,12 @@
 package pokefenn.block;
 
-import java.util.List;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -36,9 +33,9 @@ public class BlockAdvancedMachineBlock extends Block {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister register){
-		topIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_MACHINE_BLOCK_TOP);
-		sideIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_MACHINE_BLOCK_SIDE);
-		bottomIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_MACHINE_BLOCK_BOTTOM);
+		topIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_MACHINE_BLOCK_TOP);
+		sideIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_MACHINE_BLOCK_SIDE);
+		bottomIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_MACHINE_BLOCK_BOTTOM);
 	
 	}
 	

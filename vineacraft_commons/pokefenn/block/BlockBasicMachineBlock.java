@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.util.Icon;
 import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -28,8 +29,8 @@ public class BlockBasicMachineBlock extends Block {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister register){
-		topAndBotIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.BASIC_MACHINE_BLOCK_TOP_AND_BOT);
-		sidesIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.BASIC_MACHINE_BLOCK_SIDE);
+		topAndBotIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.BASIC_MACHINE_BLOCK_TOP_AND_BOT);
+		sidesIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.BASIC_MACHINE_BLOCK_SIDE);
 	
 	}
 	

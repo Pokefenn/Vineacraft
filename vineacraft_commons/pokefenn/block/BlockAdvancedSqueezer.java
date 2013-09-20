@@ -1,14 +1,15 @@
 package pokefenn.block;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import pokefenn.Vineacraft;
-import pokefenn.lib.Strings;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
+import pokefenn.Vineacraft;
+import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockAdvancedSqueezer extends BlockVineacraft {
     
@@ -39,10 +40,10 @@ public class BlockAdvancedSqueezer extends BlockVineacraft {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister register){
-		topIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_SQUEEZER_TOP);
-		sideIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_SQUEEZER_SIDE);
-		botIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_SQUEEZER_BOT);
-		//topActiveIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" ModBlocks.ADVANCED_SQUEEZER_TOP_ACTIVE);
+		topIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_SQUEEZER_TOP);
+		sideIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_SQUEEZER_SIDE);
+		botIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_SQUEEZER_BOT);
+		//topActiveIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" Textures.ADVANCED_SQUEEZER_TOP_ACTIVE);
 		
 	}
 	

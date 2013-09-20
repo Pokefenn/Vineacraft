@@ -85,53 +85,5 @@ public class ModBlocks {
     
     }
     
- 
-
-//This is textures stuff.
-
-
-	public static final String TEXTURE_LOCATION = "vineacraft";
-    
-    public static final String ADVANCED_MACHINE_BLOCK_TOP = "advancedMachineBlockTop";
-    public static final String ADVANCED_MACHINE_BLOCK_SIDE = "advancedMachineBlockSide";
-    public static final String ADVANCED_MACHINE_BLOCK_BOTTOM = "advancedMachineBlockBottom";
-    
-    public static final String BASIC_MACHINE_BLOCK_TOP_AND_BOT = "basicMachineBlockTopAndBot";
-    public static final String BASIC_MACHINE_BLOCK_SIDE = "basicMachineBlockSide";
-    
-    public static final String VINEA_FURNACE_FRONT = "vineaFurnaceFront";
-    
-    public static final String MANUAL_SQUEEZER_SIDE = "manualSqueezerSide";
-    public static final String MANUAL_SQUEEZER_TOP = "manualSqueezerTop";
-    public static final String MANUAL_SQUEEZER_BOT = "manualSqueezerBot";
-    
-    //public static final String ADVANCED_SQUEEZER_TOP_ACTIVE = "advancedSqueezerTopActive";
-    public static final String ADVANCED_SQUEEZER_TOP = "advancedSqueezerTop";
-    public static final String ADVANCED_SQUEEZER_SIDE = "advancedSqueezerSide";
-    public static final String ADVANCED_SQUEEZER_BOT = "advancedSqueezerBot";
-    
-    public static final String AUTOMATIC_SQUEEZER_TOP = "automaticSqueezerTop";
-    public static final String AUTOMATIC_SQUEEZER_SIDE = "automaticSqueezerSide";
-    public static final String AUTOMATIC_SQUEEZER_BOT = "automaticSqueezerBot";
-    
-    public static final String VINEA_HATCHER_SIDE = "vineaHatcherSide";
-    public static final String VINEA_HATCHER_BOT = "vineaHatcherBot";
-    
-    public static final String VINEA_BRICK_ALL_SIDES = "vineaBrickAllSides";
-    
-    public static final String VINE_SAP_STILL_ICON = "vineSapStillIcon";
-    public static final String VINE_SAP_FLOWING_ICON = "vineSapFlowingIcon";
-    public static final String VINE_SAP_ICON = "vineSapIcon";
-    
-    public static final String VINEA_HARVESTER_ICON = "vineaHarvesterFront";
-    
-    public static final String VINEA_INFUSER_FRONT = "vineaInfuserFrontOff";
-    
-    
-    
-    //Gui Strings
-    
-    public static final String AUTOMATIC_SQUEEZER_GUI = "automaticSqueezerGui";
-    
     
 }

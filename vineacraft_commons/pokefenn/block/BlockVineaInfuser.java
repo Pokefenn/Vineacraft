@@ -13,6 +13,7 @@ import net.minecraftforge.common.ForgeDirection;
 import pokefenn.Vineacraft;
 import pokefenn.lib.GuiIds;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 import pokefenn.tileentity.TileVineaInfuser;
 import pokefenn.tileentity.TileVineacraft;
 import cpw.mods.fml.relauncher.Side;
@@ -46,9 +47,9 @@ public class BlockVineaInfuser extends BlockVineacraft {
    	@SideOnly(Side.CLIENT)
    	@Override
    	public void registerIcons(IconRegister register){
-   		topAndBotIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.BASIC_MACHINE_BLOCK_TOP_AND_BOT);
-   		sideIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.BASIC_MACHINE_BLOCK_SIDE);
-   		frontIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.VINEA_INFUSER_FRONT);
+   		topAndBotIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.BASIC_MACHINE_BLOCK_TOP_AND_BOT);
+   		sideIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.BASIC_MACHINE_BLOCK_SIDE);
+   		frontIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.VINEA_INFUSER_FRONT);
    	
    	}
    	

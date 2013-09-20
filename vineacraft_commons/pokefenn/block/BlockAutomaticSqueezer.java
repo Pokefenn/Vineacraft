@@ -1,6 +1,5 @@
 package pokefenn.block;
 
-import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.player.EntityPlayer;
@@ -10,8 +9,8 @@ import net.minecraft.world.World;
 import pokefenn.Vineacraft;
 import pokefenn.lib.GuiIds;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 import pokefenn.tileentity.TileAutomaticSqueezer;
-import cpw.mods.fml.common.network.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -43,9 +42,9 @@ public class BlockAutomaticSqueezer extends BlockVineacraft {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IconRegister register){
-		topIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.AUTOMATIC_SQUEEZER_TOP);
-		sideIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.AUTOMATIC_SQUEEZER_SIDE);
-		bottomIcon = register.registerIcon(ModBlocks.TEXTURE_LOCATION + ":" + ModBlocks.ADVANCED_MACHINE_BLOCK_BOTTOM);
+		topIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.AUTOMATIC_SQUEEZER_TOP);
+		sideIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.AUTOMATIC_SQUEEZER_SIDE);
+		bottomIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.ADVANCED_MACHINE_BLOCK_BOTTOM);
 	
 	}
 	
