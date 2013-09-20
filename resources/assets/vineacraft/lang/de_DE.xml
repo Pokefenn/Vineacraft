@@ -12,7 +12,7 @@
     <entry key="item.vineaGrating.name">Vinea-Gitter</entry>
     <entry key="item.bucketVineSap.name">Eimer mit Weinrebensaft</entry>
     <entry key="item.vineaBallInfuser.name">Vineaball-Infundierer</entry>
-    
+    <entry key="item.vineapedia.name">VineaPedia</entry>
     <entry key="item.vineaWrench.name">Vinea-Schraubenschlüssel</entry>
     <entry key="item.vinium.name">Vinium</entry>
     <entry key="item.infestationVine.name">Seuchen-Wein</entry>
@@ -33,5 +33,7 @@
     <entry key="tile.vineaFurnace.name">Vinea-Ofen</entry>
     <entry key="tile.vineaHarvester.name">Vinea-Erntemaschine</entry>
     <entry key="tile.vineaFluidHopper.name">Vinea-Flüssigkeitstrichter</entry>
-
+    
+    
+    <entry key="container.automaticSqueezer.name">Automatische Presse</entry>
 </properties>
