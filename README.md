@@ -9,3 +9,5 @@ http://forum.feed-the-beast.com/threads/vineacraft-a-overview-and-discussion.238
 
 Minecraft Forum Thread:
 http://www.minecraftforum.net/topic/1985496-162-vineacraft-explore-technology-with-vines-no-download-link-yet/
+
+(Unfinished) Vineacraft Guide: http://pastebin.com/nKntYzTj
