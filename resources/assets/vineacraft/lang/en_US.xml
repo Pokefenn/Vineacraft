@@ -13,7 +13,6 @@
     <entry key="item.bucketVineSap.name">Vine Sap Bucket</entry>
     <entry key="item.vineaBallInfuser.name">Vinea Ball Infuser</entry>
     <entry key="item.vineapedia.name">VineaPedia</entry>
-    <entry key="item.vineaWrench.name">Vinea Wrench</entry>
     <entry key="item.vinium.name">Vinium</entry>
     <entry key="item.infestationVine.name">Infestation Vine</entry>
     <entry key="item.vineaTankModule.name">Vinea Tank Module</entry>
@@ -33,6 +32,7 @@
     <entry key="tile.vineaFurnace.name">Vinea Furnace</entry>
     <entry key="tile.vineaHarvester.name">Vinea Harvester</entry>
     <entry key="tile.vineaFluidHopper.name">Vinea Fluid Hopper</entry>
+    <entry key="tile.blockVinium.name">Block Of Vinium</entry>
     
     
     <entry key="container.automaticSqueezer.name">Automatic Squeezer</entry>

@@ -21,22 +21,24 @@ public class VineacraftRecipes {
 	       GameRegistry.addRecipe(new ItemStack(ModBlocks.vineaHarvester), new Object[] { " s ", "ete", "rbr", ('b'), ModBlocks.advancedMachineBlock, ('s'), ModItems.vineaShears, ('r'), Item.redstone, ('t'), ModItems.vineaTankModule, ('e'), Item.shears});
 	       GameRegistry.addRecipe(new ItemStack(ModBlocks.vineaFluidHopper), new Object[] { "v v", "vtv", " v ", ('v'), ModItems.vinium, ('t'), ModItems.vineaTankModule });
 	       GameRegistry.addRecipe(new ItemStack(ModBlocks.vineaHopper), new Object[]{ "viv", "vcv", " v ", ('v'), ModItems.vinium, ('i'), Block.vine, ('c'), Block.chest });
+	       GameRegistry.addRecipe(new ItemStack(ModBlocks.blockVinium), new Object[]{ "vvv", "vvv", "vvv", ('v'), ModItems.vinium});
 	       
 		  //ItemsShaped
 	       
-	        GameRegistry.addRecipe(new ItemStack(ModItems.infestationVine), new Object[] { "vvv", "vsv", "vvv", ('v'), Block.vine, ('s'), Item.sugar });
-	        GameRegistry.addRecipe(new ItemStack(ModItems.infestationVine), new Object[] { "vvv", "vbv", "vvv", ('v'), Block.vine, ('b'), Item.bone });
-	        GameRegistry.addRecipe(new ItemStack(ModItems.vineaGrating), new Object[] { "vvv", "v v", "vvv", ('v'), Block.vine});
-	        GameRegistry.addRecipe(new ItemStack(ModItems.vineaTankModule), new Object[] { "ggg", "gvg", "ggg", ('v'), Block.vine, ('g'), Block.glass  });
-	        GameRegistry.addRecipe(new ItemStack(ModItems.vineaWrench), new Object[] { "v v", " v ", "v v", ('v'), ModItems.vinium });
-	        GameRegistry.addRecipe(new ItemStack(ModItems.vineaShears), new Object[] { "v ", " v", ('v'), ModItems.vinium });
-	        GameRegistry.addRecipe(new ItemStack(ModItems.vineaBallInfuser), new Object[] { "ivi", "i i", "ivi", ('i'), Block.fenceIron, ('v'), Block.vine});
-	        GameRegistry.addRecipe(new ItemStack(ModItems.vineaStick), new Object[] { "vvv", "vsv", "vvv", ('s'), Item.stick, ('v'), Block.vine});
+	       GameRegistry.addRecipe(new ItemStack(ModItems.infestationVine), new Object[] { "vvv", "vsv", "vvv", ('v'), Block.vine, ('s'), Item.sugar });
+	       GameRegistry.addRecipe(new ItemStack(ModItems.infestationVine), new Object[] { "vvv", "vbv", "vvv", ('v'), Block.vine, ('b'), Item.bone });
+	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaGrating), new Object[] { "vvv", "v v", "vvv", ('v'), Block.vine});
+	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaTankModule), new Object[] { "ggg", "gvg", "ggg", ('v'), Block.vine, ('g'), Block.glass  });
+	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaWrench), new Object[] { "v v", " v ", "v v", ('v'), ModItems.vinium });
+	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaShears), new Object[] { "v ", " v", ('v'), ModItems.vinium });
+	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaBallInfuser), new Object[] { "ivi", "i i", "ivi", ('i'), Block.fenceIron, ('v'), Block.vine});
+	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaStick), new Object[] { "vvv", "vsv", "vvv", ('s'), Item.stick, ('v'), Block.vine});
+	        
 	        
 	        
 	      //BlockShapeless
 	     
-	        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.vineapedia), new Object[] { Item.book, Block.vine});
+	       //GameRegistry.addShapelessRecipe(new ItemStack(ModItems.vineapedia), new Object[] { Item.book, Block.vine});
 	        
 	        
 	      //ItemShapeless

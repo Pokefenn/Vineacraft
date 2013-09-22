@@ -52,6 +52,7 @@ public class Strings {
     public static final String VINEA_FLUID_HOPPER_NAME = "vineaFluidHopper";
     public static final String BLOCK_VINE_SAP_NAME = "blockVineSap";
     public static final String VINEA_FABRICATOR_NAME = "vineaFabricator";
+    public static final String BLOCK_VINIUM_NAME = "blockVinium";
     
     /* Item name constants */
     

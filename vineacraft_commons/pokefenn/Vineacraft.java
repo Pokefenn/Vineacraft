@@ -114,7 +114,7 @@ public class Vineacraft {
     @EventHandler
     public void modsLoaded(FMLPostInitializationEvent event) {
     
-   /* 
+    
      // Initialize the Addon Handler
         //AddonHandler.init();
                 
@@ -122,15 +122,15 @@ public class Vineacraft {
         if (Loader.isModLoaded("TConstruct")){
             
         VineaTinkerAddon.init();
-        //System.out.println("Tinkers construct stuff working");
+        System.out.println("[Vineacraft] Tinkers Construct Loaded");
     }
         
         //Addon for forestry.
-        if (Loader.isModLoaded("Forestry")){
+        //if (Loader.isModLoaded("Forestry")){
         	
-        	VineaForestryAddon.init();
+        	//VineaForestryAddon.init();
         //System.out.println("Forestry stuff working");
-    }
-*/
+    //}
+
 }
 }

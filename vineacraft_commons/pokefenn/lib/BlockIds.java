@@ -20,6 +20,7 @@ public class BlockIds {
     public static int VINEA_HOPPER_DEFAULT = 2693;
     public static int VINEA_FLUID_HOPPER_DEFAULT = 2696;
     public static int BLOCK_VINE_SAP_DEFAULT = 2695;
+    public static int BLOCK_VINIUM_DEFAULT = 2696;
     
     
     //CurrentBlockId's
@@ -38,5 +39,6 @@ public class BlockIds {
     public static int VINEA_HOPPER;
     public static int VINEA_FLUID_HOPPER;
     public static int BLOCK_VINE_SAP;
+    public static int BLOCK_VINIUM;
     
 }

@@ -55,9 +55,11 @@ public class BlockManualSqueezer extends BlockVineacraft {
 	public Icon getIcon(int side, int meta) {
 		if(side == 0 ){
 			return botIcon;
-		}else if(side == 1) {
+		}
+		else if(side == 1) {
 			return topIcon;
-		}else{
+		}
+		else{
 			return sideIcon;
 		}
 		

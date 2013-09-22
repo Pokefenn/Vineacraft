@@ -14,6 +14,8 @@ public class Textures {
 	
 	//Blocks
     
+    public static final String VINIUM_ALLSIDES = "blockVinium";
+    
     public static final String ADVANCED_MACHINE_BLOCK_TOP = "advancedMachineBlockTop";
     public static final String ADVANCED_MACHINE_BLOCK_SIDE = "advancedMachineBlockSide";
     public static final String ADVANCED_MACHINE_BLOCK_BOTTOM = "advancedMachineBlockBottom";
