@@ -32,6 +32,7 @@
     <entry key="tile.vineaFurnace.name">Vinea-Ofen</entry>
     <entry key="tile.vineaHarvester.name">Vinea-Erntemaschine</entry>
     <entry key="tile.vineaFluidHopper.name">Vinea-Flüssigkeitstrichter</entry>
+    <entry key="tile.blockVinium.name">Viniumblock</entry>
     
     
     <entry key="container.automaticSqueezer.name">Automatische Presse</entry>
