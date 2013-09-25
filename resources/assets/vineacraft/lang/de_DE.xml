@@ -19,6 +19,10 @@
     <entry key="item.vineaGrating.name">Vinea-Gitter</entry>
     <entry key="item.bucketVineSap.name">Eimer mit Weinrebensaft</entry>
     <entry key="item.vineaStick.name">Vineastock</entry>
+    <entry key="item.vineaBoots.name">Vineastiefel</entry>
+    <entry key="item.vineaLeggings.name">Vineahose</entry>
+    <entry key="item.vineaChestpiece.name">Vineabrustpanzer</entry>
+    <entry key="item.vineaHelmet.name">Vineahelm</entry>
 
     <entry key="tile.vineaHopper.name">Vinea-Trichter</entry>
     <entry key="tile.manualSqueezer.name">Manuelle Presse</entry>
