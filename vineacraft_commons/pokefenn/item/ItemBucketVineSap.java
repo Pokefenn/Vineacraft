@@ -17,23 +17,24 @@ import net.minecraftforge.fluids.ItemFluidContainer;
 import pokefenn.Vineacraft;
 import pokefenn.lib.BlockIds;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemBucketVineSap extends ItemFluidContainer {
 
-	public ItemBucketVineSap(int id) {
-		super(id - 256, id);
+	public ItemBucketVineSap(int id, int capacity) {
+		super(id - 256);
         this.setUnlocalizedName(Strings.BUCKET_VINE_SAP_NAME);
         this.setCreativeTab(Vineacraft.tabsVineac);
-        this.setMaxStackSize(1);
+        //this.setMaxStackSize(1);
 	}
 	
 	@Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister register) {
     	
-    	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.BUCKET_VINE_SAP_ICON);       
+    	itemIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.BUCKET_VINE_SAP_ICON);       
     	
     	
     }
@@ -141,8 +142,8 @@ public class ItemBucketVineSap extends ItemFluidContainer {
 	        }
 	    }
 	 
-	 public boolean tryPlaceContainedLiquid(World w, int x, int y, int z)
-	    {
+	 public boolean tryPlaceContainedLiquid(World w, int x, int y, int z){
+	    
 
 	            Material material = w.getBlockMaterial(x, y, z);
 	            boolean isNotSolid = !material.isSolid();

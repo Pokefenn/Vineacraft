@@ -31,8 +31,8 @@ public class ConfigurationHandler {
             BlockIds.VINEA_FURNACE = configuration.getBlock(Strings.VINEA_FURNACE_NAME, BlockIds.VINEA_FURNACE_DEFAULT).getInt(BlockIds.VINEA_FURNACE_DEFAULT);
             BlockIds.VINEA_HARVESTER = configuration.getBlock(Strings.VINEA_HARVESTER_NAME, BlockIds.VINEA_HARVESTER_DEFAULT).getInt(BlockIds.VINEA_HARVESTER_DEFAULT);
             BlockIds.VINEA_HATCHER = configuration.getBlock(Strings.VINEA_HATCHER_NAME, BlockIds.VINEA_HATCHER_DEFAULT).getInt(BlockIds.VINEA_HATCHER_DEFAULT);
-            BlockIds.LIQUID_COCOA_STILL = configuration.getBlock(Strings.LIQUID_COCOA_STILL_NAME, BlockIds.LIQUID_COCOA_STILL_DEFAULT).getInt(BlockIds.LIQUID_COCOA_STILL_DEFAULT);
-            BlockIds.LIQUID_COCOA_FLOWING = configuration.getBlock(Strings.LIQUID_COCOA_FLOWING_NAME, BlockIds.LIQUID_COCOA_FLOWING_DEFAULT).getInt(BlockIds.LIQUID_COCOA_FLOWING_DEFAULT);
+            //BlockIds.LIQUID_COCOA_STILL = configuration.getBlock(Strings.LIQUID_COCOA_STILL_NAME, BlockIds.LIQUID_COCOA_STILL_DEFAULT).getInt(BlockIds.LIQUID_COCOA_STILL_DEFAULT);
+            //BlockIds.LIQUID_COCOA_FLOWING = configuration.getBlock(Strings.LIQUID_COCOA_FLOWING_NAME, BlockIds.LIQUID_COCOA_FLOWING_DEFAULT).getInt(BlockIds.LIQUID_COCOA_FLOWING_DEFAULT);
             BlockIds.ADVANCED_SQUEEZER = configuration.getBlock(Strings.ADVANCED_SQUEEZER_NAME, BlockIds.ADVANCED_SQEEZER_DEFAULT).getInt(BlockIds.ADVANCED_SQEEZER_DEFAULT);
             BlockIds.ADVANCED_MACHINE_BLOCK = configuration.getBlock(Strings.ADVANCED_MACHINE_BLOCK_NAME, BlockIds.ADVANCED_MACHINE_BLOCK_DEFAULT).getInt(BlockIds.ADVANCED_MACHINE_BLOCK_DEFAULT);
             BlockIds.BASIC_MACHINE_BLOCK = configuration.getBlock(Strings.BASIC_MACHINE_BLOCK_NAME, BlockIds.BASIC_MACHINE_BLOCK_DEFAULT).getInt(BlockIds.BASIC_MACHINE_BLOCK_DEFAULT);
@@ -55,7 +55,11 @@ public class ConfigurationHandler {
             ItemIds.VINEA_BALL_INFUSER = configuration.getItem(Strings.VINEA_BALL_INFUSER_NAME, ItemIds.VINEA_BALL_INFUSER_DEFAULT).getInt(ItemIds.VINEA_BALL_INFUSER_DEFAULT);
             ItemIds.VINEA_STICK = configuration.getItem(Strings.VINEA_STICK_NAME, ItemIds.VINEA_STICK_DEFAULT).getInt(ItemIds.VINEA_STICK_DEFAULT);
             ItemIds.VINEAPEDIA = configuration.getItem(Strings.VINEAPEDIA_NAME, ItemIds.VINEAPEDIA_DEFAULT).getInt(ItemIds.VINEAPEDIA_DEFAULT);
-            
+            ItemIds.VINEA_BOOTS = configuration.getItem(Strings.VINEA_BOOTS_NAME, ItemIds.VINEA_BOOTS_DEFAULT).getInt(ItemIds.VINEA_BOOTS_DEFAULT);
+            ItemIds.VINEA_LEGGINGS = configuration.getItem(Strings.VINEA_LEGGINGS_NAME, ItemIds.VINEA_LEGGINGS_DEFAULT).getInt(ItemIds.VINEA_LEGGINGS_DEFAULT);
+            ItemIds.VINEA_CHESTPLATE = configuration.getItem(Strings.VINEA_CHESTPIECE_NAME, ItemIds.VINEA_CHESTPLATE_DEFAULT).getInt(ItemIds.VINEA_CHESTPLATE_DEFAULT);
+            ItemIds.VINEA_HELMET = configuration.getItem(Strings.VINEA_HELMET_NAME, ItemIds.VINEA_HELMET_DEFAULT).getInt(ItemIds.VINEA_HELMET_DEFAULT);
+            		
             
            }
         

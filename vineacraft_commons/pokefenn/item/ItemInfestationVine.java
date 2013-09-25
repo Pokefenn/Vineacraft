@@ -3,7 +3,6 @@ package pokefenn.item;
 import java.util.List;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockWood;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -14,6 +13,7 @@ import net.minecraftforge.event.entity.player.UseHoeEvent;
 import pokefenn.Vineacraft;
 import pokefenn.block.ModBlocks;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -84,7 +84,7 @@ public class ItemInfestationVine extends ItemVineacraft {
 @SideOnly(Side.CLIENT)
 public void registerIcons(IconRegister register) {
 	
-	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.INFESTATION_VINE_ICON);       
+	itemIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.INFESTATION_VINE_ICON);       
 	
 	
 }

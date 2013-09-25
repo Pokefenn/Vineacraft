@@ -10,6 +10,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeDirection;
 import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 import buildcraft.api.tools.IToolWrench;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -29,7 +30,7 @@ public class ItemVineaWrench extends ItemVineacraft implements IToolWrench {
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister register) {
     	
-    	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.VINEA_WRENCH_ICON);       
+    	itemIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.VINEA_WRENCH_ICON);       
     	
     	
     }

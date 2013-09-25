@@ -7,6 +7,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -24,7 +25,7 @@ public class ItemVineaGrating extends ItemVineacraft {
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister register) {
     	
-    	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.VINEA_GRATING_ICON);       
+    	itemIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.VINEA_GRATING_ICON);       
     	
     	
     }

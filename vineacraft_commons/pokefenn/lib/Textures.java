@@ -55,6 +55,20 @@ public class Textures {
 	//Items
 	
     public static final String VINEAPEDIA_ICON = "vineapedia";
+    public static final String VINIUM_ICON = "vinium";
+    public static final String VINEA_SHEARS_ICON = "vineaShears";
+    public static final String INFESTATION_VINE_ICON = "infestationVine";
+    public static final String VINEA_WRENCH_ICON = "vineaWrench";
+    public static final String VINEA_GRATING_ICON = "vineaGrating";
+    public static final String VINE_PARTS_ICON = "vineParts";
+    public static final String VINEA_TANK_MODULE_ICON = "vineaTankModule";
+    public static final String BUCKET_VINE_SAP_ICON = "bucketVineSap";
+    public static final String VINEA_BALL_INFUSER_ICON = "vineaBallInfuser";
+    public static final String VINEA_STICK_ICON = "vineaStick";
+    public static final String VINEA_BOOTS_ICON = "vineaBoots";
+    public static final String VINEA_LEGGINGS_ICON = "vineaLeggings";
+    public static final String VINEA_CHESTPLATE_ICON = "vineaChestplate";
+    public static final String VINEA_HELMET_ICON = "vineaHelmet";
 	
 	//Gui
 	

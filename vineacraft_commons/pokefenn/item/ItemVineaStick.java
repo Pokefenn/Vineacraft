@@ -1,10 +1,11 @@
 package pokefenn.item;
 
 import net.minecraft.client.renderer.texture.IconRegister;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemVineaStick extends ItemVineacraft {
 	
@@ -23,7 +24,7 @@ public class ItemVineaStick extends ItemVineacraft {
  @SideOnly(Side.CLIENT)
  public void registerIcons(IconRegister register) {
  	
- 	itemIcon = register.registerIcon(ModItems.TEXTURE_LOCATION + ":" + ModItems.VINEA_STICK_ICON);       
+ 	itemIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.VINEA_STICK_ICON);       
  	
  	
  }

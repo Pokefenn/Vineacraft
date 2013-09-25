@@ -15,8 +15,8 @@ public class FluidVineSap extends Fluid {
 		
 		
 		super(Strings.FLUID_VINE_SAP_NAME);
-		setDensity(50);
-        setViscosity(4000);
+		setDensity(100);
+        setViscosity(500);
         FluidRegistry.registerFluid(this);
 		
 	}
@@ -24,13 +24,13 @@ public class FluidVineSap extends Fluid {
 	 @Override
 	    @SideOnly(Side.CLIENT)
 	    public Icon getStillIcon(){
-	        return BlockVineSap.vineSapIcon;
+	        return BlockVineSap.vineSapStillIcon;
 	    }
 
 	    @Override
 	    @SideOnly(Side.CLIENT)
 	    public Icon getFlowingIcon(){
-	        return BlockVineSap.vineSapIcon;
+	        return BlockVineSap.vineSapFlowingIcon;
 	    }   
 	
 }

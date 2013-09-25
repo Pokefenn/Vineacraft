@@ -1,10 +1,13 @@
 package pokefenn.item;
 
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidContainerRegistry.FluidContainerData;
+import net.minecraftforge.fluids.FluidRegistry;
+import pokefenn.fluid.ModFluids;
 import pokefenn.lib.ItemIds;
-import cpw.mods.fml.common.registry.GameRegistry;
+import pokefenn.lib.Strings;
 
 
 public class ModItems {
@@ -23,6 +26,10 @@ public class ModItems {
     public static Item vineaBallInfuser;
     public static Item vineaStick;
     public static Item vineapedia;
+    public static Item vineaBoots;
+    public static Item vineaLeggings;
+    public static Item vineaChestplate;
+    public static Item vineaHelmet;
     
     public static void init() {
         
@@ -36,27 +43,38 @@ public class ModItems {
         infestationVine = new ItemInfestationVine(ItemIds.INFESTATION_VINE);
         vineaTankModule = new ItemVineaTankModule(ItemIds.VINEA_TANK_MODULE);
         vineaGrating = new ItemVineaGrating(ItemIds.VINEA_GRATING);
-        bucketVineSap = new ItemBucketVineSap(ItemIds.BUCKET_VINE_SAP);
+        bucketVineSap = new ItemBucketVineSap(ItemIds.BUCKET_VINE_SAP, 10);
         vineaBallInfuser = new ItemVineaBallInfuser(ItemIds.VINEA_BALL_INFUSER);
         vineaStick = new ItemVineaStick(ItemIds.VINEA_STICK);
         vineapedia = new ItemVineapedia(ItemIds.VINEAPEDIA);
+        vineaBoots = new ItemVineaBoots(ItemIds.VINEA_BOOTS);
+        vineaLeggings = new ItemVineaLeggings(ItemIds.VINEA_LEGGINGS);
+        vineaChestplate = new ItemVineaChestpiece(ItemIds.VINEA_CHESTPLATE);
+        vineaHelmet = new ItemVineaHelmet(ItemIds.VINEA_HELMET);
         
         
+        registerContainers();
         
     
     }
-    //Texture stuff bro
-    public static final String TEXTURE_LOCATION = "vineacraft";
     
-    public static final String VINIUM_ICON = "vinium";
-    public static final String VINEA_SHEARS_ICON = "vineaShears";
-    public static final String INFESTATION_VINE_ICON = "infestationVine";
-    public static final String VINEA_WRENCH_ICON = "vineaWrench";
-    public static final String VINEA_GRATING_ICON = "vineaGrating";
-    public static final String VINE_PARTS_ICON = "vineParts";
-    public static final String VINEA_TANK_MODULE_ICON = "vineaTankModule";
-    public static final String BUCKET_VINE_SAP_ICON = "bucketVineSap";
-    public static final String VINEA_BALL_INFUSER_ICON = "vineaBallInfuser";
-    public static final String VINEA_STICK_ICON = "vineaStick";
+    static void registerContainers(){
+    	
+            FluidContainerRegistry.registerFluidContainer(new FluidContainerData(FluidRegistry.getFluidStack( ModFluids.vineSap.getName(), FluidContainerRegistry.BUCKET_VOLUME ),
+                        new ItemStack(bucketVineSap),
+                        new ItemStack(Item.bucketEmpty)
+                    )
+                );
+        }
+    	
+    	
+    }
     
-}
+   
+    
+
+    
+    
+    
+    
+

@@ -19,6 +19,10 @@
     <entry key="item.vineaGrating.name">Vinea Grating</entry>
     <entry key="item.bucketVineSap.name">Vine Sap Bucket</entry>
     <entry key="item.vineaStick.name">Vinea Stick</entry>
+    <entry key="item.vineaBoots.name">Vinea Boots</entry>
+    <entry key="item.vineaLeggings.name">Vinea Leggings</entry>
+    <entry key="item.vineaChestpiece.name">Vinea Chestpiece</entry>
+    <entry key="item.vineaHelmet.name">Vinea Helmet</entry>
     
     <entry key="tile.vineaHopper.name">Vinea Hopper</entry>
     <entry key="tile.manualSqueezer.name">Manual Squeezer</entry>

@@ -1,5 +1,8 @@
 package pokefenn.item;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -7,6 +10,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraftforge.common.ISpecialArmor;
 import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
+import pokefenn.lib.Textures;
 
 public class ItemVineaBoots extends ItemVineacraft implements ISpecialArmor {
 
@@ -39,5 +43,14 @@ public class ItemVineaBoots extends ItemVineacraft implements ISpecialArmor {
 		
 	}
 	
+	
+	@Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister register) {
+    	
+    	itemIcon = register.registerIcon(Textures.TEXTURE_LOCATION + ":" + Textures.VINEA_BOOTS_ICON);       
+    	
+    	
+    }
 	
 }
