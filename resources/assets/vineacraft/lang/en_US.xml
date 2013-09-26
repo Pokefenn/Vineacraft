@@ -3,7 +3,7 @@
 <properties version="1.0">
     <comment>English (en_US) Localization File</comment>
     
-    <entry key="itemGroup.Vineacraft">Vineacraft Creative Tab</entry>
+    <entry key="itemGroup.Vineacraft">Vineacraft</entry>
 
     <entry key="item.vineaShears.name">Vinea Shears</entry>
     <entry key="item.vineParts.name">Vine Parts</entry>
