@@ -3,6 +3,8 @@
 <properties version="1.0">
     <comment>German (de_DE) Localization File</comment>
 
+    <entry key="itemGroup.Vineacraft">Vineacraft</entry>
+    
     <entry key="item.vineaShears.name">Vineaschere</entry>
     <entry key="item.vineParts.name">Weinrebenstück</entry>
     <entry key="item.vineaWrench.name">Vinea-Schraubenschlüssel</entry>
@@ -37,6 +39,7 @@
     <entry key="tile.vineaHarvester.name">Vinea-Erntemaschine</entry>
     <entry key="tile.vineaFluidHopper.name">Vinea-Flüssigkeitstrichter</entry>
     <entry key="tile.blockVinium.name">Viniumblock</entry>
+    <entry key="tile.brightVine.name">Strahlende Weinranken</entry>
     
     
     <entry key="container.automaticSqueezer.name">Automatische Presse</entry>
