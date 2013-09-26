@@ -38,6 +38,7 @@ public class ModBlocks {
     //public static VineSapFluid vineSap;
     public static Block blockVineSap;
     public static Block blockVinium;
+    public static Block brightVine;
     
   
     
@@ -60,6 +61,7 @@ public class ModBlocks {
        vineaFluidHopper = new BlockVineaFluidHopper(BlockIds.VINEA_FLUID_HOPPER);
        blockVineSap = new BlockVineSap(BlockIds.BLOCK_VINE_SAP);
        blockVinium = new BlockVinium(BlockIds.BLOCK_VINIUM);
+       brightVine = new BlockBrightVine(BlockIds.BRIGHT_VINE);
        
        
        //vineSap = new Fluid("Vine_Sap");
@@ -78,6 +80,7 @@ public class ModBlocks {
        GameRegistry.registerBlock(vineaFluidHopper, Strings.VINEA_FLUID_HOPPER_NAME);
        GameRegistry.registerBlock(blockVineSap, Strings.BLOCK_VINE_SAP_NAME);
        GameRegistry.registerBlock(blockVinium, Strings.BLOCK_VINIUM_NAME);
+       GameRegistry.registerBlock(brightVine, Strings.BRIGHT_VINE_NAME);
        
 	   
        //FluidStuff

@@ -1,5 +1,6 @@
 package pokefenn.creativetab;
 
+import pokefenn.block.ModBlocks;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -17,12 +18,9 @@ public class CreativeTabVineacraft extends CreativeTabs {
     
     @Override
     @SideOnly(Side.CLIENT)
-    
-    
-    
     public int getTabIconItemIndex() {
         
-        return Block.vine.blockID;
+        return ModBlocks.vineaFurnace.blockID;
     }
     
     

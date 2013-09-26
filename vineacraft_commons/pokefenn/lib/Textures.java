@@ -50,6 +50,8 @@ public class Textures {
     public static final String VINEA_HARVESTER_ICON = "vineaHarvesterFront";
     
     public static final String VINEA_INFUSER_FRONT = "vineaInfuserFrontOff";
+    
+    public static final String BRIGHT_VINE = "brightVine";
 	
 	
 	//Items

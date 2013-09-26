@@ -41,6 +41,7 @@ public class ConfigurationHandler {
             BlockIds.VINEA_FLUID_HOPPER = configuration.getBlock(Strings.VINEA_FLUID_HOPPER_NAME, BlockIds.VINEA_FLUID_HOPPER_DEFAULT).getInt(BlockIds.VINEA_FLUID_HOPPER_DEFAULT);
             BlockIds.BLOCK_VINE_SAP = configuration.getBlock(Strings.BLOCK_VINE_SAP_NAME, BlockIds.BLOCK_VINE_SAP_DEFAULT).getInt(BlockIds.BLOCK_VINE_SAP_DEFAULT);
             BlockIds.BLOCK_VINIUM = configuration.getBlock(Strings.BLOCK_VINIUM_NAME, BlockIds.BLOCK_VINIUM_DEFAULT).getInt(BlockIds.BLOCK_VINIUM_DEFAULT);
+            BlockIds.BRIGHT_VINE = configuration.getBlock(Strings.BRIGHT_VINE_NAME, BlockIds.BRIGHT_VINE_DEFAULT).getInt(BlockIds.BRIGHT_VINE_DEFAULT);
             
             
             //Items

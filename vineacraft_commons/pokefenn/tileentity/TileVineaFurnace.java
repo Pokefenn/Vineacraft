@@ -2,18 +2,22 @@ package pokefenn.tileentity;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.ForgeDirection;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTankInfo;
 import net.minecraftforge.fluids.IFluidHandler;
 import pokefenn.lib.Strings;
 
-public class TileVineaFurnace extends TileVineacraft implements IInventory, IFluidHandler {
+public class TileVineaFurnace extends TileVineacraft implements IInventory, IFluidHandler, ISidedInventory {
 
 	private ItemStack[] inventory;
+	
+	public static final int MAX_LIQUID = FluidContainerRegistry.BUCKET_VOLUME * 10;
 
     public static final int INVENTORY_SIZE = 3;
     
@@ -178,15 +182,36 @@ public class TileVineaFurnace extends TileVineacraft implements IInventory, IFlu
 	//Furnace stuff
 	
 	public boolean canSmelt(){
-		return false;
+		return true;
 		
 		
 	}
-    
+	
+	
 	public static int getItemBurnTime(ItemStack par0ItemStack){
 		
 		return 0;
 		
+	}
+
+	//ISidedInventory methods.
+	
+	@Override
+	public int[] getAccessibleSlotsFromSide(int var1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean canInsertItem(int i, ItemStack itemstack, int j) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean canExtractItem(int i, ItemStack itemstack, int j) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	

@@ -53,6 +53,7 @@ public class Strings {
     public static final String BLOCK_VINE_SAP_NAME = "blockVineSap";
     public static final String VINEA_FABRICATOR_NAME = "vineaFabricator";
     public static final String BLOCK_VINIUM_NAME = "blockVinium";
+    public static final String BRIGHT_VINE_NAME = "brightVine";
     
     /* Item name constants */
     

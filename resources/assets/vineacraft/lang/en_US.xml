@@ -2,6 +2,8 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
     <comment>English (en_US) Localization File</comment>
+    
+    <entry key="itemGroup.Vineacraft">Vineacraft Creative Tab</entry>
 
     <entry key="item.vineaShears.name">Vinea Shears</entry>
     <entry key="item.vineParts.name">Vine Parts</entry>
@@ -37,6 +39,7 @@
     <entry key="tile.vineaHarvester.name">Vinea Harvester</entry>
     <entry key="tile.vineaFluidHopper.name">Vinea Fluid Hopper</entry>
     <entry key="tile.blockVinium.name">Block Of Vinium</entry>
+    <entry key="tile.brightVine.name">Bright Vine</entry>
     
     
     <entry key="container.automaticSqueezer.name">Automatic Squeezer</entry>
