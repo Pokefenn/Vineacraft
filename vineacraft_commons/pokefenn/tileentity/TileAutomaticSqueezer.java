@@ -1,20 +1,16 @@
 package pokefenn.tileentity;
 
-import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.network.packet.Packet;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.ForgeDirection;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTankInfo;
 import net.minecraftforge.fluids.IFluidHandler;
 import pokefenn.lib.Strings;
-import pokefenn.network.PacketTypeHandler;
+import buildcraft.api.transport.IPipeConnection;
+import buildcraft.api.transport.IPipeTile.PipeType;
 
 public class TileAutomaticSqueezer extends TileVineacraft implements IInventory, IFluidHandler {
 
@@ -177,6 +173,9 @@ public class TileAutomaticSqueezer extends TileVineacraft implements IInventory,
 	public FluidTankInfo[] getTankInfo(ForgeDirection from) {
 		return null;
 	}
+
+	//PipeConnection
+	
 
 
 

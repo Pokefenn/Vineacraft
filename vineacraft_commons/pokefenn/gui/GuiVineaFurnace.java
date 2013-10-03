@@ -3,7 +3,9 @@ package pokefenn.gui;
 
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.util.Icon;
 import net.minecraft.util.StatCollector;
+import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 
 import org.lwjgl.opengl.GL11;
@@ -55,7 +57,44 @@ public class GuiVineaFurnace extends GuiContainer {
 	
 	
 	
+	private void displayGauge(int j, int k, int line, int col, int squaled, FluidStack liquid) {
+		if (liquid == null) {
+			return;
+		}
+		int start = 0;
+
+		Icon liquidIcon = null;
+		Fluid fluid = liquid.getFluid();
+		if (fluid != null && fluid.getStillIcon() != null) {
+			liquidIcon = fluid.getStillIcon();
+		}
+
+		if (liquidIcon != null) {
+			while (true) {
+				int x;
+
+				if (squaled > 16) {
+					x = 16;
+					squaled -= 16;
+				} else {
+					x = squaled;
+					squaled = 0;
+				}
+
+				drawTexturedModelRectFromIcon(j + col, k + line + 58 - x - start, liquidIcon, 16, 16 - (16 - x));
+				start = start + 16;
+
+				if (x == 0 || squaled == 0) {
+					break;
+				}
+			}
+			
+		}
+	
+	
+	
 	}
+}
 	
 
 

@@ -47,7 +47,8 @@ public class VineacraftRecipes {
 	      //ItemShapeless
 	       
 	       GameRegistry.addShapelessRecipe(new ItemStack(ModItems.vineapedia), new Object[] { Item.book, Block.vine});
-	        
+	       GameRegistry.addShapelessRecipe(new ItemStack(ModItems.vinium, 9), new Object[]{ ModBlocks.blockVinium});
+	       
 	         
 	      //Vanilla Item
 	        
@@ -55,7 +56,7 @@ public class VineacraftRecipes {
 	      //Vanilla Block
 	        
 	        
-	        GameRegistry.addShapelessRecipe(new ItemStack(Block.sapling, 1, 3), new Object[] { Block.sapling, Block.vine } );
+	       //GameRegistry.addShapelessRecipe(new ItemStack(Block.sapling, 1, 3), new Object[] { Block.sapling, Block.vine } );
 	}
 	
 	

@@ -22,6 +22,7 @@ public class BlockIds {
     public static int BLOCK_VINE_SAP_DEFAULT = 2695;
     public static int BLOCK_VINIUM_DEFAULT = 2697;
     public static int BRIGHT_VINE_DEFAULT = 2698;
+    public static int TEMP_VINE_DEFAULT = 2699;
     
     
     //CurrentBlockId's
@@ -42,5 +43,6 @@ public class BlockIds {
     public static int BLOCK_VINE_SAP;
     public static int BLOCK_VINIUM;
     public static int BRIGHT_VINE;
+    public static int TEMP_VINE;
     
 }

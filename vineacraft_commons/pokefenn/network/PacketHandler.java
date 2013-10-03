@@ -8,16 +8,22 @@ import cpw.mods.fml.common.network.Player;
 
 public class PacketHandler implements IPacketHandler {
 
-	@Override
-	public void onPacketData(INetworkManager manager,
-			Packet250CustomPayload packet, Player player){
-		
-		
-		
-		
+	 @Override
+	    public void onPacketData(INetworkManager manager, Packet250CustomPayload packet, Player player) {
+/*
+	        // Build a PacketEE object from the data contained within the Packet250CustomPayload packet
+	        PacketVineacraft packetVineacraft = PacketTypeHandler.buildPacket(packet.data);
+
+	        // Execute the appropriate actions based on the PacketEE type
+	        packetVineacraft.execute(manager, player);
+	        
+	        
+	        */
+	    }
+
 	}
 
 	
 	
 	
-}
+

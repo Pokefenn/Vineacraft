@@ -22,7 +22,7 @@ public class BlockBrightVine extends BlockVine {
 	}
 
 	
-	 @SideOnly(Side.CLIENT)
+	    @SideOnly(Side.CLIENT)
 		private Icon allSidesIcon;
 		
 		@SideOnly(Side.CLIENT)

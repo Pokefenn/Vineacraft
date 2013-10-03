@@ -1,17 +1,16 @@
 package pokefenn.block;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Icon;
-import net.minecraft.world.World;
 import pokefenn.Vineacraft;
 import pokefenn.lib.Strings;
 import pokefenn.lib.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockVineaBrick extends BlockVineacraft {
+public class BlockVineaBrick extends Block {
 	
 	public BlockVineaBrick (int id) {
 	       
@@ -21,10 +20,7 @@ public class BlockVineaBrick extends BlockVineacraft {
 	       this.setHardness(2F);
 	   }
 
-	@Override
-	public TileEntity createNewTileEntity(World world) {
-		return null;
-	}
+
 
     @SideOnly(Side.CLIENT)
 	private Icon allSidesIcon;

@@ -39,6 +39,7 @@ public class ModBlocks {
     public static Block blockVineSap;
     public static Block blockVinium;
     public static Block brightVine;
+    public static Block tempVine;
     
   
     
@@ -62,6 +63,7 @@ public class ModBlocks {
        blockVineSap = new BlockVineSap(BlockIds.BLOCK_VINE_SAP);
        blockVinium = new BlockVinium(BlockIds.BLOCK_VINIUM);
        brightVine = new BlockBrightVine(BlockIds.BRIGHT_VINE);
+       tempVine = new BlockTempVine(BlockIds.TEMP_VINE);
        
        
        //vineSap = new Fluid("Vine_Sap");
@@ -81,6 +83,7 @@ public class ModBlocks {
        GameRegistry.registerBlock(blockVineSap, Strings.BLOCK_VINE_SAP_NAME);
        GameRegistry.registerBlock(blockVinium, Strings.BLOCK_VINIUM_NAME);
        GameRegistry.registerBlock(brightVine, Strings.BRIGHT_VINE_NAME);
+       GameRegistry.registerBlock(tempVine, Strings.TEMP_VINE_NAME);
        
 	   
        //FluidStuff

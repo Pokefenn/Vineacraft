@@ -52,6 +52,8 @@ public class Textures {
     public static final String VINEA_INFUSER_FRONT = "vineaInfuserFrontOff";
     
     public static final String BRIGHT_VINE = "brightVine";
+    
+    public static final String TEMP_VINE = "tempVine";
 	
 	
 	//Items

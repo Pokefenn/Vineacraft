@@ -16,14 +16,16 @@ import pokefenn.lib.Strings;
 public class TileVineaFurnace extends TileVineacraft implements IInventory, IFluidHandler, ISidedInventory {
 
 	private ItemStack[] inventory;
+	private FluidStack[] fluid;
 	
-	public static final int MAX_LIQUID = FluidContainerRegistry.BUCKET_VOLUME * 10;
+	public static final int MAX_FLUID = FluidContainerRegistry.BUCKET_VOLUME * 10;
 
     public static final int INVENTORY_SIZE = 3;
     
     public static final int INPUT_INVENTORY_INDEX = 0;
     public static final int BUCKET_INVENTORY_INDEX = 1;
     public static final int OUTPUT_INVENTORY_INDEX = 2;
+    
 	
 	
 	
@@ -31,6 +33,9 @@ public class TileVineaFurnace extends TileVineacraft implements IInventory, IFlu
 	public TileVineaFurnace() {
 
 		inventory = new ItemStack[INVENTORY_SIZE];
+		fluid = new FluidStack[MAX_FLUID];
+		
+
 		
 	}
 	
@@ -107,10 +112,16 @@ public class TileVineaFurnace extends TileVineacraft implements IInventory, IFlu
 
 	@Override
 	public void openChest() {
+		
+		//Not chest so no code
+		
 	}
 
+	
 	@Override
 	public void closeChest() {
+		
+		//Not chest so no code
 	}
 
 	@Override
@@ -146,6 +157,11 @@ public class TileVineaFurnace extends TileVineacraft implements IInventory, IFlu
 	
 	@Override
 	public int fill(ForgeDirection from, FluidStack resource, boolean doFill) {
+		
+		
+		
+		
+		
 		return 0;
 	}
 
@@ -170,7 +186,7 @@ public class TileVineaFurnace extends TileVineacraft implements IInventory, IFlu
 
 	@Override
 	public boolean canDrain(ForgeDirection from, Fluid fluid) {
-		return false;
+		return true;
 	}
 
 
@@ -198,20 +214,18 @@ public class TileVineaFurnace extends TileVineacraft implements IInventory, IFlu
 	
 	@Override
 	public int[] getAccessibleSlotsFromSide(int var1) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public boolean canInsertItem(int i, ItemStack itemstack, int j) {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean canExtractItem(int i, ItemStack itemstack, int j) {
-		// TODO Auto-generated method stub
-		return false;
+
+		return true;
 	}
 
 	

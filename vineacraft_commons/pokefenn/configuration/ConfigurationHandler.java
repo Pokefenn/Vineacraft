@@ -14,6 +14,7 @@ import cpw.mods.fml.common.FMLLog;
 public class ConfigurationHandler {
 
     public static Configuration configuration;
+    public static final String CATEGORY_GAMEPLAY = "gameplay";
     
     
     public static void init(File configFile) {
@@ -23,6 +24,8 @@ public class ConfigurationHandler {
         try {
             
             configuration.load();
+            
+            ConfigurationSettings.VINE_ON_STARTUP = configuration.get(CATEGORY_GAMEPLAY, ConfigurationSettings.VINE_ON_STARTUP_CONFIGNAME, ConfigurationSettings.VINE_ON_STARTUP_DEFAULT).getBoolean(ConfigurationSettings.VINE_ON_STARTUP_DEFAULT);
             
             //Blocks
             BlockIds.AUTOMATIC_SQUEEZER = configuration.getBlock(Strings.AUTOMATIC_SQUEEZER_NAME, BlockIds.AUTOMATIC_SQUEEZER_DEFAULT).getInt(BlockIds.AUTOMATIC_SQUEEZER_DEFAULT);
@@ -42,6 +45,7 @@ public class ConfigurationHandler {
             BlockIds.BLOCK_VINE_SAP = configuration.getBlock(Strings.BLOCK_VINE_SAP_NAME, BlockIds.BLOCK_VINE_SAP_DEFAULT).getInt(BlockIds.BLOCK_VINE_SAP_DEFAULT);
             BlockIds.BLOCK_VINIUM = configuration.getBlock(Strings.BLOCK_VINIUM_NAME, BlockIds.BLOCK_VINIUM_DEFAULT).getInt(BlockIds.BLOCK_VINIUM_DEFAULT);
             BlockIds.BRIGHT_VINE = configuration.getBlock(Strings.BRIGHT_VINE_NAME, BlockIds.BRIGHT_VINE_DEFAULT).getInt(BlockIds.BRIGHT_VINE_DEFAULT);
+            BlockIds.TEMP_VINE = configuration.getBlock(Strings.TEMP_VINE_NAME, BlockIds.TEMP_VINE_DEFAULT).getInt(BlockIds.TEMP_VINE_DEFAULT);
             
             
             //Items
@@ -61,6 +65,7 @@ public class ConfigurationHandler {
             ItemIds.VINEA_CHESTPLATE = configuration.getItem(Strings.VINEA_CHESTPIECE_NAME, ItemIds.VINEA_CHESTPLATE_DEFAULT).getInt(ItemIds.VINEA_CHESTPLATE_DEFAULT);
             ItemIds.VINEA_HELMET = configuration.getItem(Strings.VINEA_HELMET_NAME, ItemIds.VINEA_HELMET_DEFAULT).getInt(ItemIds.VINEA_HELMET_DEFAULT);
             		
+           
             
            }
         

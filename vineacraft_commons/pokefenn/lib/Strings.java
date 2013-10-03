@@ -54,6 +54,7 @@ public class Strings {
     public static final String VINEA_FABRICATOR_NAME = "vineaFabricator";
     public static final String BLOCK_VINIUM_NAME = "blockVinium";
     public static final String BRIGHT_VINE_NAME = "brightVine";
+    public static final String TEMP_VINE_NAME = "tempVine";
     
     /* Item name constants */
     

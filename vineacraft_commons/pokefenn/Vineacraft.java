@@ -3,7 +3,6 @@ package pokefenn;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
-import pokefenn.addons.forestry.VineaForestryAddon;
 import pokefenn.addons.tinkersconstruct.VineaTinkerAddon;
 import pokefenn.block.ModBlocks;
 import pokefenn.configuration.ConfigurationHandler;
@@ -13,6 +12,7 @@ import pokefenn.gui.GuiHandler;
 import pokefenn.handlers.LocalizationHandler;
 import pokefenn.item.ModItems;
 import pokefenn.lib.Reference;
+import pokefenn.misc.VineSpawn;
 import pokefenn.network.PacketHandler;
 import pokefenn.proxy.CommonProxy;
 import pokefenn.recipe.VineacraftRecipes;
@@ -54,6 +54,7 @@ public class Vineacraft {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	
+    	new VineSpawn();
     	
     	
      // Load localisation stuff bro
