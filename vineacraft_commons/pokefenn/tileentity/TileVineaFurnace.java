@@ -4,6 +4,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.ForgeDirection;
 import net.minecraftforge.fluids.Fluid;
@@ -123,6 +125,43 @@ public class TileVineaFurnace extends TileVineacraft implements IInventory, IFlu
 		
 		//Not chest so no code
 	}
+	
+	@Override
+    public void readFromNBT(NBTTagCompound nbtTagCompound) {
+
+        super.readFromNBT(nbtTagCompound);
+
+        // Read in the ItemStacks in the inventory from NBT
+        NBTTagList tagList = nbtTagCompound.getTagList("Items");
+        inventory = new ItemStack[this.getSizeInventory()];
+        for (int i = 0; i < tagList.tagCount(); ++i) {
+            NBTTagCompound tagCompound = (NBTTagCompound) tagList.tagAt(i);
+            byte slotIndex = tagCompound.getByte("Slot");
+            if (slotIndex >= 0 && slotIndex < inventory.length) {
+                inventory[slotIndex] = ItemStack.loadItemStackFromNBT(tagCompound);
+            }
+        }
+    }
+	
+	
+	@Override
+    public void writeToNBT(NBTTagCompound nbtTagCompound) {
+
+        super.writeToNBT(nbtTagCompound);
+
+        // Write the ItemStacks in the inventory to NBT
+        NBTTagList tagList = new NBTTagList();
+        for (int currentIndex = 0; currentIndex < inventory.length; ++currentIndex) {
+            if (inventory[currentIndex] != null) {
+                NBTTagCompound tagCompound = new NBTTagCompound();
+                tagCompound.setByte("Slot", (byte) currentIndex);
+                inventory[currentIndex].writeToNBT(tagCompound);
+                tagList.appendTag(tagCompound);
+            }
+        }
+        nbtTagCompound.setTag("Items", tagList);
+    }
+	
 
 	@Override
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {

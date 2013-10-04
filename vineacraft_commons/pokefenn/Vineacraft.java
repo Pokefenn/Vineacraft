@@ -54,7 +54,7 @@ public class Vineacraft {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	
-    	new VineSpawn();
+    	//new VineSpawn();
     	
     	
      // Load localisation stuff bro
