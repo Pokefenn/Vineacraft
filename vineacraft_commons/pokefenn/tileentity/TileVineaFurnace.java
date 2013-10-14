@@ -22,11 +22,11 @@ public class TileVineaFurnace extends TileVineacraft implements IInventory, IFlu
 	
 	public static final int MAX_FLUID = FluidContainerRegistry.BUCKET_VOLUME * 10;
 
-    public static final int INVENTORY_SIZE = 3;
+    public static final int INVENTORY_SIZE = 2;
     
     public static final int INPUT_INVENTORY_INDEX = 0;
-    public static final int BUCKET_INVENTORY_INDEX = 1;
-    public static final int OUTPUT_INVENTORY_INDEX = 2;
+    //public static final int BUCKET_INVENTORY_INDEX = 2;
+    public static final int OUTPUT_INVENTORY_INDEX = 1;
     
 	
 	
@@ -201,7 +201,7 @@ public class TileVineaFurnace extends TileVineacraft implements IInventory, IFlu
 		
 		
 		
-		return 0;
+		return MAX_FLUID;
 	}
 
 

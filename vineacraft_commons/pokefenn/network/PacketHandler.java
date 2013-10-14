@@ -11,10 +11,10 @@ public class PacketHandler implements IPacketHandler {
 	 @Override
 	    public void onPacketData(INetworkManager manager, Packet250CustomPayload packet, Player player) {
 
-	        // Build a PacketEE object from the data contained within the Packet250CustomPayload packet
+	        // Build a PacketVineacraft object from the data contained within the Packet250CustomPayload packet
 	        PacketVineacraft packetVineacraft = PacketTypeHandler.buildPacket(packet.data);
 
-	        // Execute the appropriate actions based on the PacketEE type
+	        // Execute the appropriate actions based on the PacketVineacraft type
 	        packetVineacraft.execute(manager, player);
 	        
 	        

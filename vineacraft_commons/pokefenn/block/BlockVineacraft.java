@@ -17,7 +17,7 @@ public abstract class BlockVineacraft extends BlockContainer {
         super(id, material);
     }
     
-    /*
+    
     
     @Override
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entityLiving, ItemStack itemStack) {
@@ -46,7 +46,7 @@ public abstract class BlockVineacraft extends BlockContainer {
 
         ((TileVineacraft) world.getBlockTileEntity(x, y, z)).setOrientation(direction);
     }
-*/
+
 
 }
  

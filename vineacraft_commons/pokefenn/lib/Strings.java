@@ -85,6 +85,7 @@ public class Strings {
     public static final String VINEA_STICK_NAME = "vineaStick";
     public static final String VINEAPEDIA_NAME = "vineapedia";
     
+    public static final String VINE_HOOK_FOCUS = "vineHookFocus";
     
     /* Tile entity name constants */
      
