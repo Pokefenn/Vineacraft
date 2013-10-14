@@ -22,7 +22,6 @@ public class ItemIds {
     public static int VINEA_CHESTPLATE_DEFAULT = 4174;
     public static int VINEA_HELMET_DEFAULT = 4175;
     
-    public static int VINE_HOOK_FOCUS_DEFAULT = 4176;
     
     // Current item id's
     
@@ -43,5 +42,4 @@ public class ItemIds {
     public static int VINEA_LEGGINGS;
     public static int VINEA_HELMET;
     
-    public static int VINE_HOOK_FOCUS;
 }

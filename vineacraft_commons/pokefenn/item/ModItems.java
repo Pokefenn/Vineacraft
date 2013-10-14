@@ -6,7 +6,6 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidContainerRegistry.FluidContainerData;
 import net.minecraftforge.fluids.FluidRegistry;
 import pokefenn.fluid.ModFluids;
-import pokefenn.item.thaumcraft.ItemVineHookFocus;
 import pokefenn.lib.ItemIds;
 import pokefenn.lib.Strings;
 
@@ -32,8 +31,6 @@ public class ModItems {
     public static Item vineaChestplate;
     public static Item vineaHelmet;
     
-    public static Item vineHookFocus;
-    
     public static void init() {
         
        
@@ -41,7 +38,7 @@ public class ModItems {
         
         vineParts = new ItemVineParts(ItemIds.VINE_PARTS);
         vineaShears = new ItemVineaShears(ItemIds.VINEA_SHEARS);
-        //vineaWrench = new ItemVineaWrench(ItemIds.VINEA_WRENCH);
+        vineaWrench = new ItemVineaWrench(ItemIds.VINEA_WRENCH);
         vinium = new ItemVinium(ItemIds.VINIUM);
         infestationVine = new ItemInfestationVine(ItemIds.INFESTATION_VINE);
         vineaTankModule = new ItemVineaTankModule(ItemIds.VINEA_TANK_MODULE);
@@ -61,14 +58,7 @@ public class ModItems {
     
     }
     
-    public static void initTC(){
-    	
-    	//vineHookFocus = new ItemVineHookFocus(ItemIds.VINE_HOOK_FOCUS);
-    	
-    	
-    }
-    
-    static void registerContainers() {
+    static void registerContainers(){
     	
             FluidContainerRegistry.registerFluidContainer(new FluidContainerData(FluidRegistry.getFluidStack( ModFluids.vineSap.getName(), FluidContainerRegistry.BUCKET_VOLUME ),
                         new ItemStack(bucketVineSap),

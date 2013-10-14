@@ -19,7 +19,7 @@ public class TileAutomaticSqueezer extends TileVineacraft implements IInventory,
     public static final int INVENTORY_SIZE = 1;
     
     public static final int INPUT_INVENTORY_INDEX = 0;
-    public static final int BUCKET_INVENTORY_INDEX = 1;
+    public static final int BUCKET_INVENTORY_INDEX = 0;
 	
 	
 	
@@ -131,7 +131,7 @@ public class TileAutomaticSqueezer extends TileVineacraft implements IInventory,
     public void writeToNBT(NBTTagCompound nbtTagCompound) {
 
         super.writeToNBT(nbtTagCompound);
- 
+
         // Write the ItemStacks in the inventory to NBT
         NBTTagList tagList = new NBTTagList();
         for (int currentIndex = 0; currentIndex < inventory.length; ++currentIndex) {

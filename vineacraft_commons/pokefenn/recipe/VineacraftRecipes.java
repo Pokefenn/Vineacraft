@@ -12,13 +12,9 @@ public class VineacraftRecipes {
 	
 	public static void init() {
 		
-		
-	/*	
-		  //BlocksShaped
-		
-		
+		  //BlocksShaped   
 	       GameRegistry.addRecipe(new ItemStack(ModBlocks.manualSqueezer), new Object[] { " p ", "rcr", "wbw", ('p'), Block.pistonBase, Character.valueOf('c'), Item.cauldron, Character.valueOf('w'), Block.cloth, Character.valueOf('r'), Item.redstone, Character.valueOf('b'), ModBlocks.basicMachineBlock });
-	       GameRegistry.addRecipe(new ItemStack(ModBlocks.advancedMachineBlock), new Object[] { "sgs", "rmr", "sis", ('m'), Block.cobblestoneMossy, ('i'), Block.blockIron, ('r'), Block.blockRedstone, ('s'), ModItems.vineaStick, ('g'), Item.ingotGold });
+	       GameRegistry.addRecipe(new ItemStack(ModBlocks.advancedMachineBlock), new Object[] { "sds", "rmr", "sis", ('m'), Block.cobblestoneMossy, ('i'), Block.blockIron, ('r'), Block.blockRedstone, ('s'), ModItems.vineaStick, ('d'), Item.diamond });
 	       GameRegistry.addRecipe(new ItemStack(ModBlocks.vineaFurnace), new Object[] { " f ", "ctc", "rbr", ('f'), Block.furnaceIdle, ('t'), ModItems.vineaTankModule, ('b'), ModBlocks.advancedMachineBlock, ('c'), Item.coal, ('r'), Item.redstone});
 	       GameRegistry.addRecipe(new ItemStack(ModBlocks.automaticSqueezer), new Object[] { " p ", "iti", "rbr", ('p'), Block.pistonBase, ('t'), ModItems.vineaTankModule, ('b'), ModBlocks.advancedMachineBlock, ('i'), Item.ingotIron, ('r'), Item.redstone});
 	       GameRegistry.addRecipe(new ItemStack(ModBlocks.vineaHatcher), new Object[] { " e ", "oto", "rbr", ('b'), ModBlocks.basicMachineBlock, ('e'), Item.egg, ('r'), Item.redstone, ('t'), ModItems.vineaTankModule, ('o'), Block.torchWood});
@@ -34,14 +30,14 @@ public class VineacraftRecipes {
 	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaGrating), new Object[] { "vvv", "v v", "vvv", ('v'), Block.vine});
 	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaTankModule), new Object[] { "ggg", "gvg", "ggg", ('v'), Block.vine, ('g'), Block.glass  });
 	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaWrench), new Object[] { "v v", " v ", "v v", ('v'), ModItems.vinium });
-	       GameRegistry.addReScipe(new ItemStack(ModItems.vineaShears), new Object[] { "v ", " v", ('v'), ModItems.vinium });
+	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaShears), new Object[] { "v ", " v", ('v'), ModItems.vinium });
 	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaBallInfuser), new Object[] { "ivi", "i i", "ivi", ('i'), Block.fenceIron, ('v'), Block.vine});
 	       GameRegistry.addRecipe(new ItemStack(ModItems.vineaStick), new Object[] { "vvv", "vsv", "vvv", ('s'), Item.stick, ('v'), Block.vine});
 	        
 	        
 	        
 	      //BlockShapeless
-	     */
+	     
 	      
 	       GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.brightVine), new Object[] { Item.glowstone, Block.vine});
 	       
@@ -50,8 +46,8 @@ public class VineacraftRecipes {
 	        
 	      //ItemShapeless
 	       
-	       //GameRegistry.addShapelessRecipe(new ItemStack(ModItems.vineapedia), new Object[] { Item.book, Block.vine});
-	       //GameRegistry.addShapelessRecipe(new ItemStack(ModItems.vinium, 9), new Object[]{ ModBlocks.blockVinium});
+	       GameRegistry.addShapelessRecipe(new ItemStack(ModItems.vineapedia), new Object[] { Item.book, Block.vine});
+	       GameRegistry.addShapelessRecipe(new ItemStack(ModItems.vinium, 9), new Object[]{ ModBlocks.blockVinium});
 	       
 	         
 	      //Vanilla Item
@@ -61,8 +57,6 @@ public class VineacraftRecipes {
 	        
 	        
 	       //GameRegistry.addShapelessRecipe(new ItemStack(Block.sapling, 1, 3), new Object[] { Block.sapling, Block.vine } );
-	        
-	        
 	}
 	
 	

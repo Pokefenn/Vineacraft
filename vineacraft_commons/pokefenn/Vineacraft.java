@@ -3,6 +3,7 @@ package pokefenn;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
+import pokefenn.addons.tinkersconstruct.VineaTinkerAddon;
 import pokefenn.block.ModBlocks;
 import pokefenn.configuration.ConfigurationHandler;
 import pokefenn.creativetab.CreativeTabVineacraft;
@@ -11,6 +12,7 @@ import pokefenn.gui.GuiHandler;
 import pokefenn.handlers.LocalizationHandler;
 import pokefenn.item.ModItems;
 import pokefenn.lib.Reference;
+import pokefenn.misc.VineSpawn;
 import pokefenn.network.PacketHandler;
 import pokefenn.proxy.CommonProxy;
 import pokefenn.recipe.VineacraftRecipes;
@@ -26,8 +28,8 @@ import cpw.mods.fml.common.network.NetworkMod;
 
 
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-@NetworkMod(channels = { Reference.CHANNEL_NAME }, clientSideRequired = true, serverSideRequired = false, packetHandler = PacketHandler.class)
+@Mod( modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@NetworkMod(channels = { Reference.CHANNEL_NAME}, clientSideRequired=true, serverSideRequired=false, packetHandler = PacketHandler.class)
 public class Vineacraft {
 
 	//Instance of vineacraft
@@ -71,12 +73,6 @@ public class Vineacraft {
         
         proxy.registerRenderers();
         
-        //TickRegistry.registerTickHandler(new VersionCheckTickHandler(), Side.CLIENT)
-        
-        //proxy.registerRenderTickHandler();
-        
-        
-        
         
       //Init Fluids
     	ModFluids.init();
@@ -88,19 +84,6 @@ public class Vineacraft {
 
      // Initialise mod items
         ModItems.init();
-        
-        
-        if (Loader.isModLoaded("TConstruct")){
-        	
-        	
-        }
-        
-        //Test of some code :P
-        if (Loader.isModLoaded("Thaumcraft")){
-        	
-        	
-        	
-        }
         
         //Initialise crafting recipes
         VineacraftRecipes.init();
@@ -137,11 +120,11 @@ public class Vineacraft {
         //AddonHandler.init();
                 
         //Addon for Tinkers Construct
-        //if (Loader.isModLoaded("TConstruct")){
+        if (Loader.isModLoaded("TConstruct")){
             
-        //VineaTinkerAddon.init();
-        //System.out.println("[Vineacraft] Tinkers Construct Loaded");
-    //}
+        VineaTinkerAddon.init();
+        System.out.println("[Vineacraft] Tinkers Construct Loaded");
+    }
         
         //Addon for forestry.
         //if (Loader.isModLoaded("Forestry")){

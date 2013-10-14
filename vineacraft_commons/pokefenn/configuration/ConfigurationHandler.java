@@ -66,7 +66,6 @@ public class ConfigurationHandler {
             ItemIds.VINEA_HELMET = configuration.getItem(Strings.VINEA_HELMET_NAME, ItemIds.VINEA_HELMET_DEFAULT).getInt(ItemIds.VINEA_HELMET_DEFAULT);
             		
            
-            //ItemIds.VINE_HOOK_FOCUS = configuration.getItem(Strings.VINE_HOOK_FOCUS, ItemIds.VINE_HOOK_FOCUS_DEFAULT).getInt(ItemIds.VINE_HOOK_FOCUS_DEFAULT);
             
            }
         

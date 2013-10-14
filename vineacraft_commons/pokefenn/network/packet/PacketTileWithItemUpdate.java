@@ -71,6 +71,6 @@ public class PacketTileWithItemUpdate extends PacketVineacraft {
     @Override
     public void execute(INetworkManager manager, Player player) {
 
-        Vineacraft.proxy.handleTileWithItemPacket(x, y, z, ForgeDirection.getOrientation(orientation), state, customName, itemID, metaData, stackSize, color);
+        //Vineacraft.proxy.handleTileWithItemPacket(x, y, z, ForgeDirection.getOrientation(orientation), state, customName, itemID, metaData, stackSize, color);
     }
 }
