@@ -1,5 +1,6 @@
 package pokefenn.proxy;
 
+import net.minecraftforge.common.ForgeDirection;
 import pokefenn.lib.Strings;
 import pokefenn.tileentity.TileAutomaticSqueezer;
 import pokefenn.tileentity.TileVineaFurnace;
@@ -17,12 +18,24 @@ public class CommonProxy {
     }
 
 
+    public void sendRequestEventPacket(byte eventType, int originX, int originY, int originZ, byte sideHit, byte rangeX, byte rangeY, byte rangeZ, String data) {
+
+    }
  
 
 
 	public void initRenderingAndTextures() {
 		
 	}
+	
+	public void handleTileEntityPacket(int x, int y, int z, ForgeDirection orientation, byte state, String customName) {
+
+	}
+
+	public void handleTileWithItemPacket(int x, int y, int z, ForgeDirection orientation, byte state, String customName, int itemID, int metaData, int stackSize, int color) {
+
+    }
+
 	
 	
 public static void registerTileEntities() {
@@ -40,6 +53,12 @@ public static void registerTileEntities() {
         
         
     }
+
+
+public void registerRenderTickHandler() {
+	// TODO Auto-generated method stub
+	
+}
 	
 	
     }

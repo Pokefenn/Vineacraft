@@ -15,6 +15,8 @@ public class ConfigurationHandler {
 
     public static Configuration configuration;
     public static final String CATEGORY_GAMEPLAY = "gameplay";
+    public static final String CATEGORY_FLUID = "fluid";
+    public static final String CATEGORY_MACHINE = "machine";
     
     
     public static void init(File configFile) {
@@ -25,7 +27,19 @@ public class ConfigurationHandler {
             
             configuration.load();
             
+            ConfigurationSettings.VINE_SAP_DENSITY = configuration.get(CATEGORY_FLUID, ConfigurationSettings.VINE_SAP_DENSITY_CONFIGNAME, ConfigurationSettings.VINE_SAP_DENSITY_DEFAULT).getInt(ConfigurationSettings.VINE_SAP_DENSITY_DEFAULT);
+            ConfigurationSettings.VINE_SAP_VISCOSITY = configuration.get(CATEGORY_FLUID, ConfigurationSettings.VINE_SAP_VISCOSITY_CONFIGNAME, ConfigurationSettings.VINE_SAP_VISCOSITY_DEFAULT).getInt(ConfigurationSettings.VINE_SAP_VISCOSITY_DEFAULT);
+            
             ConfigurationSettings.VINE_ON_STARTUP = configuration.get(CATEGORY_GAMEPLAY, ConfigurationSettings.VINE_ON_STARTUP_CONFIGNAME, ConfigurationSettings.VINE_ON_STARTUP_DEFAULT).getBoolean(ConfigurationSettings.VINE_ON_STARTUP_DEFAULT);
+            
+            //ConfigurationSettings.VINE_SAP_CREATION_MODIFIER = configuration.get(CATEGORY_FLUID, ConfigurationSettings.VINE_SAP_CREATION_MODIFIER_CONFIGNAME, ConfigurationSettings.VINE_SAP_CREATION_MODIFIER_DEFAULT).getDouble(ConfigurationSettings.VINE_SAP_CREATION_MODIFIER_DEFAULT);
+            
+            ConfigurationSettings.BASE_VINE_SAP_PER_VINE = configuration.get(CATEGORY_FLUID, ConfigurationSettings.BASE_VINE_SAP_PER_VINE_CONFIGNAME, ConfigurationSettings.BASE_VINE_SAP_PER_VINE_DEFAULT).getInt(ConfigurationSettings.BASE_VINE_SAP_PER_VINE_DEFAULT);
+            
+            ConfigurationSettings.VINE_SAP_ADVANCED_SQUEEZER_MODIFIER = configuration.get(CATEGORY_FLUID, ConfigurationSettings.VINE_SAP_ADVANCED_SQUEEZER_MODIFIER_CONFIGNAME, ConfigurationSettings.VINE_SAP_ADVANCED_SQUEEZER_MODIFIER_DEFAULT).getDouble(ConfigurationSettings.VINE_SAP_ADVANCED_SQUEEZER_MODIFIER_DEFAULT);
+            ConfigurationSettings.VINE_SAP_MANUAL_SQUEEZER_MODIFIER = configuration.get(CATEGORY_FLUID, ConfigurationSettings.VINE_SAP_MANUAL_SQUEEZER_MODIFIER_CONFIGNAME, ConfigurationSettings.VINE_SAP_MANUAL_SQUEEZER_MODIFIER_DEFAULT).getDouble(ConfigurationSettings.VINE_SAP_MANUAL_SQUEEZER_MODIFIER_DEFAULT);
+            ConfigurationSettings.VINE_SAP_AUTOMATIC_SQUEEZER_MODIFIER = configuration.get(CATEGORY_FLUID, ConfigurationSettings.VINE_SAP_AUTOMATIC_SQUEEZER_MODIFIER_CONFIGNAME, ConfigurationSettings.VINE_SAP_AUTOMATIC_SQUEEZER_MODIFIER_DEFAULT).getDouble(ConfigurationSettings.VINE_SAP_AUTOMATIC_SQUEEZER_MODIFIER_DEFAULT);
+            
             
             //Blocks
             BlockIds.AUTOMATIC_SQUEEZER = configuration.getBlock(Strings.AUTOMATIC_SQUEEZER_NAME, BlockIds.AUTOMATIC_SQUEEZER_DEFAULT).getInt(BlockIds.AUTOMATIC_SQUEEZER_DEFAULT);
@@ -66,12 +80,13 @@ public class ConfigurationHandler {
             ItemIds.VINEA_HELMET = configuration.getItem(Strings.VINEA_HELMET_NAME, ItemIds.VINEA_HELMET_DEFAULT).getInt(ItemIds.VINEA_HELMET_DEFAULT);
             		
            
+            //ItemIds.VINE_HOOK_FOCUS = configuration.getItem(Strings.VINE_HOOK_FOCUS, ItemIds.VINE_HOOK_FOCUS_DEFAULT).getInt(ItemIds.VINE_HOOK_FOCUS_DEFAULT);
             
            }
         
         catch (Exception e) {
             
-            FMLLog.log(Level.SEVERE, e, Reference.MOD_NAME + " has had a problem loading its configuration");
+            FMLLog.log(Level.SEVERE, e, Reference.MOD_NAME + " has had a problem loading its configuration, go ask on the forums :p");
             
         }
         

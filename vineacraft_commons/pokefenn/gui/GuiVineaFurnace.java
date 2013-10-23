@@ -17,7 +17,11 @@ import pokefenn.tileentity.TileVineaFurnace;
 
 public class GuiVineaFurnace extends GuiContainer {
 
+	private String val1 = "You have:";
+	private String vineSapLevel = "1000";
+	private String val2 = "Vine Sap";
 	
+	private int val3 = 5;
 	
 	
 	 private TileVineaFurnace tileVineaFurnace;
@@ -38,7 +42,11 @@ public class GuiVineaFurnace extends GuiContainer {
 	    String containerName = tileVineaFurnace.isInvNameLocalized() ? tileVineaFurnace.getInvName() : StatCollector.translateToLocal(tileVineaFurnace.getInvName());
 	    fontRenderer.drawString(containerName, xSize / 2 - fontRenderer.getStringWidth(containerName) / 2, 6, 4210752);
 	    fontRenderer.drawString(StatCollector.translateToLocal(Strings.CONTAINER_INVENTORY), 8, ySize - 96 + 2, 4210752);
-	        
+	    //fontRenderer.drawString(val1, 10, ySize - 96 + 10, 4210752);
+	    //fontRenderer.drawString(val2, 10, ySize - 96 + 10, 4210752);
+	    fontRenderer.drawString(vineSapLevel, 12, ySize - 130, 4210752);
+	    
+	    
 	    }
 	    
 	    
@@ -55,7 +63,7 @@ public class GuiVineaFurnace extends GuiContainer {
         this.drawTexturedModalRect(xStart, yStart, 0, 0, xSize, ySize);
     }
 	
-	
+	/*
 	
 	private void displayGauge(int j, int k, int line, int col, int squaled, FluidStack liquid) {
 		if (liquid == null) {
@@ -90,10 +98,12 @@ public class GuiVineaFurnace extends GuiContainer {
 			}
 			
 		}
+		
 	
 	
 	
 	}
+	*/
 }
 	
 

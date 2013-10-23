@@ -15,6 +15,7 @@ import net.minecraftforge.event.Event;
 import net.minecraftforge.event.entity.player.FillBucketEvent;
 import net.minecraftforge.fluids.ItemFluidContainer;
 import pokefenn.Vineacraft;
+import pokefenn.block.ModBlocks;
 import pokefenn.lib.BlockIds;
 import pokefenn.lib.Strings;
 import pokefenn.lib.Textures;
@@ -27,7 +28,7 @@ public class ItemBucketVineSap extends ItemFluidContainer {
 		super(id - 256);
         this.setUnlocalizedName(Strings.BUCKET_VINE_SAP_NAME);
         this.setCreativeTab(Vineacraft.tabsVineac);
-        //this.setMaxStackSize(1);
+        this.setMaxStackSize(1);
 	}
 	
 	@Override
@@ -159,7 +160,7 @@ public class ItemBucketVineSap extends ItemFluidContainer {
 	                    {
 	                        w.destroyBlock(x, y, z, true);
 	                    }
-	                    w.setBlock(x, y, z,  BlockIds.BLOCK_VINE_SAP_DEFAULT, 0, 3);
+	                    w.setBlock(x, y, z,  ModBlocks.blockVineSap.blockID, 0, 3);
 	                return true;
 	            }
 	        

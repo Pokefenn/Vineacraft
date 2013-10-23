@@ -3,7 +3,6 @@ package pokefenn;
 import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
-import pokefenn.addons.tinkersconstruct.VineaTinkerAddon;
 import pokefenn.block.ModBlocks;
 import pokefenn.configuration.ConfigurationHandler;
 import pokefenn.creativetab.CreativeTabVineacraft;
@@ -12,10 +11,10 @@ import pokefenn.gui.GuiHandler;
 import pokefenn.handlers.LocalizationHandler;
 import pokefenn.item.ModItems;
 import pokefenn.lib.Reference;
-import pokefenn.misc.VineSpawn;
 import pokefenn.network.PacketHandler;
 import pokefenn.proxy.CommonProxy;
 import pokefenn.recipe.VineacraftRecipes;
+import pokefenn.util.VineOreDictionary;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -25,11 +24,13 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.TickRegistry;
+import cpw.mods.fml.relauncher.Side;
 
 
 
-@Mod( modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-@NetworkMod(channels = { Reference.CHANNEL_NAME}, clientSideRequired=true, serverSideRequired=false, packetHandler = PacketHandler.class)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@NetworkMod(channels = { Reference.CHANNEL_NAME }, clientSideRequired = true, serverSideRequired = false, packetHandler = PacketHandler.class)
 public class Vineacraft {
 
 	//Instance of vineacraft
@@ -63,7 +64,7 @@ public class Vineacraft {
     	
     	
     	
-     // Initialize the configuration
+     // Initialise the configuration
         ConfigurationHandler.init(new File(event.getModConfigurationDirectory()
                 .getAbsolutePath()
                 + File.separator
@@ -72,6 +73,12 @@ public class Vineacraft {
 
         
         proxy.registerRenderers();
+        
+        //TickRegistry.registerTickHandler(new VersionCheckTickHandler(), Side.CLIENT);
+        
+        proxy.registerRenderTickHandler();
+        
+        
         
         
       //Init Fluids
@@ -84,6 +91,23 @@ public class Vineacraft {
 
      // Initialise mod items
         ModItems.init();
+        
+        ModItems.registerContainers();
+        
+        VineOreDictionary.oreRegistration();
+        
+        
+        if (Loader.isModLoaded("TConstruct")){
+        	
+        	
+        }
+        
+        //Test of some code :P
+        if (Loader.isModLoaded("Thaumcraft")){
+        	
+        	
+        	
+        }
         
         //Initialise crafting recipes
         VineacraftRecipes.init();
@@ -118,20 +142,7 @@ public class Vineacraft {
     
      // Initialize the Addon Handler
         //AddonHandler.init();
-                
-        //Addon for Tinkers Construct
-        if (Loader.isModLoaded("TConstruct")){
-            
-        VineaTinkerAddon.init();
-        System.out.println("[Vineacraft] Tinkers Construct Loaded");
-    }
-        
-        //Addon for forestry.
-        //if (Loader.isModLoaded("Forestry")){
-        	
-        	//VineaForestryAddon.init();
-        //System.out.println("Forestry stuff working");
-    //}
+
 
 }
 }

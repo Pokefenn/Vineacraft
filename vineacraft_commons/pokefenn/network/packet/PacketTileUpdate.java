@@ -58,7 +58,7 @@ public class PacketTileUpdate extends PacketVineacraft {
     @Override
     public void execute(INetworkManager manager, Player player) {
 
-        //Vineacraft.proxy.handleTileEntityPacket(x, y, z, ForgeDirection.getOrientation(orientation), state, customName);
+        Vineacraft.proxy.handleTileEntityPacket(x, y, z, ForgeDirection.getOrientation(orientation), state, customName);
     }
 
 }

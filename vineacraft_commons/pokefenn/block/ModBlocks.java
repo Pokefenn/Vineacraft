@@ -88,8 +88,6 @@ public class ModBlocks {
 	   
        //FluidStuff
        
-       //fluidVineSap = new Fluid ("Vine Sap");
-       //FluidRegistry.registerFluid(vineSap);
        
     
     }
